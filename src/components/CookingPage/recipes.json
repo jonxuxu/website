@@ -1,0 +1,167 @@
+{
+    "sheng-jian-bao":
+    {
+        "name": "Sheng Jian Bao",
+        "subtitle": "Shanghai style pan-fried pork buns",
+        "description": "I make these whenever I am craving Chinese street food. The filling is where the flavor is at, so if that part is done right you get a good bao.",
+        "image": "https://redhousespice.com/wp-content/uploads/2017/08/Sheng-Jian-Bao-Pan-fried-pork-buns-landscape1.jpg",
+        "ingredients": [
+            {
+                "unit": 250,
+                "item": "g all-purpose flour"
+            },
+            {
+                "unit": 1,
+                "item": "tsp sugar"
+            },
+            {
+                "unit": 1,
+                "item": "tsp dried instant yeast"
+            },
+            {
+                "unit": 140,
+                "item": "ml lukewarm water"
+            },
+            {
+                "unit": 250,
+                "item": "g minced pork"
+            },
+            {
+                "unit": 2,
+                "item": "tbsp spring onion, finely chopped"
+            },
+            {
+                "unit": 0.5,
+                "item": "tbsp ginger, minced"
+            }
+        ],
+        "steps": [
+            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
+            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."            
+        ],
+        "notes": []
+    },
+    "italian-wedding-soup":
+    {
+        "name": "Italian Wedding Soup",
+        "subtitle": "Authentic tasting, hearty American x Italian soup",
+        "image": "https://www.onceuponachef.com/images/2017/11/Italian_Wedding_Soup_.jpg",
+        "ingredients": [
+            {
+                "unit": 250,
+                "item": "g all-purpose flour"
+            },
+            {
+                "unit": 1,
+                "item": "tsp sugar"
+            },
+            {
+                "unit": 1,
+                "item": "tsp dried instant yeast"
+            },
+            {
+                "unit": 140,
+                "item": "ml lukewarm water"
+            },
+            {
+                "unit": 250,
+                "item": "g minced pork"
+            },
+            {
+                "unit": 2,
+                "item": "tbsp spring onion, finely chopped"
+            },
+            {
+                "unit": 0.5,
+                "item": "tbsp ginger, minced"
+            }
+        ],
+        "steps": [
+            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
+            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."
+        ],
+        "notes": []
+    },
+    "soy-sauce-fried-rice":
+    {
+        "name": "Soy Sauce Fried Rice",
+        "subtitle": "The cheapest, fastest meal that isn't microwavable or canned",
+        "image": "https://omnivorescookbook.com/wp-content/uploads/2020/02/2002_Soy-Sauce-Fried-Rice_004.jpg",
+        "ingredients": [
+            {
+                "unit": 250,
+                "item": "g all-purpose flour"
+            },
+            {
+                "unit": 1,
+                "item": "tsp sugar"
+            },
+            {
+                "unit": 1,
+                "item": "tsp dried instant yeast"
+            },
+            {
+                "unit": 140,
+                "item": "ml lukewarm water"
+            },
+            {
+                "unit": 250,
+                "item": "g minced pork"
+            },
+            {
+                "unit": 2,
+                "item": "tbsp spring onion, finely chopped"
+            },
+            {
+                "unit": 0.5,
+                "item": "tbsp ginger, minced"
+            }
+        ],
+        "steps": [
+            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
+            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."
+        ],
+        "notes": []
+    },
+    "taiwanese-fried-chicken":
+    {
+        "name": "Taiwanese Fried Chicken",
+        "subtitle": "High effort but high reward",
+        "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/03/Taiwanese-Fried-Chicken1.jpg?fit=1300%2C867&ssl=1",
+        "ingredients": [
+            {
+                "unit": 250,
+                "item": "g all-purpose flour"
+            },
+            {
+                "unit": 1,
+                "item": "tsp sugar"
+            },
+            {
+                "unit": 1,
+                "item": "tsp dried instant yeast"
+            },
+            {
+                "unit": 140,
+                "item": "ml lukewarm water"
+            },
+            {
+                "unit": 250,
+                "item": "g minced pork"
+            },
+            {
+                "unit": 2,
+                "item": "tbsp spring onion, finely chopped"
+            },
+            {
+                "unit": 0.5,
+                "item": "tbsp ginger, minced"
+            }
+        ],
+        "steps": [
+            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
+            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."
+        ],
+        "notes": []
+    }
+}
