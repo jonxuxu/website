@@ -34,12 +34,12 @@ const MainPage = () => {
         Some recipes for foods I love that have a high deliciousness to effort
         ratio
       </Title>
-      {loading && <Spin />}
+      {/* {loading && <Spin />} */}
       <Masonry
         onLayoutComplete={() => {
           setLoading(false);
         }}
-        style={{ visibility: loading ? "hidden" : "visible" }}
+        // style={{ visibility: loading ? "hidden" : "visible" }}
       >
         {Object.entries(recipes).map(([key, value]) => RecipeCard(key, value))}
       </Masonry>

@@ -3,9 +3,15 @@
     {
         "name": "Sheng Jian Bao",
         "subtitle": "Shanghai style pan-fried pork buns",
-        "description": "I make these whenever I am craving Chinese street food. The filling is where the flavor is at, so if that part is done right you get a good bao.",
-        "image": "https://redhousespice.com/wp-content/uploads/2017/08/Sheng-Jian-Bao-Pan-fried-pork-buns-landscape1.jpg",
+        "description": "I love making these with friends. The filling is where the flavor is at, so if that part is done right you get a good bao.",
+        "image": "https://www.seriouseats.com/recipes/images/2015/03/20150323-pan-fried-pork-bao-shao-zhong-24-1500x1125.jpg",
+        "time":"1.5 hours",
+        "servings": 2,
+        "type": "Main Course",
         "ingredients": [
+            {
+                "header": "For the wrappers"
+            },
             {
                 "unit": 250,
                 "item": "g all-purpose flour"
@@ -23,6 +29,9 @@
                 "item": "ml lukewarm water"
             },
             {
+                "header": "For the filling"
+            },
+            {
                 "unit": 250,
                 "item": "g minced pork"
             },
@@ -33,101 +42,258 @@
             {
                 "unit": 0.5,
                 "item": "tbsp ginger, minced"
+            },
+            {
+                "unit": 2,
+                "item": "tsp soy sauce"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp Shaoxing rice wine"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp sesame oil"
+            },
+            {
+                "unit": 0.25,
+                "item": "tsp salt"
+            },
+            {
+                "unit": 1,
+                "item": "pinch Chinese five-spice powder"
+            },
+            {
+                "unit": 5,
+                "item": "tbsp water or chicken stock"
+            },
+            {
+                "header": "For frying"
+            },
+            {
+                "unit": 1,
+                "item": "tbsp cooking oil"
+            },
+            {
+                "unit": 250,
+                "item": "ml water"
+            },
+            {
+                "header": "Garnish"
+            },
+            {
+                "item": "Toasted sesame seeds"
+            },
+            {
+                "item": "Spring onion, finely chopped"
             }
         ],
         "steps": [
+            "SECTIONPrepare the dough",
             "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
-            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."            
+            "Knead with your hand until a smooth, elastic dough forms. Cover the bowl with a wet kitchen towel.",
+            "Leave to rise in a warm place until double in size. It will take between 40 minutes to 1.5 hours depending on the room temperature.",
+            "SECTIONMix the filling",
+            "Put all the ingredients for the filling into a large bowl. Slowly swirl in water/stock into the mixture.",
+            "SECTIONShape the buns",
+            "Knead the dough on a floured work surface until it goes back to its original size.",
+            "Divide it into 20 equal portions. Roll each piece into a disk-like wrapper.",
+            "Hold the wrapper in the palm of one hand. Place some filling in the middle. Use the other hand to fold the edge anticlockwise by pinching with thumb and index finger until the bun is completely sealed.",
+            "Leave to rest for 15 minutes before frying.",
+            "SECTIONFry the buns",
+            "Heat up oil in a frying pan over a high heat. Place in the buns.",
+            "When the bottom part becomes golden brown, pour in water then cover with a lid.",
+            "Uncover when the water evaporates completely. Sprinkle sesame seeds and spring onion over.",
+            "Cook another 30 seconds or so to crisp up."
         ],
-        "notes": []
+        "notes": [
+            "I found instant yeast to be quite effective, but any type of yeast works. I learned the hard way that baking powder doesn't work!"
+        ]
     },
     "italian-wedding-soup":
     {
         "name": "Italian Wedding Soup",
         "subtitle": "Authentic tasting, hearty American x Italian soup",
+        "description": "This was the dish that convinced my Mom to give Italian food a chance. It's hearty so it's great as a quick meal for later.",
         "image": "https://www.onceuponachef.com/images/2017/11/Italian_Wedding_Soup_.jpg",
+        "time":"50 minutes",
+        "servings": 6,
+        "type": "Main Course",
         "ingredients": [
             {
-                "unit": 250,
-                "item": "g all-purpose flour"
-            },
-            {
-                "unit": 1,
-                "item": "tsp sugar"
-            },
-            {
-                "unit": 1,
-                "item": "tsp dried instant yeast"
-            },
-            {
-                "unit": 140,
-                "item": "ml lukewarm water"
+                "header": "For the meatballs"
             },
             {
                 "unit": 250,
-                "item": "g minced pork"
-            },
-            {
-                "unit": 2,
-                "item": "tbsp spring onion, finely chopped"
+                "item": "g lean ground beef"
             },
             {
                 "unit": 0.5,
-                "item": "tbsp ginger, minced"
+                "item": "cup bread crumbs"
+            },
+            {
+                "unit": 0.25,
+                "item": "cup chopped fresh parsley"
+            },
+            {
+                "unit": 1.5,
+                "item": "tsp minced fresh orgeano"
+            },
+            {
+                "unit": 0.5,
+                "item": "cup finely shredded parmesean"
+            },
+            {
+                "unit": 1,
+                "item": "tbsp olive oil"
+            },
+            {
+                "unit": 1,
+                "item": "large egg"
+            },
+            {
+                "unit": 1,
+                "item": "tsp salt"
+            },
+            {
+                "unit": 0.25,
+                "item": "tsp pepper"
+            },
+            {
+                "header": "For the soup"
+            },
+            {
+                "unit": 1,
+                "item": "tbsp olive oil"
+            },
+            {
+                "unit": 1.5,
+                "item": "cups carrots, diced"
+            },
+            {
+                "unit": 1.5,
+                "item": "cups yellow onion, diced"
+            },
+            {
+                "unit": 0.75,
+                "item": "cups celery, diced"
+            },
+            {
+                "unit": 4,
+                "item": "cloves garlic, minced"
+            },
+            {
+                "unit": 5,
+                "item": "cans chicken broth (~1.75L)"
+            },
+            {
+                "unit": 1,
+                "item": "cup orzo pasta"
+            },
+            {
+                "unit": 4,
+                "item": "175g fresh spinach, chopped"
             }
         ],
         "steps": [
-            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
-            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."
+            "SECTIONMake the meatballs",
+            "Mix meatball ingredients in a bowl.",
+            "Shape mix into small meatballs, about 3/4 inch to 1 inch and transfer to a plate.",
+            "Heat 1 Tbsp olive oil in a large pan over medium-high heat. Add the meatballs and cook, turning occasionally until 2 or 3 sides are browned (about 4 minutes total). They will not be fully cooked at this point.",
+            "SECTIONFor the soup",
+            "Heat 1 Tbsp olive oil in a large pot over medium-high heat. Add carrots, onions and celery and saute until veggies have softened about 6 - 8 minutes, add garlic and saute 1 minute longer.",
+            "Pour in chicken broth, season soup with salt and pepper to taste and bring it to a boil.",
+            "Add in pasta and meatballs, reduce heat to light boil.",
+            "Cover and cook, stirring occasionally for about 10 minutes.",
+            "Add in spinach during the last minute of cooking.",
+            "Serve warm, sprinkle each serving with parmesan cheese."
         ],
-        "notes": []
+        "notes": [
+            "You can make your own breadcrumbs really easily by leaving white bread out to dry and crushing it.",
+            "I prefer to use low sodium chicken broth. If not, I usually don't add salt to the meatballs at all.",
+            "Pasta can be substituted with the same amount of rice."
+        ]
     },
     "soy-sauce-fried-rice":
     {
         "name": "Soy Sauce Fried Rice",
-        "subtitle": "The cheapest, fastest meal that isn't microwavable or canned",
-        "image": "https://omnivorescookbook.com/wp-content/uploads/2020/02/2002_Soy-Sauce-Fried-Rice_004.jpg",
+        "subtitle": "The cheapest, fastest meal that isn't microwavable or canned.",
+        "description": "My go-to meal when I have 15 minutes to make food. In actuality, all the ingrients except the soy sauce, oil and rice is optional. Feel free to experiment! \n\nSee notes section for items marked *",
+        "image": "https://thewoksoflife.com/wp-content/uploads/2016/08/soy-sauce-fried-rice-10.jpg",
+        "time":"15 minutes",
+        "servings": 2,
+        "type": "Main Course",
         "ingredients": [
             {
-                "unit": 250,
-                "item": "g all-purpose flour"
+                "header": "Sauce mixture"
             },
             {
-                "unit": 1,
-                "item": "tsp sugar"
+                "unit":1,
+                "item": "tbsp dark soy sauce*"
             },
             {
-                "unit": 1,
-                "item": "tsp dried instant yeast"
-            },
-            {
-                "unit": 140,
-                "item": "ml lukewarm water"
-            },
-            {
-                "unit": 250,
-                "item": "g minced pork"
-            },
-            {
-                "unit": 2,
-                "item": "tbsp spring onion, finely chopped"
+                "unit":1,
+                "item":"tbsp light soy sauce"
             },
             {
                 "unit": 0.5,
-                "item": "tbsp ginger, minced"
+                "item": "tbsp cooking oil"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp sugar"
+            },
+            {
+                "unit":0.5,
+                "item":"tsp oyster sauce (optional)"
+            },
+            {
+                "unit":1,
+                "item":"tsp fish sauce (optional)"
+            },
+            {
+                "header":"For the fried rice"
+            },
+            {
+                "unit": 1,
+                "item": "cup mixed vegetables (optional)*"
+            },
+            {
+                "unit":2,
+                "item": "eggs"
+            },
+            {
+                "unit": 3,
+                "item": "cups cooked rice"
+            },
+            {
+                "unit": 2,
+                "item": "green onions, chopped"
             }
         ],
         "steps": [
-            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
-            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."
+            "Add oil to a medium pan. Heat on high until the oil just starts to shimmer.",
+            "Immediately break eggs and add to the pan. The high heat will make the eggs spatter, which airs them up. Quickly scramble the eggs, and set them aside.",
+            "Turn the heat to medium. Add oil and rice.",
+            "Stir rice and break up clumps, until the rice is heated through.",
+            "Add all the ingredients for the sauce mixture, veggies and scrambled eggs to the rice.",
+            "Stir fry eveything until combined. Add more soy sauce to taste if needed.",
+            "Stir in the green onions, and serve."
         ],
-        "notes": []
+        "notes": [
+            "Anything that isn't wet inside (like tomatoes), and smaller than half your thumb is good. My go-to is frozen mixed vegetables, or whatever veggies in the fridge, diced.",
+            "This can be replaced by half the amount of light soy sauce"
+        ]
     },
     "taiwanese-fried-chicken":
     {
         "name": "Taiwanese Fried Chicken",
-        "subtitle": "High effort but high reward",
+        "subtitle": "High effort but high reward.",
+        "description": "I make these whenever I am craving Asian street food.",
         "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/03/Taiwanese-Fried-Chicken1.jpg?fit=1300%2C867&ssl=1",
+        "time":"15 minutes",
+        "servings": 2,
+        "type": "Main Course",
         "ingredients": [
             {
                 "unit": 250,

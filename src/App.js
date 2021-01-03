@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.less";
 
-import Cooking from "./components/CookingPage";
-import { Navigation } from "./components/shared";
+import HomePage from "./components/HomePage";
+import CookingPgae from "./components/CookingPage";
 
 export default function App() {
   return (
@@ -11,23 +11,13 @@ export default function App() {
       <div>
         <Switch>
           <Route path="/cooking">
-            <Cooking />
+            <CookingPgae />
           </Route>
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
         </Switch>
       </div>
     </Router>
-  );
-}
-
-function Home() {
-  return (
-    <div>
-      {" "}
-      <Navigation />
-      <h2>Home</h2>
-    </div>
   );
 }
