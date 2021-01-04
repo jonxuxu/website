@@ -1,18 +1,34 @@
-import React from "react";
-import { useParams, useHistory } from "react-router-dom";
-import { PageHeader, Typography, Image, Checkbox, Space, Row, Col } from "antd";
-import { ClockCircleOutlined, UsergroupAddOutlined } from "@ant-design/icons";
-import { Helmet } from "react-helmet";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import {
+  PageHeader,
+  Typography,
+  Image,
+  Checkbox,
+  Space,
+  Row,
+  Col,
+  Breadcrumb,
+} from "antd";
+import {
+  ClockCircleOutlined,
+  UsergroupAddOutlined,
+  HomeOutlined,
+} from "@ant-design/icons";
 
-import { Container } from "../shared";
+import { Container } from "../../components/layout";
 import recipes from "./recipes.json";
 
 const { Title, Text } = Typography;
 
 const RecipePage = () => {
-  const { recipeUrl } = useParams();
-  const history = useHistory();
-  const recipe = recipes[recipeUrl];
+  const router = useRouter();
+  // const history = useHistory();
+  if (router.asPath === router.route) {
+    return <div></div>; // router.query.recipe is not deifned
+  }
+
+  const recipe = recipes[router.query.recipe];
 
   const Ingredients = recipe.ingredients.map((i, idx) => (
     <div key={idx}>
@@ -50,14 +66,22 @@ const RecipePage = () => {
     </Row>
   ));
 
-  const middle = (
+  const center = (
     <div>
-      <PageHeader
-        onBack={() => {
-          history.goBack();
-        }}
-        title={recipe.name}
-      />
+      <div style={{ paddingTop: 20, paddingLeft: 20 }}>
+        <Breadcrumb>
+          <Link href="/">
+            <Breadcrumb.Item href="">
+              <HomeOutlined />
+            </Breadcrumb.Item>
+          </Link>
+          <Link href="/cooking">
+            <Breadcrumb.Item href="">Cooking</Breadcrumb.Item>
+          </Link>
+          <Breadcrumb.Item>{recipe.name}</Breadcrumb.Item>
+        </Breadcrumb>
+        <Title>{recipe.name}</Title>
+      </div>
       <Row align="top">
         <Col md={8}>
           <Image src={recipe.image} style={{ paddingTop: 20 }} />
@@ -80,15 +104,15 @@ const RecipePage = () => {
       </Row>
       <Row align="top">
         <Col md={8} style={{ padding: 20 }}>
-          <Title level={4}>Ingredients</Title>
+          <Title level={3}>Ingredients</Title>
           {Ingredients}
         </Col>
         <Col md={16} style={{ padding: 20 }}>
-          <Title level={4}>Directions</Title>
+          <Title level={3}>Directions</Title>
           <ul style={{ paddingLeft: 0 }}>{Directions}</ul>
           {recipe.notes.length > 0 && (
             <div style={{ paddingTop: 20 }}>
-              <Title level={4}>Notes</Title>
+              <Title level={3}>Notes</Title>
               {Notes}
             </div>
           )}
@@ -96,14 +120,7 @@ const RecipePage = () => {
       </Row>
     </div>
   );
-  return (
-    <div>
-      <Helmet>
-        <title>{recipe.name}</title>
-      </Helmet>
-      <Container center={middle} />
-    </div>
-  );
+  return <Container center={center} />;
 };
 
 export default RecipePage;

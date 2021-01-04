@@ -281,7 +281,7 @@
             "Stir in the green onions, and serve."
         ],
         "notes": [
-            "Anything that isn't wet inside (like tomatoes), and smaller than half your thumb is good. My go-to is frozen mixed vegetables, or whatever veggies in the fridge, diced.",
+            "Any veggies that aren't really watery (like tomatoes), and smaller than half your thumb is good. My go-to is frozen mixed vegetables, or whatever veggies in the fridge, diced.",
             "This can be replaced by half the amount of light soy sauce"
         ]
     },
@@ -289,45 +289,78 @@
     {
         "name": "Taiwanese Fried Chicken",
         "subtitle": "High effort but high reward.",
-        "description": "I make these whenever I am craving Asian street food.",
+        "description": "I make these whenever I am craving Asian street food. This always brings me back to my 2019 trip to Taiwan. \n\nSee notes section for items marked *",
         "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/03/Taiwanese-Fried-Chicken1.jpg?fit=1300%2C867&ssl=1",
-        "time":"15 minutes",
+        "time":"2-3 hours",
         "servings": 2,
-        "type": "Main Course",
+        "type": "Appetizer",
         "ingredients": [
             {
-                "unit": 250,
-                "item": "g all-purpose flour"
+                "unit": 1,
+                "item": "tbsp fermented bean curd"
             },
             {
                 "unit": 1,
-                "item": "tsp sugar"
+                "item": "tbsp oyster sauce"
             },
             {
                 "unit": 1,
-                "item": "tsp dried instant yeast"
+                "item": "tsp shaoxing wine"
             },
             {
-                "unit": 140,
-                "item": "ml lukewarm water"
+                "unit": 0.25,
+                "item": "tsp white pepper"
             },
             {
-                "unit": 250,
-                "item": "g minced pork"
+                "unit": 3,
+                "item": "cloves garlic, chopped"
             },
             {
-                "unit": 2,
-                "item": "tbsp spring onion, finely chopped"
+                "unit": 1,
+                "item": "lb boneless skinless chicken thighs, cut into 1\" cubes"
+            },
+            {
+                "item": "peanut oil or frying oil"
+            },
+            {
+                "unit": 0.75,
+                "item": "cup sweet potato flour"
+            },
+            {
+                "unit": 1,
+                "item": "tsp salt"
             },
             {
                 "unit": 0.5,
-                "item": "tbsp ginger, minced"
+                "item": "tsp Sichuan peppercorn, toasted and ground up"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp white pepper"
+            },
+            {
+                "unit": 0.25,
+                "item": "cayenne or papripka powder"
+            },
+            {
+                "unit": 1,
+                "item": "handful Thai basil"
             }
         ],
         "steps": [
-            "In a large bowl, mix flour, yeast and sugar. Pour in water little by little while stirring with a pair of chopsticks (or a fork).",
-            "Then knead with your hand until a smooth, elastic dough forms (see note 3). Cover the bowl with a wet kitchen towel."
+            "In a bowl, mix the fermented bean curd, oyster sauce, shaoxing wine white pepper and garlic.",
+            "Add the chicken and coat it in sauce. Cover the bowl and marinate for 2-12 hours.",
+            "Heat frying oil to 350°F.",
+            "For each piece of chicken, coat it in the sweet potato starch and drop it in the frying oil. Fry the chicken for 3-4 minutes, until it is floating on the surface of the oil. *",
+            "Remove the cooked chicken from the oil and place on a rack to cool.",
+            "Increase the oil temperate to 400°F. While waiting, mix salt, Sichuan peppercorn, white pepper and paprika in a small bowl.",
+            "Add half of the first bach of chicken and fry it for 30 seconds. Add half of the basil into the oil and immediately cover the pot. Count to 5, uncover, and remove the chicken and basil from the oil.",
+            "Repeat the previous step for the remaining chicken and basil. *",
+            "Sprinkle the dry seasoning mixture on top of the fried chicken. Serve immediately!"
         ],
-        "notes": []
+        "notes": [
+            "Cook the chicken in batches of 2 or 3 to avoid crowding the pot. Otherwise, the oil will get too cold and the chicken pieces will stick to each other.",
+            "Vary batch size based on the amount of chicken and pot size."
+        ]
     }
 }
