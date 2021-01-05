@@ -1,7 +1,7 @@
 import { Row, Col } from "antd";
 
 const Container = ({ left, center, right }) => (
-  <Row style={{ paddingTop: 20, paddingBottom: 20 }}>
+  <Row style={{ padding: 20 }}>
     <Col xs={0} sm={2} lg={4} xl={6}>
       {left}
     </Col>

@@ -4,9 +4,22 @@ import { Breadcrumb } from "antd";
 
 export const metadata = {
   title: "The Case For Interning at Tech Startups",
+  url: "2020-10-03-startups",
   date: 1601683200,
   length: 8,
 };
+
+<Breadcrumb>
+  <Link href="/">
+    <Breadcrumb.Item href="">
+      <HomeOutlined />
+    </Breadcrumb.Item>
+  </Link>
+  <Link href="/blog">
+    <Breadcrumb.Item href="">Blog</Breadcrumb.Item>
+  </Link>
+  <Breadcrumb.Item>{metadata.title}</Breadcrumb.Item>
+</Breadcrumb>
 
 # The Case For Interning at Tech Startups
 
