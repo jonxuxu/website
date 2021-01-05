@@ -31,7 +31,7 @@ const RecipeCard = (url, recipe) => {
 
 export default function CookingPage() {
   return (
-    <div style={{ padding: 20 }}>
+    <div>
       <Breadcrumb>
         <Link href="/">
           <Breadcrumb.Item href="">
@@ -42,7 +42,7 @@ export default function CookingPage() {
       </Breadcrumb>
 
       <Title level={2}>Eating fine on a dime</Title>
-      <Title level={4} type="secondary">
+      <Title level={4} type="secondary" style={{ marginTop: 5 }}>
         Some recipes for foods I love that have a high deliciousness to effort
         ratio
       </Title>

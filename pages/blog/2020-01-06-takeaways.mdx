@@ -1,13 +1,29 @@
+import Link from "next/link";
+import { HomeOutlined } from "@ant-design/icons";
+import { Breadcrumb } from "antd";
+
 export const metadata = {
   title: "Takeaways from 1A Software Engineering at Waterloo",
   date: 1578268800,
   length: 4,
 };
 
+<Breadcrumb>
+  <Link href="/">
+    <Breadcrumb.Item href="">
+      <HomeOutlined />
+    </Breadcrumb.Item>
+  </Link>
+  <Link href="/blog">
+    <Breadcrumb.Item href="">Blog</Breadcrumb.Item>
+  </Link>
+  <Breadcrumb.Item>{metadata.title}</Breadcrumb.Item>
+</Breadcrumb>
+
 # Takeaways from 1A Software Engineering at Waterloo
 
 Hurray, I’ve finished my first term at Waterloo! Term 1A starts early September and ends mid December, just in time for the holidays. I want to take some time to reflect on my first term, and share some tips with any prospective incoming students.
-![Fall Pic](https://lh3.googleusercontent.com/cN-3wr0c4EIguv_Mda8tUAHGoUtqhbfOfY7xeAM8QZq3G_7fO9i6c4swpDPqeoUN8E1nebo-5_bFevw-v_UBldwu-x5Q0WUunTbmbCISVU0tw0pSGGXaObXyM6V2DcCLBQSFFcdY3kJpAUjMlFdG6HuV41XdKH3pCyLSBF27WDB04HRuc6DF2fMMY5h-fNSPcJwWe-H7J9H6dKMRtsZAYpXYGdX7e4rg-MrpNwA1zP4dyv-4BG68gsK-KFhfgkT8IN-L85yCflAUpw_MQOxRSz1jZSi3rPrtFJwCWZmrIRxCvUEM0THDprXthIh1rFiQXt6AxHbeG9KML9FQm6Ab-_qxM2DPq5YpBwOjCx7A7wrzf6G_VmljBZDDa9fW-wZ9rQxV7ez9lOwIBOGjwZiuMiToshOliGzYP4NshP8pvxl5xY0vtH88jfXpjTpQYJzlKQe8ljgJ6rLhsBeRr2fvU94svceJrBOxNT9vIY_cVoUjf7sQ5J2PgZ5yRexL1E8CadxMifsty80W1XFdqBR0xCZ2m93Y4o8tkpgv73sYzB-OowI7NmSIAjvwpzG7itXY1bcCxWq8_VaKXZ5wvlfOLjuY9GGJjtntma3ic3z5Px6jWCgd9sCilEt8hRzt3pc9XdQA1WX-U-iTXL67NQzFUnwnaKgDWv0QSILNCIca6-gWAhyf8Kj2eztwbPakBw=w1292-h970-no?authuser=0)  
+![Fall Pic](https://miro.medium.com/max/6000/1*Z_3euRAnlIwuSYn_Lz-jJA.jpeg)  
 _Fall shots from my room_
 
 ## Orientation Week

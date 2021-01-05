@@ -57,20 +57,18 @@ const RecipePage = () => {
 
   return (
     <div>
-      <div style={{ paddingTop: 20, paddingLeft: 20 }}>
-        <Breadcrumb>
-          <Link href="/">
-            <Breadcrumb.Item href="">
-              <HomeOutlined />
-            </Breadcrumb.Item>
-          </Link>
-          <Link href="/cooking">
-            <Breadcrumb.Item href="">Cooking</Breadcrumb.Item>
-          </Link>
-          <Breadcrumb.Item>{recipe.name}</Breadcrumb.Item>
-        </Breadcrumb>
-        <Title>{recipe.name}</Title>
-      </div>
+      <Breadcrumb>
+        <Link href="/">
+          <Breadcrumb.Item href="">
+            <HomeOutlined />
+          </Breadcrumb.Item>
+        </Link>
+        <Link href="/cooking">
+          <Breadcrumb.Item href="">Cooking</Breadcrumb.Item>
+        </Link>
+        <Breadcrumb.Item>{recipe.name}</Breadcrumb.Item>
+      </Breadcrumb>
+      <Title style={{ marginBottom: 5 }}>{recipe.name}</Title>
       <Row align="top">
         <Col md={8} style={{ paddingTop: 20 }}>
           <Image src={recipe.image} />
@@ -92,16 +90,22 @@ const RecipePage = () => {
         </Col>
       </Row>
       <Row align="top">
-        <Col md={8} style={{ padding: 20 }}>
-          <Title level={3}>Ingredients</Title>
+        <Col md={8} style={{ paddingTop: 20 }}>
+          <Title level={3} style={{ marginBottom: 5 }}>
+            Ingredients
+          </Title>
           {Ingredients}
         </Col>
-        <Col md={16} style={{ padding: 20 }}>
-          <Title level={3}>Directions</Title>
+        <Col md={16} style={{ paddingTop: 20 }}>
+          <Title level={3} style={{ marginBottom: 5 }}>
+            Directions
+          </Title>
           <ul style={{ paddingLeft: 0 }}>{Directions}</ul>
           {recipe.notes.length > 0 && (
-            <div style={{ paddingTop: 20 }}>
-              <Title level={3}>Notes</Title>
+            <div>
+              <Title level={3} style={{ marginBottom: 5 }}>
+                Notes
+              </Title>
               {Notes}
             </div>
           )}

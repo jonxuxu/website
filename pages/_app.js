@@ -12,7 +12,11 @@ const components = {
 function MyApp({ Component, pageProps }) {
   return (
     <MDXProvider components={components}>
-      <Container center={<Component {...pageProps} />} />
+      {pageProps.fullscreen ? (
+        <Component {...pageProps} />
+      ) : (
+        <Container center={<Component {...pageProps} />} />
+      )}
     </MDXProvider>
   );
 }

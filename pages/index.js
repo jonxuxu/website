@@ -1,7 +1,13 @@
 import Head from "next/head";
 // import "../style.less";
 
-export default function Home() {
+export function getStaticProps() {
+  return {
+    props: { fullscreen: true }, // will be passed to the page component as props
+  };
+}
+
+const Home = () => {
   return (
     <div>
       <Head>
@@ -12,4 +18,6 @@ export default function Home() {
       <div>CRINNNNNNNNNNNNGEE</div>
     </div>
   );
-}
+};
+
+export default Home;
