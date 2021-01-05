@@ -1,22 +1,12 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import {
-  PageHeader,
-  Typography,
-  Image,
-  Checkbox,
-  Space,
-  Row,
-  Col,
-  Breadcrumb,
-} from "antd";
+import { Typography, Image, Checkbox, Row, Col, Breadcrumb } from "antd";
 import {
   ClockCircleOutlined,
   UsergroupAddOutlined,
   HomeOutlined,
 } from "@ant-design/icons";
 
-import { Container } from "../../components/layout";
 import recipes from "./recipes.json";
 
 const { Title, Text } = Typography;
@@ -25,9 +15,8 @@ const RecipePage = () => {
   const router = useRouter();
   // const history = useHistory();
   if (router.asPath === router.route) {
-    return <div></div>; // router.query.recipe is not deifned
+    return <div></div>; // router.query.recipe is not yet deifned
   }
-
   const recipe = recipes[router.query.recipe];
 
   const Ingredients = recipe.ingredients.map((i, idx) => (
@@ -37,10 +26,10 @@ const RecipePage = () => {
           {i.header}
         </Title>
       ) : (
-        <Space align="start">
-          <Checkbox />
-          <div>{i.unit ? i.unit.toString() + " " + i.item : i.item}</div>
-        </Space>
+        <div>
+          <Checkbox style={{ marginRight: 10 }} />
+          <Text>{i.unit ? i.unit.toString() + " " + i.item : i.item}</Text>
+        </div>
       )}
     </div>
   ));
@@ -58,15 +47,15 @@ const RecipePage = () => {
   ));
 
   const Notes = recipe.notes.map((n, idx) => (
-    <Row key={idx} gutter={10}>
-      <Space align="start">
-        <div style={{ minWidth: "30px" }}>{(idx + 1).toString() + "."}</div>
-        <div>{n}</div>
-      </Space>
-    </Row>
+    <div>
+      <span style={{ minWidth: "20px", display: "inline-block" }}>
+        {(idx + 1).toString() + "."}
+      </span>
+      <Text>{n}</Text>
+    </div>
   ));
 
-  const center = (
+  return (
     <div>
       <div style={{ paddingTop: 20, paddingLeft: 20 }}>
         <Breadcrumb>
@@ -83,8 +72,8 @@ const RecipePage = () => {
         <Title>{recipe.name}</Title>
       </div>
       <Row align="top">
-        <Col md={8}>
-          <Image src={recipe.image} style={{ paddingTop: 20 }} />
+        <Col md={8} style={{ paddingTop: 20 }}>
+          <Image src={recipe.image} />
         </Col>
         <Col md={16} style={{ padding: 20 }}>
           <div>{recipe.description}</div>
@@ -120,7 +109,6 @@ const RecipePage = () => {
       </Row>
     </div>
   );
-  return <Container center={center} />;
 };
 
 export default RecipePage;

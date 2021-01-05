@@ -4,9 +4,7 @@ import recipes from "./recipes.json";
 import Masonry from "react-masonry-component";
 import { HomeOutlined } from "@ant-design/icons";
 
-import { Container } from "../../components/layout";
-
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const { Meta } = Card;
 
 const RecipeCard = (url, recipe) => {
@@ -32,7 +30,7 @@ const RecipeCard = (url, recipe) => {
 };
 
 export default function CookingPage() {
-  const middle = (
+  return (
     <div style={{ padding: 20 }}>
       <Breadcrumb>
         <Link href="/">
@@ -56,6 +54,4 @@ export default function CookingPage() {
       </Masonry>
     </div>
   );
-
-  return <Container center={middle} />;
 }

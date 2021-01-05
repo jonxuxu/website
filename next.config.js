@@ -4,6 +4,9 @@ const withLess = require("@zeit/next-less");
 const lessToJS = require("less-vars-to-js");
 const fs = require("fs");
 const path = require("path");
+
+const optimizedImages = require("next-optimized-images");
+
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
 });
@@ -55,12 +58,13 @@ module.exports = withPlugins(
         },
       },
     ],
-    // [
-    //   withMDX,
-    //   {
-    //     pageExtensions: ["js", "jsx", "mdx"],
-    //   },
-    // ],
+    [
+      withMDX,
+      {
+        pageExtensions: ["js", "jsx", "mdx"],
+      },
+    ],
+    [optimizedImages],
   ],
   nextConfig
 );
