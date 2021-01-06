@@ -5,8 +5,7 @@ import recipes from "./recipes.json";
 import Masonry from "react-masonry-component";
 import { HomeOutlined } from "@ant-design/icons";
 
-const { Title } = Typography;
-const { Meta } = Card;
+const { Title, Text } = Typography;
 
 const RecipeCard = (url, recipe) => {
   return (
@@ -18,11 +17,10 @@ const RecipeCard = (url, recipe) => {
             cover={<img alt={recipe.name} src={recipe.image} />}
             key={recipe.name}
           >
-            <Meta
-              //   avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-              title={recipe.name}
-              description={recipe.subtitle}
-            />
+            <Text strong style={{ display: "block" }}>
+              {recipe.name}
+            </Text>
+            <Text type="secondary">{recipe.subtitle}</Text>
           </Card>
         </Link>
       </div>
@@ -46,7 +44,7 @@ export default function CookingPage() {
       </Breadcrumb>
 
       <Title level={2}>Eating fine on a dime</Title>
-      <Title level={4} type="secondary" style={{ marginTop: 5 }}>
+      <Title level={5} type="secondary" style={{ marginTop: 5 }}>
         Some recipes for foods I love that have a high deliciousness to effort
         ratio
       </Title>

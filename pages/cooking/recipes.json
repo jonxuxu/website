@@ -362,5 +362,48 @@
             "Cook the chicken in batches of 2 or 3 to avoid crowding the pot. Otherwise, the oil will get too cold and the chicken pieces will stick to each other.",
             "Vary batch size based on the amount of chicken and pot size."
         ]
+    },
+    "tomato-and-egg":
+    {
+        "name": "Stir-fried Tomato and Eggs",
+        "subtitle": "The greatest thing before sliced bread",
+        "description": "A tasty staple in the Chinese diet. If I was told to make a dish in 5 minutes or less, I would go for this.\n\nSee notes section for items marked *",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG",
+        "time":"10 minutes",
+        "servings": 2,
+        "type": "Main Course",
+        "ingredients": [
+            {
+                "unit":2,
+                "item": "eggs, large"
+            },
+            {
+                "unit":4,
+                "item":"roma tomatoes, cubed to 1.5\" pieces *"
+            },
+            {
+                "unit":1,
+                "item":"tbsp cooking oil"
+            },
+            {
+                "unit":3,
+                "item":"tbsp soy sauce *"
+            },
+            {
+                "unit": 1,
+                "item": "green onion, chopped"
+            }
+        ],
+        "steps": [
+            "Add oil to a medium pan. Heat on high until the oil just starts to shimmer.",
+            "Immediately break eggs and add to the pan. The high heat will make the eggs spatter, which airs them up. Quickly scramble the eggs until they are solid and set them aside.",
+            "Turn the heat to medium. Add tomatoes and soy sauce.",
+            "Cover pan, add soy sauce, and cook for 5-10 minutes until the tomato skin easily slides off.",
+            "Stir in  the eggs and green onions. Serve!"
+        ],
+        "notes": [
+            "Any tomato works as a substitute. 4 roma tomatoes is equal to roughly 250g of tomato. If you feel extra, you can peel the tomato skins for a smoother texture.",
+            "I prefer the soy sauce version of this dish. If you don't, use salt to taste instead. This dish is on the saliter side because I recommend you eat it with rice."
+        ]
     }
 }

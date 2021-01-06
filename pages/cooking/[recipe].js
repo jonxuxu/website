@@ -27,10 +27,12 @@ const RecipePage = () => {
           {i.header}
         </Title>
       ) : (
-        <div>
-          <Checkbox style={{ marginRight: 10 }} />
-          <Text>{i.unit ? i.unit.toString() + " " + i.item : i.item}</Text>
-        </div>
+        <Row wrap={false}>
+          <Col>
+            <Checkbox style={{ marginRight: 10 }} />
+          </Col>
+          <Col>{i.unit ? i.unit.toString() + " " + i.item : i.item}</Col>
+        </Row>
       )}
     </div>
   ));
@@ -79,15 +81,15 @@ const RecipePage = () => {
           <Image src={recipe.image} />
         </Col>
         <Col md={16} style={{ padding: 20 }}>
-          <div>{recipe.description}</div>
+          <div style={{ whiteSpace: "pre-wrap" }}>{recipe.description}</div>
           <Row gutter={20} style={{ marginTop: 20 }}>
             {recipe.time && (
-              <Col md={24}>
+              <Col>
                 <ClockCircleOutlined /> {recipe.time}
               </Col>
             )}
             {recipe.servings && (
-              <Col md={24}>
+              <Col>
                 <UsergroupAddOutlined /> {"serves " + recipe.servings}
               </Col>
             )}
