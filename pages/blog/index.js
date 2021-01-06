@@ -1,12 +1,10 @@
+import Head from "next/head";
 import fs from "fs";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import moment from "moment";
 import { Breadcrumb, Typography, List, Space } from "antd";
 import { HomeOutlined } from "@ant-design/icons";
 import { ClockCircleOutlined } from "@ant-design/icons";
-
-import blogNames from "./blogs.json";
 
 const { Title } = Typography;
 
@@ -27,6 +25,9 @@ const BlogPage = ({ filenames }) => {
     .map((name) => require(`./${name}`).metadata); //TODO: Fix crude solution to get metadata
   return (
     <div>
+      <Head>
+        <title>Blog</title>
+      </Head>
       <Breadcrumb>
         <Link href="/">
           <Breadcrumb.Item href="">

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { Typography, Image, Checkbox, Row, Col, Breadcrumb } from "antd";
@@ -57,6 +58,10 @@ const RecipePage = () => {
 
   return (
     <div>
+      <Head>
+        <title>{recipe.name}</title>
+      </Head>
+
       <Breadcrumb>
         <Link href="/">
           <Breadcrumb.Item href="">

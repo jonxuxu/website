@@ -5,7 +5,7 @@ const lessToJS = require("less-vars-to-js");
 const fs = require("fs");
 const path = require("path");
 
-const optimizedImages = require("next-optimized-images");
+// const optimizedImages = require("next-optimized-images");
 
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
@@ -68,7 +68,6 @@ module.exports = withPlugins(
         pageExtensions: ["js", "jsx", "mdx"],
       },
     ],
-    [optimizedImages],
   ],
   nextConfig
 );

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { Card, Col, Typography, Breadcrumb } from "antd";
 import recipes from "./recipes.json";
@@ -32,6 +33,9 @@ const RecipeCard = (url, recipe) => {
 export default function CookingPage() {
   return (
     <div>
+      <Head>
+        <title>Cooking</title>
+      </Head>
       <Breadcrumb>
         <Link href="/">
           <Breadcrumb.Item href="">
