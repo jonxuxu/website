@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Card, Col, Typography, Breadcrumb } from "antd";
+import { Card, Col, Typography } from "antd";
 import recipes from "./recipes.json";
 import Masonry from "react-masonry-component";
-import { HomeOutlined } from "@ant-design/icons";
 
 const { Title, Text } = Typography;
 
@@ -34,15 +33,6 @@ export default function CookingPage() {
       <Head>
         <title>Cooking</title>
       </Head>
-      <Breadcrumb>
-        <Link href="/">
-          <Breadcrumb.Item href="">
-            <HomeOutlined />
-          </Breadcrumb.Item>
-        </Link>
-        <Breadcrumb.Item>Cooking</Breadcrumb.Item>
-      </Breadcrumb>
-
       <Title level={2}>Eating fine on a dime</Title>
       <Title level={5} type="secondary" style={{ marginTop: 5 }}>
         Some recipes for foods I love that have a high deliciousness to effort

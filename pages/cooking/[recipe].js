@@ -1,12 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Link from "next/link";
-import { Typography, Image, Checkbox, Row, Col, Breadcrumb } from "antd";
-import {
-  ClockCircleOutlined,
-  UsergroupAddOutlined,
-  HomeOutlined,
-} from "@ant-design/icons";
+import { Typography, Image, Checkbox, Row, Col } from "antd";
+import { ClockCircleOutlined, UsergroupAddOutlined } from "@ant-design/icons";
 
 import recipes from "./recipes.json";
 
@@ -63,18 +58,6 @@ const RecipePage = () => {
       <Head>
         <title>{recipe.name}</title>
       </Head>
-
-      <Breadcrumb>
-        <Link href="/">
-          <Breadcrumb.Item href="">
-            <HomeOutlined />
-          </Breadcrumb.Item>
-        </Link>
-        <Link href="/cooking">
-          <Breadcrumb.Item href="">Cooking</Breadcrumb.Item>
-        </Link>
-        <Breadcrumb.Item>{recipe.name}</Breadcrumb.Item>
-      </Breadcrumb>
       <Title style={{ marginBottom: 5 }}>{recipe.name}</Title>
       <Row align="top">
         <Col md={8} style={{ paddingTop: 20 }}>
