@@ -1,44 +1,101 @@
+import styled from "styled-components";
 import { Row, Col, Menu } from "antd";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { HomeOutlined } from "@ant-design/icons";
+import Image from "next/image";
+import {
+  HomeOutlined,
+  TwitterOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
 
-const Container = ({ left, center, right }) => {
+const MainCol = styled(Col)`
+  padding: 20px;
+  @media (min-width: 992px) {
+    // lg
+    padding: 0px;
+    padding-top: 70px;
+  }
+`;
+
+const SideBar = () => (
+  <div style={{ padding: 80 }}>
+    <Link passHref href="/">
+      <a>
+        <Image src="/images/logoBlack.svg" width={50} height={50} />
+      </a>
+    </Link>
+
+    <div style={{ marginTop: 10 }}>
+      <Link href="/blog">Blog</Link>
+    </div>
+    <div>
+      <Link href="/projects">Projects</Link>
+    </div>
+    <div>
+      <Link href="/cooking">Cooking</Link>
+    </div>
+    <div style={{ marginTop: 40 }}>
+      <a href="https://twitter.com/_JonathanXu" target="_blank">
+        <TwitterOutlined />
+      </a>
+    </div>
+    <div>
+      <a href="https://github.com/JonathanXu1" target="_blank">
+        <GithubOutlined />
+      </a>
+    </div>
+    <div>
+      <a href="https://webring.xxiivv.com/#random" target="_blank">
+        <img
+          style={{
+            filter:
+              "invert(40%) sepia(32%) saturate(6268%) hue-rotate(341deg) brightness(111%) contrast(101%)",
+          }}
+          src="/images/home/webring.svg"
+          width={18}
+          height={18}
+        />
+      </a>
+    </div>
+  </div>
+);
+
+const Container = ({ center, right }) => {
   const router = useRouter();
   const currRoute = router.asPath.split("/");
   const currKey = currRoute.length > 1 ? currRoute[1] : "home";
 
   return (
     <div>
-      <Menu mode="horizontal" selectedKeys={[currKey]}>
-        <Menu.Item key="home">
-          <Link href="/">
-            <HomeOutlined />
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="blog">
-          <Link href="/blog">Blog</Link>
-        </Menu.Item>
-        <Menu.Item key="projects">
-          <Link href="/projects">Projects</Link>
-        </Menu.Item>
-        <Menu.Item key="cooking">
-          <Link href="/cooking">Cooking</Link>
-        </Menu.Item>
-        <Menu.Item>
-          <a href="/documents/home/resume.pdf" target="_blank">
-            Resume
-          </a>
-        </Menu.Item>
-      </Menu>
-      <Row style={{ padding: 20 }}>
-        <Col xs={0} sm={2} lg={4} xl={6}>
-          {left}
+      <Row>
+        <Col xs={24} lg={0}>
+          <Menu mode="horizontal" selectedKeys={[currKey]}>
+            <Menu.Item key="home">
+              <Link href="/">
+                <HomeOutlined />
+              </Link>
+            </Menu.Item>
+            <Menu.Item key="blog">
+              <Link href="/blog">Blog</Link>
+            </Menu.Item>
+            <Menu.Item key="projects">
+              <Link href="/projects">Projects</Link>
+            </Menu.Item>
+            <Menu.Item key="cooking">
+              <Link href="/cooking">Cooking</Link>
+            </Menu.Item>
+          </Menu>
         </Col>
-        <Col xs={24} sm={20} lg={16} xl={12}>
+      </Row>
+      <Row>
+        <Col xs={0} lg={6} xl={6}>
+          <SideBar />
+        </Col>
+        <MainCol xs={24} lg={14} xl={12}>
           {center}
-        </Col>
-        <Col xs={0} sm={2} lg={4} xl={6}>
+        </MainCol>
+        <Col xs={0} lg={4} xl={6}>
           {right}
         </Col>
       </Row>

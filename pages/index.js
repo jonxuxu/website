@@ -2,13 +2,13 @@ import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
-import { Row, Col, Typography, Menu } from "antd";
+import { Row, Col, Typography, Menu, Timeline, Button, Divider } from "antd";
 import {
   TwitterOutlined,
   GithubOutlined,
   HomeOutlined,
 } from "@ant-design/icons";
-// import "../style.less";
+import "../style.less";
 
 const { Title } = Typography;
 
@@ -26,33 +26,40 @@ const HoverSvg = styled.img`
       brightness(110%) contrast(101%);
   }
 `;
+const MainCol = styled(Col)`
+  padding: 20px;
+  margin-top: 20px;
+  @media (min-width: 992px) {
+    // lg
+    margin-top: 70px;
+  }
+`;
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ height: "100%" }}>
       <Head>
         <title>Jonathan Xu</title>
       </Head>
 
-      <Row style={{ height: "100vh" }}>
+      <Row style={{ height: "100%" }}>
         <Col
           style={{
             background: "url(/images/home/sideBanner.jpg)",
             backgroundSize: "cover",
-            padding: 60,
+            padding: 80,
           }}
           xs={0}
-          lg={6}
+          lg={4}
         >
           <SideBar />
         </Col>
-        <Col xs={24} lg={18}>
-          <Row>
-            <Col xs={24} lg={0}>
-              <TopMenu />
-            </Col>
-            <Col xs={0} md={2} />
-            <Col xs={24} md={7} xl={4} style={{ marginTop: 30 }}>
+        <Col xs={24} lg={0}>
+          <TopMenu />
+        </Col>
+        <Col xs={24} lg={19}>
+          <Row justify="center">
+            <MainCol xs={24} md={7} xl={4}>
               <div style={{ minHeight: 200 }}>
                 <Image
                   src="/images/home/profileCircle.jpg"
@@ -60,23 +67,81 @@ const Home = () => {
                   objectFit="contain"
                 />
               </div>
-            </Col>
-            <Col xs={0} md={1} />
-            <Col xs={24} md={12} xl={12} style={{ padding: 30 }}>
+            </MainCol>
+            <MainCol xs={24} md={12} xl={12}>
               <Title>Hello!</Title>
               <p>
                 I'm Jonathan. Many of my projects explore the magic of
                 cross-domain tech; whether that's exploring the future of
                 hardware in our lives, or creating mindful spaces using AI and
-                music. I am currently building a better Discord for the Chinese
-                market at iDreamSky.
+                music.
               </p>
               <p>
-                Apart from code, I am trying out ways to cook, learn languages,
-                and make music better. I enjoy meeting and sharing interesting
-                conversations with new people, so never hesitate to reach out to
-                me.
+                Apart from code, I am trying out better ways to cook, learn
+                languages, and make music. I enjoy meeting and sharing
+                interesting conversations with new people, so never hesitate to
+                reach out to me.
               </p>
+              <Divider />
+            </MainCol>
+          </Row>
+          <Row justify="center" style={{ padding: 40 }} gutter={30}>
+            <Col xs={24} sm={12} md={8}>
+              <Title level={5} style={{ marginBottom: 20 }}>
+                What I've been up to
+              </Title>
+              <Timeline pending="Stay tuned...">
+                <Timeline.Item>
+                  Making fortune mining accessible @ Myriade
+                </Timeline.Item>
+                <Timeline.Item>
+                  Turning Chromebooks into supercomputers @ Fractal
+                </Timeline.Item>
+                <Timeline.Item>
+                  Exploring decentralized produce distribution @ Mozilla
+                </Timeline.Item>
+                <Timeline.Item>
+                  MakingAI make musical spaces @ Noisy
+                </Timeline.Item>
+                <Timeline.Item>
+                  Living in shared intellectual communities @ New Mexico and San
+                  Francisco
+                </Timeline.Item>
+                <Timeline.Item>
+                  Creating a better Discord for the Chinese market @ iDreamSky
+                </Timeline.Item>
+              </Timeline>
+            </Col>
+            <Col xs={24} sm={12} md={8}>
+              <Title level={5}>My values & beliefs</Title>
+              <ul>
+                <li>
+                  <strong>Live authentically: </strong>Find your own purpose and
+                  meaning in life; live to be a better, more honest version of
+                  yourself.
+                </li>
+                <li>
+                  <strong>Grow meaningfully: </strong>Have a clear compass for
+                  what your definition of goodness and success is and work
+                  towards that. Is what you are working towards something is
+                  truly important?
+                </li>
+                <li>
+                  <strong>Inner joy is the best motivator: </strong>Doing
+                  something out of innate interest will never feel old, tiresome
+                  or competitive.
+                </li>
+                <li>
+                  <strong>Experiment and learn: </strong>Life is short, and
+                  there is so out there to explore. Try new things and never let
+                  yourself get bored.
+                </li>
+              </ul>
+              <div style={{ paddingTop: 30 }}>
+                <a href="/documents/home/resume.pdf" target="_blank">
+                  <Button type="dashed">Paper thing for recruiters</Button>
+                </a>
+              </div>
             </Col>
           </Row>
         </Col>
@@ -87,7 +152,7 @@ const Home = () => {
 
 const SideBar = () => (
   <div>
-    <Image src="/images/logoWhite.svg" width={50} height={50} />
+    <img src="/images/logoWhite.svg" width={50} height={50} />
 
     <div style={{ marginTop: 10 }}>
       <Link passHref href="/blog">
@@ -103,11 +168,6 @@ const SideBar = () => (
       <Link passHref href="/cooking">
         <WhiteA>Cooking</WhiteA>
       </Link>
-    </div>
-    <div>
-      <WhiteA href="/documents/home/resume.pdf" target="_blank">
-        Resume
-      </WhiteA>
     </div>
     <div style={{ marginTop: 40 }}>
       <WhiteA href="https://twitter.com/_JonathanXu" target="_blank">
@@ -142,11 +202,6 @@ const TopMenu = () => (
     </Menu.Item>
     <Menu.Item key="cooking">
       <Link href="/cooking">Cooking</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <a href="/documents/home/resume.pdf" target="_blank">
-        Resume
-      </a>
     </Menu.Item>
   </Menu>
 );
