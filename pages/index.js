@@ -42,18 +42,21 @@ const Home = () => {
         <title>Jonathan Xu</title>
       </Head>
 
-      <Row style={{ height: "100%" }}>
+      <Row justify="space-between">
         <Col
           style={{
             background: "url(/images/home/sideBanner.jpg)",
             backgroundSize: "cover",
             padding: 80,
+            height: "100vh",
+            position: "fixed",
           }}
           xs={0}
           lg={4}
         >
           <SideBar />
         </Col>
+        <Col xs={0} lg={4} />
         <Col xs={24} lg={0}>
           <TopMenu />
         </Col>
