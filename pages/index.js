@@ -130,14 +130,13 @@ const Home = () => {
                   truly important?
                 </li>
                 <li>
-                  <strong>Inner joy is the best motivator: </strong>Doing
-                  something out of innate interest will never feel old, tiresome
-                  or competitive.
+                  <strong>Motivate innately: </strong>Doing something out of
+                  innate interest will never feel old, tiresome or competitive.
                 </li>
                 <li>
-                  <strong>Experiment and learn: </strong>Life is short, and
-                  there is so out there to explore. Try new things and never let
-                  yourself get bored.
+                  <strong>Experiment and explore: </strong>Life is short, and
+                  there is so much out there to do. Try new things and never
+                  stop <Link href="/todayilearned">learning</Link>.
                 </li>
               </ul>
               <div style={{ paddingTop: 30 }}>
