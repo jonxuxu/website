@@ -405,5 +405,44 @@
             "Any tomato works as a substitute. 4 roma tomatoes is equal to roughly 250g of tomato. If you feel extra, you can peel the tomato skins for a smoother texture.",
             "I prefer the soy sauce version of this dish. If you don't, use salt to taste instead. This dish is on the saliter side because I recommend you eat it with rice."
         ]
+    },
+    "blueberry-ice-cream":
+    {
+        "name": "Blueberry Ice Cream",
+        "subtitle": "Cheap and easy gourmet ice cream",
+        "description": "The friends at Topos reviewed this one very highly: \"It's better than store bought :o\"\n\nSee notes section for items marked *",
+        "image": "https://lh3.googleusercontent.com/wv2FO2E8wTrzTS-YrRexJyU4zYyfrvVlbhnb80RhCIDFmi-FUm9Uep3uc1tqD1pzGU7uQ5K7epj5dAa1uZRWaJXXXDWI4-g91MxQtzOLI8hxoHNiOq-1JhMn5KceOTtqpA_8Am0LecU75ehYhAIlgUoTX2SX0OUw7hW8CcWBSYZkMx9xBhd6YRIv0kl1iX1tVbYBosyb_wnCJzAy2EJih9q18hyxoAGV3sRP-fwhvL7E1CBXkR0kCtrqzqd3-2WTHWqJ-yDQUqMFR__i4SOQNgfpktFHcAJH9n0kLezdNoxlH82dUkxgP3wDFT5MbZMtnBBj5GXn5m2N4L9FTG1iEiiQjZQNgd4WVHUlHrsBX9PL2Rm7iaadMz7cVKkwfFAAobksGIeqtGQcwmhu2oCILahhEIXtleGAh5Motmmm1a4N6t4K7wPleGuAjYKi8N786667lhS54CdFJAXVQZPws4dLSm0l9Y_8A5AGa5DEL2j21BB9JylTIccNwbUShEvEJD6tWqrURXebUpTqv9Lw4iUVT556bzOQNgpz7fwZsiWzox9xXum89R9GLMtEEVJkt9eHc1V7N3iwsQS8dxsLh7VTEjb_jA1PT9eFrWPlxaQAV0N9hOl_7f4pSI2lAGodncEysPzvTPD_WHi4JGrJi-SuKb9wbX88H3NiteAzzvd3mOk5GK1IsGIYNecejw=w1292-h970-no?authuser=0",
+        "time":"3 hours",
+        "servings": 5,
+        "type": "Dessert",
+        "ingredients": [
+            {
+                "unit":2,
+                "item": "cups blueberries *"
+            },
+            {
+                "unit":1,
+                "item":"cup sugar"
+            },
+            {
+                "unit":1,
+                "item":"cup whole milk"
+            },
+            {
+                "unit":1,
+                "item":"cup whipping cream"
+            }
+        ],
+        "steps": [
+            "Add blueberries and sugar to a medium saucepan. Add a spoon of water.",
+            "Heat on medium until the mixture melts and starts boiling.",
+            "Turn the heat to low. Simmer, stirring occasionally, for 10 minutes.",
+            "Let the mixture cool for 20 minutes.",
+            "Put in a blender, and blend until you get a smoothie texture.",
+            "Pour in a bowl/tub, put in a freezer, and enjoy when it's solid (freeze time depends on freezer temp)."
+        ],
+        "notes": [
+            "Frozen or fresh blueberries does not matter"
+        ]
     }
 }

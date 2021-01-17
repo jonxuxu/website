@@ -1,0 +1,53 @@
+import { Carousel } from "antd";
+import styled from "styled-components";
+
+export const CarouselDiv = styled.div`
+  height: 160px;
+  color: #fff;
+  lineheight: 160px;
+  textalign: center;
+  background: #364d79;
+`;
+
+# Brett
+
+Brett is a fire detection and mapping drone I built in early 2020. It was done as part of the NXP Hovergames Challenge on Hackster.io. This definitely is one of the more ambitious hardware projects I've attempted.
+
+This project was motivated by the record-breaking bushfires that were going on in early 2020. Brett helped me discover a suite of open-concept drone platforms:
+
+-
+
+# Tutorial
+
+I'll actually cover the build process for the project, in tutorial format. If you get the parts, you could replicate this!
+
+### The project
+
+Our solution is to build a drone-based forest fire charting system, that is capable of flying through a predefined path autonomously. The benefits of this approach is that it is relatively cost-effective, while still allowing for a good resolution with a high degree of control. Most importantly, the data captured by drones on site is very time-relevant, as it can be retrieved as soon as the drone completes its flight mission.
+
+The project, BRETT, consists of two main parts:
+
+1. The drone captures images of the area below it at a constant rate, and stores it in an SD card. Then, the data is stitched together, and cropped to a proper rectangular shape using Python OpenCV. This provides the visual map that firefighters and rescue teams can use to determine where the fire is, relative to landmarks such as towns.
+
+2. The drone captures infrared readings from the position below it at a constant rate, and stores the value along with a timestamp and GPS position in an SD card. This data is then reconstructed using Python Numpy to create a heatmap of measured infrared emissions with respect to position.
+
+The heatmap is then overlayed on top of the stitched aerial image, to create an intuitive view of the current status of the forest fire.
+
+### 1. Assembling the drone
+
+The majority of the hardware parts are included as part of the HoverGames drone development kit. The kit contents included the drone frame, the brushless motors and rootrs, the basic tools, the NXP Flight Management Unit (FMU), PixHawk GPS module, radio controller, telemetry radios, debuggers, an NXP Rapid IoT device, a Melexis IR sensor, and a 3S/4S battery charger.
+
+<Carousel>
+  <CarouselDiv>
+    <h3>1</h3>
+  </CarouselDiv>
+  <CarouselDiv>
+    <h3>2</h3>
+  </CarouselDiv>
+  <CarouselDiv>
+    <h3>3</h3>
+  </CarouselDiv>
+  <CarouselDiv>
+    <h3>4</h3>
+  </CarouselDiv>
+</Carousel>

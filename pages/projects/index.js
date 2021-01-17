@@ -6,7 +6,7 @@ import { Typography, List, Space, Row, Col } from "antd";
 
 const { Title } = Typography;
 
-const LinkCover = styled.a`
+const ACover = styled.a`
   display: block;
   margin-bottom: 20px;
   overflow: hidden;
@@ -37,25 +37,22 @@ const ProjectsPage = () => {
       </p>
       <Row gutter={20}>
         <Col xs={24} sm={12}>
-          {/* <Link href="/projects/noisy" passHref>
-            <LinkCover>
+          <Link href="/projects/noisy" passHref>
+            <ACover>
               <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
-            </LinkCover>
-          </Link> */}
-          <LinkCover href="https://noisy.live" target="_blank">
-            <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
-          </LinkCover>
-          <LinkCover
+            </ACover>
+          </Link>
+          <ACover
             href="https://www.hackster.io/jonathan-xu/brett-the-fire-mapping-drone-94fc1c"
             target="_blank"
           >
             <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
-          </LinkCover>
+          </ACover>
         </Col>
         <Col xs={24} sm={12}>
-          <LinkCover href="https://trofi.app" target="_blank">
+          <ACover href="https://trofi.app" target="_blank">
             <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
-          </LinkCover>
+          </ACover>
         </Col>
       </Row>
     </div>

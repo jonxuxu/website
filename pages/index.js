@@ -37,7 +37,7 @@ const MainCol = styled(Col)`
 
 const Home = () => {
   return (
-    <div style={{ height: "100%" }}>
+    <div style={{ height: "100%", overflowX: "hidden" }}>
       <Head>
         <title>Jonathan Xu</title>
       </Head>
@@ -50,6 +50,7 @@ const Home = () => {
             padding: 80,
             height: "100vh",
             position: "fixed",
+            zIndex: 1,
           }}
           xs={0}
           lg={4}
@@ -60,7 +61,7 @@ const Home = () => {
         <Col xs={24} lg={0}>
           <TopMenu />
         </Col>
-        <Col xs={24} lg={19}>
+        <Col xs={24} lg={20}>
           <Row justify="center">
             <MainCol xs={24} md={7} xl={4}>
               <div style={{ minHeight: 200 }}>
@@ -130,7 +131,7 @@ const Home = () => {
                   truly important?
                 </li>
                 <li>
-                  <strong>Motivate innately: </strong>Doing something out of
+                  <strong>Motivate internaly: </strong>Doing something out of
                   innate interest will never feel old, tiresome or competitive.
                 </li>
                 <li>

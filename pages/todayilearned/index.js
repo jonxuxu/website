@@ -101,7 +101,7 @@ const LearnedPage = () => {
       // onFilter: (value, record) => record.name.indexOf(value) === 0,
       sorter: (a, b) => a.date - b.date,
       defaultSortOrder: "descend",
-      render: (text) => moment.unix(text).format("ll"),
+      render: (text) => moment.utc(text, "X").format("ll"),
       width: 130,
     },
     {
