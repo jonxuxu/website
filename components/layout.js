@@ -19,7 +19,7 @@ const MainCol = styled(Col)`
 `;
 
 const SideBar = () => (
-  <div style={{ padding: 80 }}>
+  <div style={{ padding: 80, position: "fixed" }}>
     <Link passHref href="/">
       <a>
         <Image src="/images/logoBlack.svg" width={50} height={50} />
@@ -89,13 +89,14 @@ const Container = ({ center, right }) => {
         </Col>
       </Row>
       <Row>
-        <Col xs={0} lg={6} xl={6}>
+        <Col xs={0} lg={6} xl={7}>
           <SideBar />
         </Col>
-        <MainCol xs={24} lg={14} xl={12}>
+        <Col xs={0} md={3} lg={0} />
+        <MainCol xs={24} md={18} lg={12} xl={10}>
           {center}
         </MainCol>
-        <Col xs={0} lg={4} xl={6}>
+        <Col xs={0} md={3} lg={6} xl={7}>
           {right}
         </Col>
       </Row>

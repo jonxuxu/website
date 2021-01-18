@@ -42,12 +42,11 @@ const ProjectsPage = () => {
               <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
             </ACover>
           </Link>
-          <ACover
-            href="https://www.hackster.io/jonathan-xu/brett-the-fire-mapping-drone-94fc1c"
-            target="_blank"
-          >
-            <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
-          </ACover>
+          <Link href="/projects/brett" passHref>
+            <ACover>
+              <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
+            </ACover>
+          </Link>
         </Col>
         <Col xs={24} sm={12}>
           <ACover href="https://trofi.app" target="_blank">
