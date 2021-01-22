@@ -360,7 +360,23 @@
         "lesson":"r/wallstreetbets is now the second most popular subreddit. Looking at some interesting times ahead (and sell those GME calls while you can btw)."
     },
     {
-        "date":1610870945 ,
+        "date":1610870945,
         "lesson":"Sometimes, life beats you down nonstop, and other times you get so many opportunities all at once. Moreover, it is sometimes harder to say no to an awesome offer than to work hard for one."
+    },
+    {
+        "date":1610928000,
+        "lesson":"Used mark.js for the first time. It is cool for highlighting text in pages, especially if you're a Chrome extension."
+    },
+    {
+        "date":1611014400,
+        "lesson":"Learned how to set up one-to-many and many-to-many table relationships in GraphQL. Hasura is a lifesaver!"
+    },
+    {
+        "date":1611100800,
+        "lesson":"Set up my first automated Github project. Yo Trello you better up your game."
+    },
+    {
+        "date":1611187200,
+        "lesson":"Learned about ScaNN (Google's efficient vector similarity search library)."
     }
 ]
