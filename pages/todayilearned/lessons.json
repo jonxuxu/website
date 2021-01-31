@@ -386,5 +386,21 @@
     {
         "date":1611446400, 
         "lesson": "Used async coroutines on Python (about time as well)"
+    },
+    {
+        "date":1611532800, 
+        "lesson": "Learned about short squeezes (what helped propel GME and BB stock to the moon today)"
+    },
+    {
+        "date":1611619200, 
+        "lesson": "Made a bet based on Reddit sentiment instead of finance estimates. Buying $GME, $BB, and $NOK half ironically. Seems like the less brainpower I use, the higher the returns??"
+    },
+    {
+        "date":1611705600, 
+        "lesson": "Using Haystack AI for the first time. It seems like a powerful solution for neural question answering at scale"
+    },
+    {
+        "date":1611792000, 
+        "lesson": "Installing Nvidia drivers for an EC2 instance for the first time. I think we should have better documentation for this process"
     }
 ]
