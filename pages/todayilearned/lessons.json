@@ -378,5 +378,13 @@
     {
         "date":1611187200,
         "lesson":"Learned about ScaNN (Google's efficient vector similarity search library)."
+    },
+    {
+        "date":1611273600,
+        "lesson": "Trying out Auth0 with GraphQL"
+    },
+    {
+        "date":1611446400, 
+        "lesson": "Used async coroutines on Python (about time as well)"
     }
 ]
