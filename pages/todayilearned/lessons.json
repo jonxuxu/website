@@ -393,7 +393,7 @@
     },
     {
         "date":1611619200, 
-        "lesson": "Made a bet based on Reddit sentiment instead of finance estimates. Buying $GME, $BB, and $NOK half ironically. Seems like the less brainpower I use, the higher the returns??"
+        "lesson": "Bought $GME, $BB, and $NOK half ironically. Seems like the less brainpower I use, the higher the returns??"
     },
     {
         "date":1611705600, 
@@ -402,5 +402,25 @@
     {
         "date":1611792000, 
         "lesson": "Installing Nvidia drivers for an EC2 instance for the first time. I think we should have better documentation for this process"
+    },
+    {
+        "date":1612058950, 
+        "lesson": "Learned how short ladder attacks occur and why hedge funds run them"
+    },
+    {
+        "date":1612231750, 
+        "lesson": "Did you know that smoked salmon flavored cream cheese is a thing?"
+    },
+    {
+        "date":1612490950, 
+        "lesson": "Explored the Alameda Naval Station. Not saying that I entered the buildings, but they are clearly full of furniture and materials. There's billions of dollars of infrastructure that's just left to waste away!"
+    },
+    {
+        "date":1612577350, 
+        "lesson": "Advertisements use a combination of subliminal conditioning methods to achieve a desired effect, some of which are banned in the EU but not the US"
+    },
+    {
+        "date":1612663750, 
+        "lesson": "Discovered that Bootstrap and Antd have 'xxl' col breakpoints"
     }
 ]

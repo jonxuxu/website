@@ -2,13 +2,14 @@ import { Typography, Image, Divider } from "antd";
 import { MDXProvider } from "@mdx-js/react";
 
 import { Container } from "../components/layout";
-import CodeBlock from "../components/CodeBlock";
+import { CodeBlock, BlockQuote } from "../components/mdx";
 
 const components = {
   h1: Typography.Title,
   img: Image,
   hr: Divider,
   code: CodeBlock,
+  blockquote: BlockQuote,
 };
 
 function MyApp({ Component, pageProps }) {

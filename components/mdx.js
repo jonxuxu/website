@@ -1,7 +1,11 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
-export default ({ children, className, live }) => {
+import { Typography } from "antd";
+
+const { Title } = Typography;
+
+const CodeBlock = ({ children, className, live }) => {
   const language = className.replace(/language-/, "");
   if (live) {
     return (
@@ -33,3 +37,17 @@ export default ({ children, className, live }) => {
     </Highlight>
   );
 };
+
+const BlockQuote = ({ children }) => {
+  return (
+    <Title
+      level={5}
+      type="secondary"
+      style={{ borderLeft: "4px solid rgba(0, 0, 0, 0.45)", paddingLeft: 15 }}
+    >
+      {children}
+    </Title>
+  );
+};
+
+export { CodeBlock, BlockQuote };
