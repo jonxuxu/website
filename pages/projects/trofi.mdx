@@ -2,23 +2,48 @@
 
 Trofi was a startup that my friends and I ran from April 2020 to October 2020. The goal was to explore the world of food distribution, and to see if we could make some groundbreaking changes in the area. Trofi was made as part of the first and second batch of the Mozilla Builders MVP Lab.
 
-Looking back, it's definitely been a wild ride turning a hackathon idea to an incorporated company launch. Though the startup didn't work out, I learned a ton about running a business and working in the produce industry. I'll be sharing my experiences and takeaways, which can hopefully be of some help to you if you're intersted in these areas.
+Looking back, it's definitely been a wild ride turning a hackathon idea to an incorporated company launch. Though the startup ultimately shut down, I'm glad I learned a ton about running a business and navigating the produce industry. I'll be sharing my experiences and takeaways, which can hopefully be of some help to you if you're intersted in these areas.
 
-## The process
+## The builders lab
 
-The origin story for Trofi is quite amusing. Basically, my friend Ryan went up to me and asked if I wanted to hack on something with him. I said sure, and we started looking for an online hackathon (lockdown was in full swing by now). Someone mentioned the Mozilla Spring MVP Builders lab in a DM and so I decided to go for it. We added two other hackathon friends, Jason and Kailas to the team, and sent in the application. We got a call with Bart Decrem from Mozilla, who looked unimpressed with our "digital giftcards app", but seemed excited about the dynamics of our team. So we basically got ourselves into a startup ideation program, assuming the whole time that it was just a regular old hackathon. Looking back,
+The origin story for Trofi is quite amusing. Basically, my friend Ryan went to me and asked if I wanted to hack on something with him. I said sure, and we started looking for an online hackathon (lockdown was in full swing by now). My mentor Shun mentioned the Mozilla Spring MVP Builders lab in a DM and so we decided to go for it. We joined with two other hackathon friends, Jason and Kailas, and sent in the application. We got a call with Bart Decrem from Mozilla, who looked unimpressed with our "digital giftcards app", but seemed excited about the dynamics of our team. So we basically joined a startup ideation program, assuming the whole time that it was just a regular old hackathon. We quickly realized that we actually needed create a viable business idea ASAP.
 
-### Exploration and research
+### Exploration
 
-Kickoff ceremonies came and went, and we quickly realized that we actually needed create a viable business idea ASAP. We decided to hone in on the produce space, since we all had experience watching our Asian parents go to extreme lengths to get quality, niche produce. Moreover, this was at the peak of the buying frenzy, when we saw headlines about
+We decided to hone in on the produce space, since we all had experience watching our Asian parents go to extreme lengths to get quality, niche produce. Moreover, this was at the peak of the groceries buying frenzy, when headlines were dominated by cases of farmers dumping milk and mushrooms due to the logistical dumpster fire that was the food distribution industry at the time. It was clear that this space was getting obsolete, so went to the local food terminal to see what it really was like.
 
-### Scaling up
+The next two weeks consisted of a series of trips to the food terminal at unusal hours, to learn about the hidden machine that powers a huge part of how we eat. The Ontario Food Terminal serves the majority of the local grocery stores and restaurants in the Greater Toronto Area, so it was busiest between midnight and 2 am in order for produce to arrive when shops open up. We would drive down at 1 am on Tuesdays and Thursdays (the busiest days), and interview as many key people as we could. We broke into pairs, with one person asking questions while the other taking pictures, notes, and business cards. At the end, we would thank the interviewee and give them a $20 business card for their time.
+
+This bit of market research taught us that we in fact knew but a miniscule amount of what there is to know about this age-old industry. This taught me that for any project, the first step is to figure out the true unknowns (the things we don't know we don't know). After this, we were able to start answering some of those questions by prototyping with various MVP ideas.
+
+### The terminal
+
+By this time, we had a pretty solid grasp about the inner owrkings of a food terminal. It consists of two sections: the loading bays uesd by multinational conglomerates, and the farmers market for smaller retailers. The loading bays mostly dealt with international produce: avocados, bananas, and mangoes. To make an order, you had to call a salesperson a few days in advance, and place a quote for an amount anywhere from a box to several truck loads of the stuff. We were more interested in the farmer's market, which dealt with locally grown crops from various individual farmers.
+
+The farmer's market consists of three main players: the farmer that grows the produce, the food distributor that sells the produce at the terminal, and the buyer that purchases the produce, either on behalf of a store or restaurant, or for themselves. Many local farmers also act as the distributor. The stuff here is exceptionally cheap; on a good day, you could buy a 40lb basket of bell peppers for $25, or a box of 12 english cucumbers for $1. Moreover, the food is exteremely fresh - you can expect an A grade tomato to have been picked within the past 3 days. Short of going to the farm, you are getting the stuff right at the source here. That's why most restaurants buy in bulk at food terminals instead of from another distributor, or even worse - the grocery store. There's a catch: to access the terminal, you need a buyer's card, which requires $250 and proof that you are buying from an incorporated business.
+
+We also noticed that the dynamic at the market was very hands-on: prices are agreed upon on the spot, the seller personally comes to examine the produce, and discounts are given for long-time partners. Prices swing wildly by the day based on supply and demand, and distributors are extremely secretive about their prices - makes sense, since competitors have no way to differentiate their products from each other. We noticed that a seller even set up a wall of boxes between him and his competitor, so that they would not be able to overhear his negotiation prices. Also, everything was done very old-school: to make an order, you call or fax the distributor for a price, come in person to pick it up, and pay by cash.
+
+### Initial prototype
+
+We thought that it would be really cool if we could have fresh produce delivered to the door at food terminal prices (like paying 20 cents for a cucumber!). So we started a produce group buy for some of our friends to get a feel of the process. Our mentors Bart, Bijan and Noah epmathized the importance of iterating quickly - that the point was to experiment with features and approaches instead of getting caught up with thoughts about scaling and design.
+
+To get things running, we filled out a few forms, incorporated Trofi, and bought a buyer's card. On Tuesdays, we head down to the terminal, take photos, and get price sheets for the products for the day. We then called up our family friends who already take part in group buys, got them excited about the prospect of getting fresh, local food at an affordable price. We shared the prices on a Google Sheets doc, and collected orders by hand. On Thursdays, we would drive down, pick up the produce, sort them at our homes, and drop them off at our customers' homes, where we'd finally get paid at a 20% markup.
+
+A few problems quickly arose. We initially underestimated the volatility of the produce prices, and lost $200 on an order of tomatoes when prices spiked on a Thursday. Moreover, we got multiple complaints from our buyers about the quality of the produce. Factoring in the cost of gas, and the 6+ weekly hours we put into the operation, and it was clear that this was a very difficult operation. Unlike software products, scaling becomes logistically and economically challenging when factors such as storage, distribution and inventory come into play.
+
+We continued with this experiment for a few weeks, building a network of food distributors and a database of price sheets. We also started working with existing group buy leaders, building a platform for them to track customer orders and list their own items alongside our selection. Though it wasn't a sustainable model, we were able to capture 5 digit revenue through our platform in 4 weeks, serving over 1000 customers and selling over 400 unique items. Overall, the process of growing something to have some not-insignificant traction was super exhilerating - it's definitely something I'll try to do more in the future.
 
 ### The pivot
 
+By this time, we had reached the end of the spring incubator. We demoed our product, process, and results, which generally pleased the organizers. We won third place in the lab, and got fast-tracked to the Summer MVP Lab. It was clear
+
 ### Closing up
 
-## The lessons I learned
+## Big startup lessons
+
+1. Avoid tech when you start
+2. It's okay to pivot
 
 ### You can always build more lean
 

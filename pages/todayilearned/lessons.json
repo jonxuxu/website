@@ -422,5 +422,65 @@
     {
         "date":1612663750, 
         "lesson": "Discovered that Bootstrap and Antd have 'xxl' col breakpoints"
+    },
+    {
+        "date":1612767406,
+        "lesson": "The Canadian passport office does mess things up, and can give you a refund if it's reasonable"
+    },
+    {
+        "date":1612853806,
+        "lesson":"Scammers actually exist?! Paid $250 to buy a phone on Facebook Marketplace, seller deletes their account, and I'm still phoneless."
+    },
+    {
+        "date":1612940206,
+        "lesson":"Tax forms are a hassle! Let's get rid of them"
+    },
+    {
+        "date":1613026606,
+        "lesson":"Visas are a hassle! Let's get rid of them"
+    },
+    {
+        "date":1613113006,
+        "lesson":"Used Redis properly for the first time"
+    },
+    {
+        "date":1613199406,
+        "lesson":"Learning to implement a Celery task queue"
+    },
+    {
+        "date":1613285806,
+        "lesson":"Got OkCupid. Apparently you can find some really interesting people there"
+    },
+    {
+        "date":1613372206,
+        "lesson":"A lot of people don't actually use dating platforms to date?"
+    },
+    {
+        "date":1613458606,
+        "lesson":"Made Goi Cuon for the first time. So good"
+    },
+    {
+        "date":1613545006,
+        "lesson":"Created complex gradients in HSL format"
+    },
+    {
+        "date":1613631406,
+        "lesson":"A daily, 20 minute call seems to be the best interval to get close to someone"
+    },
+    {
+        "date":1613717806,
+        "lesson":"Read about Elon's experience starting SpaceX. It's a really inspiring foray into deep tech that I would like to replicate someday."
+    },
+    {
+        "date":1613804206,
+        "lesson":"Super Mario Effect: Focusing on the Princess and not the pits,  to stick with a task and learn more"
+    },
+    {
+        "date":1613890606,
+        "lesson":"I should ask more questions. People seem to be much more willing to share details of their life than it seems."
+    },
+    {
+        "date":1613977006,
+        "lesson": "For regularly occcuring group calls, 3 people seem to be the perfect number for always having something to talk about while not having to wait your turn"
     }
 ]
