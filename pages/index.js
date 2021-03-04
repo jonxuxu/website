@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
-import Image from "next/image";
 import { Row, Col, Typography, Menu, Timeline, Button, Divider } from "antd";
 import {
   TwitterOutlined,
@@ -45,7 +44,7 @@ const Home = () => {
       <Row justify="space-between">
         <Col
           style={{
-            background: "url(/images/home/sideBanner.jpg)",
+            background: "url(https://i.ibb.co/q5Bh6sZ/side-Banner.jpg)",
             backgroundSize: "cover",
             padding: 80,
             height: "100vh",
@@ -65,10 +64,9 @@ const Home = () => {
           <Row justify="center">
             <MainCol xs={24} md={7} xl={4}>
               <div style={{ minHeight: 200 }}>
-                <Image
-                  src="/images/home/profileCircle.jpg"
-                  layout="fill"
-                  objectFit="contain"
+                <img
+                  src="https://i.ibb.co/XLq7z0h/profile-Circle.jpg"
+                  style={{ width: "100%" }}
                 />
               </div>
             </MainCol>
