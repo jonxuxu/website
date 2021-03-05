@@ -6,12 +6,13 @@ import { Typography, List, Space, Row, Col } from "antd";
 
 const { Title } = Typography;
 
-const ACover = styled.a`
+const ImgDiv = styled.div`
   display: block;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 2px;
   max-height: 360px;
+  cursor: pointer;
 `;
 
 const CoverImg = styled.img`
@@ -37,22 +38,22 @@ const ProjectsPage = () => {
       </p>
       <Row gutter={20}>
         <Col xs={24} sm={12}>
-          <Link href="/projects/noisy" passHref>
-            <ACover>
+          <Link href="/projects/noisy">
+            <ImgDiv>
               <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
-            </ACover>
+            </ImgDiv>
           </Link>
-          <Link href="/projects/brett" passHref>
-            <ACover>
+          <Link href="/projects/brett">
+            <ImgDiv>
               <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
-            </ACover>
+            </ImgDiv>
           </Link>
         </Col>
         <Col xs={24} sm={12}>
-          <Link href="/projects/trofi" passHref>
-            <ACover>
+          <Link href="/projects/trofi">
+            <ImgDiv>
               <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
-            </ACover>
+            </ImgDiv>
           </Link>
         </Col>
       </Row>
