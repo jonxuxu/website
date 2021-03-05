@@ -49,9 +49,11 @@ const ProjectsPage = () => {
           </Link>
         </Col>
         <Col xs={24} sm={12}>
-          <ACover href="https://trofi.app" target="_blank">
-            <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
-          </ACover>
+          <Link href="/projects/trofi" passHref>
+            <ACover>
+              <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
+            </ACover>
+          </Link>
         </Col>
       </Row>
     </div>

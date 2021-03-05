@@ -482,5 +482,53 @@
     {
         "date":1613977006,
         "lesson": "For regularly occcuring group calls, 3 people seem to be the perfect number for always having something to talk about while not having to wait your turn"
+    },
+    {
+        "date":1614075743,
+        "lesson":"Learned about Transport Layer Security and SSL certificates"
+    },
+    {
+        "date":1614126143,
+        "lesson":"Captured a video stream from an html canvas to get signatures"
+    },
+    {
+        "date":1614212543,
+        "lesson":"There is a consensus in the Topos house that SF is too dismissive of the humanities and the real issues that matter"
+    },
+    {
+        "date":1614298943,
+        "lesson":"Flight wifi is cheap - 30 bucks for a 14 hour trip seems like a great deal. Looking forward to free wifi on planes soon."
+    },
+    {
+        "date":1614385343,
+        "lesson":"Learned about SSR and used serverless functions in Next.Js for the first time"
+    },
+    {
+        "date":1614471743,
+        "lesson":"There's no Chinese word for cream. The phrase 奶油 literally means 'milk oil'"
+    },
+    {
+        "date":1614558143,
+        "lesson":"Don't surround yourself with smarter people. Surround yourself with people who are free in ways you are not."
+    },
+    {
+        "date":1614558143,
+        "lesson":"A major factor for why Taiwan handled the coronavirus well was that it make quarantine bearable and affordable for individuals instead of using it as a sort of punishment for traveling"
+    },
+    {
+        "date":1614644543,
+        "lesson":"It seems that over 90% of startups are made to fit to a market opportunity instead of from a conscious desire to bring about change. Would love to be proven wrong about this."
+    },
+    {
+        "date":1614730943,
+        "lesson":"Exploratory experimentation prevents us from examining a hypothesis on the basis of a previously established theory. It helps us not be limited by what we already know."
+    },
+    {
+        "date":1614817343,
+        "lesson":"The ability to discern is 100x more important than just working harder - Brian Gu"
+    },
+    {
+        "date":1614903743,
+        "lesson":"Maintain optionality until you find your rocketship"
     }
 ]
