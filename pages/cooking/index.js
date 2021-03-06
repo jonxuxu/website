@@ -34,10 +34,10 @@ export default function CookingPage() {
         <title>Cooking</title>
       </Head>
       <Title level={2}>Eating fine on a dime</Title>
-      <Title level={5} type="secondary" style={{ marginTop: 5 }}>
+      <p>
         Some recipes for foods I love that have a high deliciousness to effort
         ratio
-      </Title>
+      </p>
       {/* {loading && <Spin />} */}
       <Masonry
       // style={{ visibility: loading ? "hidden" : "visible" }}

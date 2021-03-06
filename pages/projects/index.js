@@ -49,6 +49,14 @@ const ProjectsPage = () => {
               <CoverImg alt="curius" src="/images/projects/curius/banner.png" />
             </ImgDiv>
           </Link>
+          <Link href="/projects/hackathons">
+            <ImgDiv>
+              <CoverImg
+                alt="hackathons"
+                src="/images/projects/hackathons/banner.png"
+              />
+            </ImgDiv>
+          </Link>
         </Col>
         <Col xs={24} sm={12}>
           <Link href="/projects/trofi">
