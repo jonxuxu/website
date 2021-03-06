@@ -1,4 +1,239 @@
 {
+    "taiwanese-fried-chicken":
+    {
+        "name": "Taiwanese Fried Chicken",
+        "subtitle": "High effort but high reward",
+        "description": "I make these whenever I am craving Asian street food. This always brings me back to my 2019 trip to Taiwan. \n\nSee notes section for items marked *",
+        "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/03/Taiwanese-Fried-Chicken1.jpg?fit=1300%2C867&ssl=1",
+        "time":"2-3 hours",
+        "servings": 2,
+        "type": "Appetizer",
+        "ingredients": [
+            {
+                "unit": 1,
+                "item": "tbsp fermented bean curd"
+            },
+            {
+                "unit": 1,
+                "item": "tbsp oyster sauce"
+            },
+            {
+                "unit": 1,
+                "item": "tsp shaoxing wine"
+            },
+            {
+                "unit": 0.25,
+                "item": "tsp white pepper"
+            },
+            {
+                "unit": 3,
+                "item": "cloves garlic, chopped"
+            },
+            {
+                "unit": 1,
+                "item": "lb boneless skinless chicken thighs, cut into 1\" cubes"
+            },
+            {
+                "item": "peanut oil or frying oil"
+            },
+            {
+                "unit": 0.75,
+                "item": "cup sweet potato flour"
+            },
+            {
+                "unit": 1,
+                "item": "tsp salt"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp Sichuan peppercorn, toasted and ground up"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp white pepper"
+            },
+            {
+                "unit": 0.25,
+                "item": "cayenne or papripka powder"
+            },
+            {
+                "unit": 1,
+                "item": "handful Thai basil"
+            }
+        ],
+        "steps": [
+            "In a bowl, mix the fermented bean curd, oyster sauce, shaoxing wine white pepper and garlic.",
+            "Add the chicken and coat it in sauce. Cover the bowl and marinate for 2-12 hours.",
+            "Heat frying oil to 350°F.",
+            "For each piece of chicken, coat it in the sweet potato starch and drop it in the frying oil. Fry the chicken for 3-4 minutes, until it is floating on the surface of the oil. *",
+            "Remove the cooked chicken from the oil and place on a rack to cool.",
+            "Increase the oil temperate to 400°F. While waiting, mix salt, Sichuan peppercorn, white pepper and paprika in a small bowl.",
+            "Add half of the first bach of chicken and fry it for 30 seconds. Add half of the basil into the oil and immediately cover the pot. Count to 5, uncover, and remove the chicken and basil from the oil.",
+            "Repeat the previous step for the remaining chicken and basil. *",
+            "Sprinkle the dry seasoning mixture on top of the fried chicken. Serve immediately!"
+        ],
+        "notes": [
+            "Cook the chicken in batches of 2 or 3 to avoid crowding the pot. Otherwise, the oil will get too cold and the chicken pieces will stick to each other.",
+            "Vary batch size based on the amount of chicken and pot size."
+        ]
+    },
+    "tomato-and-egg":
+    {
+        "name": "Stir-fried Tomato and Eggs",
+        "subtitle": "The greatest thing before sliced bread",
+        "description": "A tasty staple in the Chinese diet. If I was told to make a dish in 5 minutes or less, I would go for this.\n\nSee notes section for items marked *",
+        "image": "/images/cooking/tomato-egg.jpg",
+        "time":"10 minutes",
+        "servings": 2,
+        "type": "Main Course",
+        "ingredients": [
+            {
+                "unit":2,
+                "item": "eggs, large"
+            },
+            {
+                "unit":4,
+                "item":"roma tomatoes, cubed to 1.5\" pieces *"
+            },
+            {
+                "unit":1,
+                "item":"tbsp cooking oil"
+            },
+            {
+                "unit":3,
+                "item":"tbsp soy sauce *"
+            },
+            {
+                "unit": 1,
+                "item": "green onion, chopped"
+            }
+        ],
+        "steps": [
+            "Add oil to a medium pan. Heat on high until the oil just starts to shimmer.",
+            "Immediately break eggs and add to the pan. The high heat will make the eggs spatter, which airs them up. Quickly scramble the eggs until they are solid and set them aside.",
+            "Turn the heat to medium. Add tomatoes and soy sauce.",
+            "Cover pan, add soy sauce, and cook for 5-10 minutes until the tomato skin easily slides off.",
+            "Stir in  the eggs and green onions. Serve!"
+        ],
+        "notes": [
+            "Any tomato works as a substitute. 4 roma tomatoes is equal to roughly 250g of tomato. If you feel extra, you can peel the tomato skins for a smoother texture.",
+            "I prefer the soy sauce version of this dish. If you don't, use salt to taste instead. This dish is on the saliter side because I recommend you eat it with rice."
+        ]
+    },
+    "blueberry-ice-cream":
+    {
+        "name": "Blueberry Ice Cream",
+        "subtitle": "Cheap and easy gourmet ice cream",
+        "description": "The friends at Topos reviewed loved this one! They say it taste better than store-bought. \"\n\nSee notes section for items marked *",
+        "image": "/images/cooking/blueberry-ice-cream.jpg",
+        "time":"3 hours",
+        "servings": 5,
+        "type": "Dessert",
+        "ingredients": [
+            {
+                "unit":2,
+                "item": "cups blueberries *"
+            },
+            {
+                "unit":1,
+                "item":"cup sugar"
+            },
+            {
+                "unit":1,
+                "item":"cup whole milk"
+            },
+            {
+                "unit":1,
+                "item":"cup whipping cream"
+            }
+        ],
+        "steps": [
+            "Add blueberries and sugar to a medium saucepan. Add a spoon of water.",
+            "Heat on medium until the mixture melts and starts boiling.",
+            "Turn the heat to low. Simmer, stirring occasionally, for 10 minutes.",
+            "Let the mixture cool for 20 minutes.",
+            "Put in a blender, and blend until you get a smoothie texture.",
+            "Pour in a bowl/tub, put in a freezer, and enjoy when it's solid (freeze time depends on freezer temp)."
+        ],
+        "notes": [
+            "Frozen or fresh blueberries does not matter"
+        ]
+    },
+    "goi-cuon":
+    {
+        "name": "Gỏi Cuốn",
+        "subtitle": "Highest flavor to effort ratio",
+        "description": "My go-to for quick Vietnamese eats! It's an amazingly refreshing meal. \"\n\nSee notes section for items marked *",
+        "image": "/images/cooking/goi-cuon.jpg",
+        "time":"0.5 hours",
+        "servings": 4,
+        "type": "Main Course",
+        "ingredients": [
+            {
+                "unit":10,
+                "item": "sheets rice paper"
+            },
+            {
+                "unit":250,
+                "item":"grams rice vermicelli"
+            },
+            {
+                "unit":3,
+                "item":"sprigs fresh basil"
+            },
+            {
+                "unit":0.5,
+                "item":"head lettuce"
+            },
+            {
+                "unit":2,
+                "item":"cups bean sprouts"
+            },
+            {
+                "unit":0.5,
+                "item":"lb large shrimp *"
+            },
+            {
+                "item":"hoisin sauce"
+            },
+            {
+                "header":"For the dipping sauce"
+            },
+            {
+                "unit":1,
+                "item":"tbsp fish sauce"
+            },
+            {
+                "unit":75,
+                "item": "ml water"
+            },
+            {
+                "unit":1,
+                "item": "clove garlic, minced"
+            },
+            {
+                "unit":2,
+                "item": "tbsp lime juice"
+            },
+            {
+                "unit": 0.5,
+                "item": "tsp chili garlic sauce"
+            }
+        ],
+        "steps": [
+            "Bring a medium saucepan of water to boil. Boil rice vermicelli and shrimp 5 minutes.",
+            "Drain, pouring some of the hot water in a plate for later.",
+            "Cut shrimp in half, lengthwise.",
+            "Dip one wrapper into the hot water for 2 seconds to soften. Lay wrapper flat on a plate, and place on it a handful total of vermecelli, shrimp, basil, and bean sprouts.",
+            "Fold two sides of the wrapper in to the center. Bring the bottom up to cover the center, and roll it up like a burrito.",
+            "Repeat steps 4-5 for other wrappers.",
+            "Mix the sauce ingredients together in a small bowl. Put some hoison sauce into another bowl.",
+            "Dip the rolls in the sauce and enjoy!"
+        ],
+        "notes": [
+            "If the shrimp are not peeled and devined, make sure to do that carefully with a knife after boiling them."
+        ]
+    },
     "sheng-jian-bao":
     {
         "name": "Sheng Jian Bao",
@@ -217,7 +452,7 @@
     "soy-sauce-fried-rice":
     {
         "name": "Soy Sauce Fried Rice",
-        "subtitle": "The cheapest, fastest meal that isn't microwavable or canned",
+        "subtitle": "A lunchtime staple",
         "description": "My go-to meal when I have 15 minutes to make food. In actuality, all the ingrients except the soy sauce, oil and rice is optional. Feel free to experiment! \n\nSee notes section for items marked *",
         "image": "https://thewoksoflife.com/wp-content/uploads/2016/08/soy-sauce-fried-rice-10.jpg",
         "time":"15 minutes",
@@ -283,166 +518,6 @@
         "notes": [
             "Any veggies that aren't really watery (like tomatoes), and smaller than half your thumb is good. My go-to is frozen mixed vegetables, or whatever veggies in the fridge, diced.",
             "This can be replaced by half the amount of light soy sauce"
-        ]
-    },
-    "taiwanese-fried-chicken":
-    {
-        "name": "Taiwanese Fried Chicken",
-        "subtitle": "High effort but high reward",
-        "description": "I make these whenever I am craving Asian street food. This always brings me back to my 2019 trip to Taiwan. \n\nSee notes section for items marked *",
-        "image": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2020/03/Taiwanese-Fried-Chicken1.jpg?fit=1300%2C867&ssl=1",
-        "time":"2-3 hours",
-        "servings": 2,
-        "type": "Appetizer",
-        "ingredients": [
-            {
-                "unit": 1,
-                "item": "tbsp fermented bean curd"
-            },
-            {
-                "unit": 1,
-                "item": "tbsp oyster sauce"
-            },
-            {
-                "unit": 1,
-                "item": "tsp shaoxing wine"
-            },
-            {
-                "unit": 0.25,
-                "item": "tsp white pepper"
-            },
-            {
-                "unit": 3,
-                "item": "cloves garlic, chopped"
-            },
-            {
-                "unit": 1,
-                "item": "lb boneless skinless chicken thighs, cut into 1\" cubes"
-            },
-            {
-                "item": "peanut oil or frying oil"
-            },
-            {
-                "unit": 0.75,
-                "item": "cup sweet potato flour"
-            },
-            {
-                "unit": 1,
-                "item": "tsp salt"
-            },
-            {
-                "unit": 0.5,
-                "item": "tsp Sichuan peppercorn, toasted and ground up"
-            },
-            {
-                "unit": 0.5,
-                "item": "tsp white pepper"
-            },
-            {
-                "unit": 0.25,
-                "item": "cayenne or papripka powder"
-            },
-            {
-                "unit": 1,
-                "item": "handful Thai basil"
-            }
-        ],
-        "steps": [
-            "In a bowl, mix the fermented bean curd, oyster sauce, shaoxing wine white pepper and garlic.",
-            "Add the chicken and coat it in sauce. Cover the bowl and marinate for 2-12 hours.",
-            "Heat frying oil to 350°F.",
-            "For each piece of chicken, coat it in the sweet potato starch and drop it in the frying oil. Fry the chicken for 3-4 minutes, until it is floating on the surface of the oil. *",
-            "Remove the cooked chicken from the oil and place on a rack to cool.",
-            "Increase the oil temperate to 400°F. While waiting, mix salt, Sichuan peppercorn, white pepper and paprika in a small bowl.",
-            "Add half of the first bach of chicken and fry it for 30 seconds. Add half of the basil into the oil and immediately cover the pot. Count to 5, uncover, and remove the chicken and basil from the oil.",
-            "Repeat the previous step for the remaining chicken and basil. *",
-            "Sprinkle the dry seasoning mixture on top of the fried chicken. Serve immediately!"
-        ],
-        "notes": [
-            "Cook the chicken in batches of 2 or 3 to avoid crowding the pot. Otherwise, the oil will get too cold and the chicken pieces will stick to each other.",
-            "Vary batch size based on the amount of chicken and pot size."
-        ]
-    },
-    "tomato-and-egg":
-    {
-        "name": "Stir-fried Tomato and Eggs",
-        "subtitle": "The greatest thing before sliced bread",
-        "description": "A tasty staple in the Chinese diet. If I was told to make a dish in 5 minutes or less, I would go for this.\n\nSee notes section for items marked *",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG",
-        "time":"10 minutes",
-        "servings": 2,
-        "type": "Main Course",
-        "ingredients": [
-            {
-                "unit":2,
-                "item": "eggs, large"
-            },
-            {
-                "unit":4,
-                "item":"roma tomatoes, cubed to 1.5\" pieces *"
-            },
-            {
-                "unit":1,
-                "item":"tbsp cooking oil"
-            },
-            {
-                "unit":3,
-                "item":"tbsp soy sauce *"
-            },
-            {
-                "unit": 1,
-                "item": "green onion, chopped"
-            }
-        ],
-        "steps": [
-            "Add oil to a medium pan. Heat on high until the oil just starts to shimmer.",
-            "Immediately break eggs and add to the pan. The high heat will make the eggs spatter, which airs them up. Quickly scramble the eggs until they are solid and set them aside.",
-            "Turn the heat to medium. Add tomatoes and soy sauce.",
-            "Cover pan, add soy sauce, and cook for 5-10 minutes until the tomato skin easily slides off.",
-            "Stir in  the eggs and green onions. Serve!"
-        ],
-        "notes": [
-            "Any tomato works as a substitute. 4 roma tomatoes is equal to roughly 250g of tomato. If you feel extra, you can peel the tomato skins for a smoother texture.",
-            "I prefer the soy sauce version of this dish. If you don't, use salt to taste instead. This dish is on the saliter side because I recommend you eat it with rice."
-        ]
-    },
-    "blueberry-ice-cream":
-    {
-        "name": "Blueberry Ice Cream",
-        "subtitle": "Cheap and easy gourmet ice cream",
-        "description": "The friends at Topos reviewed this one very highly: \"It's better than store bought :o\"\n\nSee notes section for items marked *",
-        "image": "/images/cooking/blueberry-ice-cream.jpg",
-        "time":"3 hours",
-        "servings": 5,
-        "type": "Dessert",
-        "ingredients": [
-            {
-                "unit":2,
-                "item": "cups blueberries *"
-            },
-            {
-                "unit":1,
-                "item":"cup sugar"
-            },
-            {
-                "unit":1,
-                "item":"cup whole milk"
-            },
-            {
-                "unit":1,
-                "item":"cup whipping cream"
-            }
-        ],
-        "steps": [
-            "Add blueberries and sugar to a medium saucepan. Add a spoon of water.",
-            "Heat on medium until the mixture melts and starts boiling.",
-            "Turn the heat to low. Simmer, stirring occasionally, for 10 minutes.",
-            "Let the mixture cool for 20 minutes.",
-            "Put in a blender, and blend until you get a smoothie texture.",
-            "Pour in a bowl/tub, put in a freezer, and enjoy when it's solid (freeze time depends on freezer temp)."
-        ],
-        "notes": [
-            "Frozen or fresh blueberries does not matter"
         ]
     }
 }
