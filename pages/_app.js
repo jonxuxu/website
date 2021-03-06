@@ -4,6 +4,8 @@ import { MDXProvider } from "@mdx-js/react";
 import { Container } from "../components/layout";
 import { CodeBlock, BlockQuote } from "../components/mdx";
 
+import "../styles/antd.less";
+
 const components = {
   h1: Typography.Title,
   img: Image,
