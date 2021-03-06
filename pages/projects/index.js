@@ -33,8 +33,9 @@ const ProjectsPage = () => {
       </Head>
       <Title>Projects</Title>
       <p>
-        This page is a work in progress, please mind the dust as I document the
-        things that I have built, worked on, and experimented with.
+        This page is a work in progress, please mind the dust. Here, I'm
+        documenting a few of the things I've worked on, that I found pretty cool
+        to share about.
       </p>
       <Row gutter={20}>
         <Col xs={24} sm={12}>
@@ -43,9 +44,9 @@ const ProjectsPage = () => {
               <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
             </ImgDiv>
           </Link>
-          <Link href="/projects/brett">
+          <Link href="/projects/curius">
             <ImgDiv>
-              <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
+              <CoverImg alt="curius" src="/images/projects/curius/banner.png" />
             </ImgDiv>
           </Link>
         </Col>
@@ -53,6 +54,11 @@ const ProjectsPage = () => {
           <Link href="/projects/trofi">
             <ImgDiv>
               <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
+            </ImgDiv>
+          </Link>
+          <Link href="/projects/brett">
+            <ImgDiv>
+              <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
             </ImgDiv>
           </Link>
         </Col>
