@@ -3,7 +3,7 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { Typography } from "antd";
 
-const { Title } = Typography;
+const { Text } = Typography;
 
 const CodeBlock = ({ children, className, live }) => {
   const language = className.replace(/language-/, "");
@@ -40,13 +40,13 @@ const CodeBlock = ({ children, className, live }) => {
 
 const BlockQuote = ({ children }) => {
   return (
-    <Title
-      level={5}
-      type="secondary"
-      style={{ borderLeft: "4px solid rgba(0, 0, 0, 0.45)", paddingLeft: 15 }}
+    <div
+      style={{ borderLeft: "4px solid rgba(0, 0, 0, 0.25)", paddingLeft: 15 }}
     >
-      {children}
-    </Title>
+      <Text type="secondary" strong>
+        {children}
+      </Text>
+    </div>
   );
 };
 

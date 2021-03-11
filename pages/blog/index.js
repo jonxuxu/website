@@ -27,9 +27,13 @@ const BlogPage = ({ filenames }) => {
   return (
     <div>
       <Head>
-        <title>Blog</title>
+        <title>Jonathan's Blog</title>
       </Head>
       <Title>Jonathan's Blog</Title>
+      <p>
+        The soup pot, the salad bowl, the dumpster bin for all my thoughts - I'm
+        not sure how to classify the collection so anything goes.
+      </p>
       <List itemLayout="horizontal">
         {metas.map((m) => (
           <List.Item
