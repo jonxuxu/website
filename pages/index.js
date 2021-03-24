@@ -134,8 +134,8 @@ const Home = () => {
                 </li>
                 <li>
                   <strong>Experiment and explore: </strong>Life is short, and
-                  there is so much to do out there. Never stop trying new
-                  things.<Link href="/todayilearned">learning</Link>.
+                  there is so much to do out there. Try new things and never
+                  stop <Link href="/todayilearned">learning</Link>.
                 </li>
               </ul>
               <div style={{ paddingTop: 30 }}>
