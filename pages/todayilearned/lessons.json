@@ -530,5 +530,81 @@
     {
         "date":1614903743,
         "lesson":"Maintain optionality until you find your rocketship"
+    },
+    {
+        "date": 1615016049,
+        "lesson":"Tried to improve my notetaking workflow with Obsidian + Syncthing + Lightsail. Let's see if this works better than Roam"
+    },
+    {
+        "date":1615102449,
+        "lesson":"Otter does some real awesome live transcription. Looks like it works great with video calls."
+    },
+    {
+        "date":1615188849,
+        "lesson":"In Taiwan you can pay for an online order in person, by cash. Pizza delivery convenience for Amazon goods"
+    },
+    {
+        "date":1615275249,
+        "lesson":"Used the Twitter API for the first time"
+    },
+    {
+        "date":1615361649,
+        "lesson":"Did you know that you can't tweet the same tweet twice?"
+    },
+    {
+        "date":1615448049,
+        "lesson":"Discovered a new way to do media markets - Unsplash lets photographers share their work for strong exposure, while sites can use high quality assets for free"
+    },
+    {
+        "date":1615534449,
+        "lesson":"Adaptive Bitrate Streaming (ABS) and setting up an AWS stack to stream chunks of video at adaptive resolutions"
+    },
+    {
+        "date":1615620849,
+        "lesson":"Had my first video call with someone I met from OkCupid :o"
+    },
+    {
+        "date":1615707249,
+        "lesson":"Cunningham's Law: the best way to get the right answer on the Internet is not to ask a question, it's to post the wrong answer."
+    },
+    {
+        "date":1615793649,
+        "lesson":"Implemented hash signing functionality on Ethereum using Ethers.js"
+    },
+    {
+        "date":1615880049,
+        "lesson":"Weird video frame rates (23.98, 29.97, 59.94) came historical factors stemming from the introduction of color tv"
+    },
+    {
+        "date":1615966449,
+        "lesson":"Learned about the Elliptic Curve Digital Signature Algorithm as alternative to RSA"
+    },
+    {
+        "date":1616052849,
+        "lesson":"Learned to play the D, G and C chords on the guitar"
+    },
+    {
+        "date":1616139249,
+        "lesson":"AWS step functions and AWS Rekognition for videos"
+    },
+    {
+        "date":1616225649,
+        "lesson":"Used GCP Video Intelligence and App Engine for the first time"
+    },
+    {
+        "date":1616312049,
+        "lesson":"The median salary for infrastructure devs at PornHub is $300K"
+    },
+    {
+        "date":1616398449,
+        "lesson":"Talked to Kevin Lin from Twitch : the space for context-based video interaction is super big and exciting, and different from AR"
+    },
+    {
+        "date":1616484849,
+        "lesson":"Chatted with Mike Zintel from Microsoft : ask people for money and you'll get advice, ask people for advice and you'll sometimes get money"
+    },
+    {
+        "date":1616571249,
+        "lesson":"AppWorks is one of the best places to find a family of founders in Taiwan"
     }
 ]
