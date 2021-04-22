@@ -120,7 +120,8 @@ const LearnedPage = () => {
       <Title>Today I Learned</Title>
       <p>
         This is a special part of the digital woods where I try to log what I've
-        learned every day. Let's see how long we can keep this ritual going.
+        learned every day. The universe is big and complex thing - learning a
+        little bit about it every day makes life a bit more interesting.
       </p>
       <Table columns={columns} dataSource={lessons} rowKey="id" />
     </div>

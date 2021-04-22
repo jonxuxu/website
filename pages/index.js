@@ -125,16 +125,16 @@ const Home = () => {
                 <li>
                   <strong>Grow meaningfully: </strong>Have a clear compass for
                   what your definition of goodness and success is and work
-                  towards that. Is what you are working towards something is
+                  towards that. Is what you are working towards something that's
                   truly important?
                 </li>
                 <li>
-                  <strong>Motivate internaly: </strong>Doing something out of
+                  <strong>Motivate internally: </strong>Doing something out of
                   innate interest will never feel old, tiresome or competitive.
                 </li>
                 <li>
                   <strong>Experiment and explore: </strong>Life is short, and
-                  there is so much out there to do. Try new things and never
+                  there is so much to do out there. Try new things and never
                   stop <Link href="/todayilearned">learning</Link>.
                 </li>
               </ul>
