@@ -36,26 +36,22 @@ const SideBar = () => (
       <Link href="/cooking">Cooking</Link>
     </div>
     <div style={{ marginTop: 40 }}>
-      <a href="https://twitter.com/_JonathanXu" target="_blank">
+      <BlackA href="https://twitter.com/_JonathanXu" target="_blank">
         <TwitterOutlined />
-      </a>
+      </BlackA>
     </div>
     <div>
-      <a href="https://github.com/JonathanXu1" target="_blank">
+      <BlackA href="https://github.com/JonathanXu1" target="_blank">
         <GithubOutlined />
-      </a>
+      </BlackA>
     </div>
     <div>
       <a href="https://webring.xxiivv.com/#random" target="_blank">
-        <img
-          style={{
+      style={{
             filter:
               "invert(40%) sepia(32%) saturate(6268%) hue-rotate(341deg) brightness(111%) contrast(101%)",
           }}
-          src="/images/home/webring.svg"
-          width={18}
-          height={18}
-        />
+        <img src="/images/home/webring.svg" width={18} height={18} />
       </a>
     </div>
   </div>
@@ -105,3 +101,10 @@ const Container = ({ center, right }) => {
 };
 
 export { Container };
+
+const BlackA = styled.a`
+  color: #999;
+  &:hover {
+    color: black;
+  }
+`;

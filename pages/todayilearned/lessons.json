@@ -530,5 +530,73 @@
     {
         "date":1614903743,
         "lesson":"Maintain optionality until you find your rocketship"
+    },
+    {
+        "date":1616936486,
+        "lesson":"Baader–Meinhof phenomenon: we tend to notice things more often after noticing something for the first time, making us think it happens at a high frequency"
+    },
+    {
+        "date":1617022886,
+        "lesson":"Taiwanese people are surprisingly chill when it comes to filming in public. No one seems to be bothered at all by my walking tour filming"
+    },
+    {
+        "date":1617109286,
+        "lesson":"People actually read the stuff on this site 😮. Hopefully you find it useful!"
+    },
+    {
+        "date":1617195686,
+        "lesson":"ISO and shutter speed are inversely proportional. Choose between two evils: blurriness and graininess"
+    },
+    {
+        "date":1617282086,
+        "lesson":"You can call Vercel api endpoints directly in an <a> tag"
+    },
+    {
+        "date":1617368486,
+        "lesson":"It's easier to use buckets than pub/sub communication to trigger Google cloud functions"
+    },
+    {
+        "date":1617454886,
+        "lesson":"You can draw font awesome icons in the html canvas"
+    },
+    {
+        "date":1617541286,
+        "lesson":"Using Google text to speech for the first time"
+    },
+    {
+        "date":1617714086,
+        "lesson":"moment.js is slow is and big. day.js is slow. date-fns is big (but supports tree shaking!)"
+    },
+    {
+        "date":1617886886,
+        "lesson":"Created my first ERC20 tokens using Solidity"
+    },
+    {
+        "date":1618059686,
+        "lesson":"Any contract more than a page long will have at least two critical errors that will render it obsolete"
+    },
+    {
+        "date":1618146086,
+        "lesson":"Most Indian families vote based on what the father figure decides, which leads to a lot of gender inequality and bad policy"
+    },
+    {
+        "date":1618318886,
+        "lesson":"Did some waterfall rappeling!"
+    },
+    {
+        "date":1618405286,
+        "lesson":"Although you should minimize company dilution as much as possible, giving a tiny amount to investors ensures vested interest and access to connections later"
+    },
+    {
+        "date":1618664486,
+        "lesson":"Even if you have no traction or signals in your startup, you are basically guaranteed funding as long as you show confidence"
+    },
+    {
+        "date":1618837286,
+        "lesson":"Learning about simple vs preflighted CORS requests"
+    },
+    {
+        "date":1619096486,
+        "lesson":"Nearly all significant cloud APIs usage requires you to store your info on the provider's buckets"
     }
 ]
