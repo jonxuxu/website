@@ -50,9 +50,4 @@ const BlockQuote = ({ children }) => {
   );
 };
 
-const TitleElem = (props) => {
-  console.log(props);
-  return <Title name="{children}">{props.children}</Title>;
-};
-
-export { CodeBlock, BlockQuote, TitleElem };
+export { CodeBlock, BlockQuote };
