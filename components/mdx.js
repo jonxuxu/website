@@ -3,7 +3,7 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { Typography } from "antd";
 
-const { Text } = Typography;
+const { Text, Title } = Typography;
 
 const CodeBlock = ({ children, className, live }) => {
   const language = className.replace(/language-/, "");
@@ -50,4 +50,9 @@ const BlockQuote = ({ children }) => {
   );
 };
 
-export { CodeBlock, BlockQuote };
+const TitleElem = (props) => {
+  console.log(props);
+  return <Title name="{children}">{props.children}</Title>;
+};
+
+export { CodeBlock, BlockQuote, TitleElem };
