@@ -9,15 +9,6 @@ import {
   GithubOutlined,
 } from "@ant-design/icons";
 
-const MainCol = styled(Col)`
-  padding: 20px;
-  @media (min-width: 992px) {
-    // lg
-    padding: 0px;
-    padding-top: 70px;
-  }
-`;
-
 const SideBar = () => (
   <div style={{ padding: 80, position: "fixed" }}>
     <Link passHref href="/">
@@ -47,11 +38,15 @@ const SideBar = () => (
     </div>
     <div>
       <a href="https://webring.xxiivv.com/#random" target="_blank">
-      style={{
+        <img
+          style={{
             filter:
-              "invert(40%) sepia(32%) saturate(6268%) hue-rotate(341deg) brightness(111%) contrast(101%)",
+              "invert(69%) sepia(0%) saturate(1504%) hue-rotate(139deg) brightness(90%) contrast(83%)",
           }}
-        <img src="/images/home/webring.svg" width={18} height={18} />
+          src="https://webring.xxiivv.com/icon.black.svg"
+          width={18}
+          height={18}
+        />
       </a>
     </div>
   </div>
@@ -106,5 +101,14 @@ const BlackA = styled.a`
   color: #999;
   &:hover {
     color: black;
+  }
+`;
+
+const MainCol = styled(Col)`
+  padding: 20px;
+  @media (min-width: 992px) {
+    // lg
+    padding: 0px;
+    padding-top: 70px;
   }
 `;
