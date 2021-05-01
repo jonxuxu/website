@@ -3,22 +3,25 @@
         "name": "Topos",
         "description":"A community of scientists dedicated to life-long learning. Lots of scientific minds who are excited about the humanities.",
         "url" :"https://topos.house/  ",
-        "location":"San Francisco, California"
+        "location":"San Francisco, California",
+        "img":"https://topos.house/img/communal-area.jpg"
     },
     {
         "name": "Incepto",
         "description":"A family of intellectual houses, passionate about technological progress and its influence on societal change. A big startup presence here.",
         "url" :"https://incepto.house/",
-        "location":"Menlo Park, California"
+        "location":"Menlo Park, California",
+        "img":"https://i.ibb.co/jJVdRqG/incepto.png"
     },
     {
         "name": "Archive",
         "description":"Values curiosity, reliability, intentionality, and benevolence. Composed of a group of extremely diverse residents.",
         "url" :"https://archive.house/",
-        "location":"Dolores Park, California"
+        "location":"Dolores Park, California",
+        "img":"https://archive.house/archive1.jpg"
     },
     {
-        "name": "Gamma House",
+        "name": "Gamma School",
         "description":"A house for young students, researchers, and hackers, filled with curiosity and kindness. (June 5th to September 1st, 2021)",
         "url" :"https://www.gamma-school.com/",
         "location":"Bay Area, California"
@@ -27,12 +30,13 @@
         "name": "Rainbow Mansion",
         "description":"A community house full of aspiring astronauts, virtual reality engineers, makers, entrepreneurs, Antarctica explorers, and most importantly, friends.",
         "url" :"http://rainbowmansion.com/",
-        "location":"San Francisco, California"
+        "location":"San Francisco, California",
+        "img":"https://secureservercdn.net/198.71.233.153/3b5.88e.myftpupload.com/wp-content/uploads/2016/02/2.jpg"
     },
     {
         "name": "Red Door TV",
         "description":"A collective of talented creatives, musicians, artists, Twitch streamers, YouTubers, OnlyFan creators, and more.",
-        "url" :"https://reddoortelevision.com",
+        "url" :"http://reddoortelevision.com",
         "location":"Las Vegas, Nevada"
     }
 ]
