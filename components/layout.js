@@ -27,7 +27,7 @@ const SideBar = () => (
       <Link href="/cooking">Cooking</Link>
     </div>
     <div style={{ marginTop: 40 }}>
-      <BlackA href="https://twitter.com/_JonathanXu" target="_blank">
+      <BlackA href="https://twitter.com/jonxuxu" target="_blank">
         <TwitterOutlined />
       </BlackA>
     </div>

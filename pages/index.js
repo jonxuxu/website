@@ -171,7 +171,7 @@ const SideBar = () => (
       </Link>
     </div>
     <div style={{ marginTop: 40 }}>
-      <WhiteA href="https://twitter.com/_JonathanXu" target="_blank">
+      <WhiteA href="https://twitter.com/jonxuxu" target="_blank">
         <TwitterOutlined />
       </WhiteA>
     </div>
@@ -182,7 +182,11 @@ const SideBar = () => (
     </div>
     <div>
       <a href="https://webring.xxiivv.com/#random" target="_blank">
-        <HoverSvg src="/images/home/webring.svg" width={18} height={18} />
+        <HoverSvg
+          src="https://webring.xxiivv.com/icon.white.svg"
+          width={18}
+          height={18}
+        />
       </a>
     </div>
   </div>
