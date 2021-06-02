@@ -674,5 +674,129 @@
     {
         "date":1619096486,
         "lesson":"Nearly all significant cloud APIs usage requires you to store your info on the provider's buckets"
+    },
+    {
+        "date":1619132770,
+        "lesson":"Used Tailwind CSS for the first time"
+    },
+    {
+        "date":1619219170,
+        "lesson":"Props in React stands for properties 🤦‍"
+    },
+    {
+        "date":1619305570,
+        "lesson":"Used XHR requests, they're good for getting file upload progress."
+    },
+    {
+        "date":1619391970,
+        "lesson":"Found my cross platform note taking stack"
+    },
+    {
+        "date":1619478370,
+        "lesson":"If the size of the observable universe is a lightbulb, the theoretical size of the unobservable universe would be the size of Pluto"
+    },
+    {
+        "date":1619564770,
+        "lesson":"One does not need to worry about uncertain futures if they have confidence in their own skillset"
+    },
+    {
+        "date":1619651170,
+        "lesson":" Why pay and compete for a university diploma if what you’re looking for in the university experience is everything but that?"
+    },
+    {
+        "date":1619823970,
+        "lesson":"Life is short, but life is long too. There are no wasted genuine attempts to make a contribution."
+    },
+    {
+        "date":1619910370,
+        "lesson":"Tools like Anki use space repetition to help you remember something for life"
+    },
+    {
+        "date":1619996770,
+        "lesson":"You can put the ETH you're to work with a yield aggregator like Rari to get interest, right now at 8% APR"
+    },
+    {
+        "date":1620083170,
+        "lesson":"Used the Twitch API for the first time"
+    },
+    {
+        "date":1620169570,
+        "lesson":"Media queries with React Native"
+    },
+    {
+        "date":1620255970,
+        "lesson":"When curating data, narrow as much as you can since breadth means nothing if there is no depth (ie a list of all the restaurants, but most don't even have a menu)"
+    },
+    {
+        "date":1620342370,
+        "lesson":"Made a fully cross-platform app: iOS, Android, Windows, MacOS all in one project"
+    },
+    {
+        "date":1620428770,
+        "lesson":"Got my ETH hacked for the first time. An attack on Rari Capital lost me 2 ETH :("
+    },
+    {
+        "date":1620515170,
+        "lesson":"Made a gradient signature box"
+    },
+    {
+        "date":1620601570,
+        "lesson":"Learning about the SM-2 algorithm - a very important algorithm that defines a lot of how spaced repetition programs work"
+    },
+    {
+        "date":1620687970,
+        "lesson":"Used Figma components - consistency and reusability ftw!"
+    },
+    {
+        "date":1620774370,
+        "lesson":"Learning to use Typescript - about time"
+    },
+    {
+        "date":1620860770,
+        "lesson":"When bargaining, start with a counter that's at least 50% off"
+    },
+    {
+        "date":1620947170,
+        "lesson":"The strat to motivate slackers in non-profits is to not give them any tasks: they coast, get peer pressured, and get mad enough to crush any task just to prove that they're capable"
+    },
+    {
+        "date":1620947170,
+        "lesson":"95% of all stars that will ever exist in the universe have already been born"
+    },
+    {
+        "date":1621119970,
+        "lesson":"Encoding and sample rates in FFMPEG conversion"
+    },
+    {
+        "date":1621292770,
+        "lesson":"Binance smart chain is great for trading crypto quickly - until the market crashes and no orders can go through"
+    },
+    {
+        "date":1621465570,
+        "lesson":"Scaling image data that's been captured in an HTML canvas"
+    },
+    {
+        "date":1621638370,
+        "lesson":"The 83(b) election is very important for making sure you don't get destroyed by taxes as a founder. Don't forget it!"
+    },
+    {
+        "date":1621724770,
+        "lesson":" There's a javascript port that lets you run ffmpeg in the browser (slowly)"
+    },
+    {
+        "date":1621811170,
+        "lesson":"Using form data to send blobs and files to backend"
+    },
+    {
+        "date":1621897570,
+        "lesson":"Optional chaining (?.) and nullish operators (??) in Typescript"
+    },
+    {
+        "date":1622156770,
+        "lesson":"Writing bad code is defensible - you can't get fired if you're the only one who can read your code"
+    },
+    {
+        "date":1622502370,
+        "lesson":"Logging levels: trace, debug, info, warn, error, and fatal levels should be used properly for good logging practices."
     }
 ]
