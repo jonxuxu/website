@@ -1,7 +1,7 @@
 import Head from "next/head";
 import fs from "fs";
 import Link from "next/link";
-import moment from "moment";
+import dayjs from "dayjs";
 import { Typography, List, Space } from "antd";
 import { ClockCircleOutlined } from "@ant-design/icons";
 
@@ -47,7 +47,7 @@ const BlogPage = ({ filenames }) => {
           >
             <List.Item.Meta
               title={<Link href={`/blog/${m.url}`}>{m.title}</Link>}
-              description={moment.unix(m.date).format("MMM D, YYYY")}
+              description={dayjs(m.date, "YYYY-MM-DD").format("MMM D, YYYY")}
             />
           </List.Item>
         ))}

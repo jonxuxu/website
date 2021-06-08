@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
 import Highlighter from "react-highlight-words";
-import moment from "moment";
+import dayjs from "dayjs";
 import { Typography, Table, Input, Space, Button } from "antd";
 import lessons from "./lessons.json";
 
@@ -101,7 +101,7 @@ const LearnedPage = () => {
       // onFilter: (value, record) => record.name.indexOf(value) === 0,
       sorter: (a, b) => a.date - b.date,
       defaultSortOrder: "descend",
-      render: (text) => moment.utc(text, "X").format("ll"),
+      render: (text) => dayjs.unix(text).format("MMM D YYYY"),
       width: 130,
     },
     {
