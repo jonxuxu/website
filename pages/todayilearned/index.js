@@ -123,7 +123,7 @@ const LearnedPage = () => {
         learned every day. The universe is big and complex thing - learning a
         little bit about it every day makes life a bit more interesting.
       </p>
-      <Table columns={columns} dataSource={lessons} rowKey="id" />
+      <Table columns={columns} dataSource={lessons} rowKey="date" />
     </div>
   );
 };
