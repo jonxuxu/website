@@ -73,16 +73,10 @@ const Home = () => {
             <MainCol xs={24} md={12} xl={12}>
               <Title>Hello!</Title>
               <p>
-                I'm Jonathan. Many of my projects explore the magic of
-                cross-domain tech; whether that's exploring the future of
-                hardware in our lives, or creating mindful spaces using AI and
-                music.
+                I'm Jonathan. Many of my projects explore the magic of cross-domain tech; recently I've been building affordable smart home tech and creating mindful spaces using AI and music.
               </p>
               <p>
-                Apart from code, I am trying out better ways to cook, learn
-                languages, and make music. I enjoy meeting and sharing
-                interesting conversations with new people, so never hesitate to
-                reach out to me.
+                Apart from code, I enjoying cooking new things, learning languages, and making music. I love meeting and sharing interesting conversations with new people, so please do reach out!
               </p>
               <Divider />
             </MainCol>
