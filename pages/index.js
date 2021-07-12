@@ -73,10 +73,15 @@ const Home = () => {
             <MainCol xs={24} md={12} xl={12}>
               <Title>Hello!</Title>
               <p>
-                I'm Jonathan. Many of my projects explore the magic of cross-domain tech; recently I've been building affordable smart home tech and creating mindful spaces using AI and music.
+                I'm Jonathan. Many of my projects explore the magic of
+                cross-domain tech; recently I've been building affordable smart
+                home tech and creating mindful spaces using AI and music.
               </p>
               <p>
-                Apart from code, I enjoying cooking new things, learning languages, and making music. I love meeting and sharing interesting conversations with new people, so please do reach out!
+                Apart from code, I enjoying cooking new things, learning
+                languages, and making music. I love meeting and sharing
+                interesting conversations with new people, so please do reach
+                out!
               </p>
               <Divider />
             </MainCol>
@@ -86,26 +91,27 @@ const Home = () => {
               <Title level={5} style={{ marginBottom: 20 }}>
                 What I've been up to
               </Title>
-              <Timeline pending="Stay tuned...">
+              <Timeline pending="Building the next thing..." reverse={true}>
                 <Timeline.Item>
-                  Making fortune mining accessible @ Myriade
+                  <a href="https://myriade.io">Myriade</a>: Making fortune
+                  mining accessible
                 </Timeline.Item>
                 <Timeline.Item>
-                  Turning Chromebooks into supercomputers @ Fractal
+                  <a href="https://fractal.co">Fractal</a>: Turning Chromebooks
+                  into supercomputers
                 </Timeline.Item>
                 <Timeline.Item>
-                  Exploring decentralized produce distribution @ Mozilla
+                  Living in shared intellectual communities in New Mexico, San
+                  Francisco and Taipei
                 </Timeline.Item>
                 <Timeline.Item>
-                  MakingAI make musical spaces @ Noisy
+                  <a href="https://hebbia.ai">Hebbia</a>: Answering questions
+                  for everything
                 </Timeline.Item>
                 <Timeline.Item>
-                  Living in shared intellectual communities @ New Mexico and San
-                  Francisco
+                  Hacking on <Link href="/projects">projects</Link>
                 </Timeline.Item>
-                <Timeline.Item>
-                  Creating a better Discord for the Chinese market @ iDreamSky
-                </Timeline.Item>
+                <Timeline.Item>Travelling in New York now!</Timeline.Item>
               </Timeline>
             </Col>
             <Col xs={24} sm={12} md={8}>
