@@ -798,5 +798,65 @@
     {
         "date":1622502370,
         "lesson":"Logging levels: trace, debug, info, warn, error, and fatal levels should be used properly for good logging practices."
+    },
+    {
+        "date":1622681660,
+        "lesson":"Make sure you look at the rejectUnauthorized header if you have inexplicable errors between localhost and production"
+    },
+    {
+        "date":1623113660,
+        "lesson":"Seize the chance when you're inspired to write. These moments are fleeting and you won't write with the same conviction and authenticity about the topic later"
+    },
+    {
+        "date":1623200060,
+        "lesson":"When you feel strong about a limit stock purchase, be willing to do it immediately (even with mark up) because the moment may not present itself again"
+    },
+    {
+        "date":1623804860,
+        "lesson":"Used nvm - it's so nice"
+    },
+    {
+        "date":1623977660,
+        "lesson":"Saying no to many opportunities is a symptom of focus, not a causation of it"
+    },
+    {
+        "date":1624064060,
+        "lesson":"Someone can feel certain about something now, but you never know if they will feel certain later, even if they say they will. Plan for that"
+    },
+    {
+        "date":1624150460,
+        "lesson":"C++ file extensions can be written as .cc, .C, .c++, .CPP, .cpp, .cp, and .cxx. Bah!"
+    },
+    {
+        "date":1624236860,
+        "lesson":"Operator overloading in C++"
+    },
+    {
+        "date":1624323260,
+        "lesson":"Type aliases and typedef declarations, inline functions in C++"
+    },
+    {
+        "date":1624409660,
+        "lesson":"Linear interpolation in ray tracing. Also you can call it lerp"
+    },
+    {
+        "date":1624496060,
+        "lesson":"Public, private, and protected inheritance. Shared pointers in C++"
+    },
+    {
+        "date":1624582460,
+        "lesson":"Snell's Law: equation describing refraction in dielectrics"
+    },
+    {
+        "date":1625100860,
+        "lesson":"People change, and commitments made in earnest in the moment may fall through. Always plan for that."
+    },
+    {
+        "date":1625705660,
+        "lesson":"The most important decisions in running a startup are the people you hire - Ali Partovi"
+    },
+    {
+        "date":1625964860,
+        "lesson":"Use https://toogoodtogo.org to get good food for cheap"
     }
 ]
