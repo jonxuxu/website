@@ -1,14 +1,70 @@
 import Head from "next/head";
-import Image from "next/image";
+import { device } from "../../styles/breakpoints";
 import Link from "next/link";
 import styled from "styled-components";
-import { Typography, List, Space, Row, Col } from "antd";
+import { Typography } from "antd";
 
 const { Title } = Typography;
 
+const ProjectsPage = () => {
+  return (
+    <div style={{ paddingBottom: 80 }}>
+      <Head>
+        <title>Projects</title>
+      </Head>
+      <Title>Projects</Title>
+      <p>
+        This page is a work in progress, please mind the dust. Here is where
+        I'll be documenting some of the things that I've built.
+      </p>
+      <ProjectsContainer>
+        <Link href="/projects/polygon">
+          <ImgDiv>
+            <CoverImg alt="polygon" src="/images/projects/polygon/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/noisy">
+          <ImgDiv>
+            <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/trofi">
+          <ImgDiv>
+            <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/curius">
+          <ImgDiv>
+            <CoverImg alt="curius" src="/images/projects/curius/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/echo">
+          <ImgDiv>
+            <CoverImg alt="echo" src="/images/projects/echo/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/brett">
+          <ImgDiv>
+            <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/hackathons">
+          <ImgDiv>
+            <CoverImg
+              alt="hackathons"
+              src="/images/projects/hackathons/banner.png"
+            />
+          </ImgDiv>
+        </Link>
+      </ProjectsContainer>
+    </div>
+  );
+};
+
+export default ProjectsPage;
+
 const ImgDiv = styled.div`
   display: block;
-  margin-bottom: 20px;
   overflow: hidden;
   border-radius: 2px;
   max-height: 360px;
@@ -25,54 +81,18 @@ const CoverImg = styled.img`
   }
 `;
 
-const ProjectsPage = () => {
-  return (
-    <div>
-      <Head>
-        <title>Projects</title>
-      </Head>
-      <Title>Projects</Title>
-      <p>
-        This page is a work in progress, please mind the dust. Here, I'm
-        documenting a few of the things I've worked on, that I found pretty cool
-        to share about.
-      </p>
-      <Row gutter={20}>
-        <Col xs={24} sm={12}>
-          <Link href="/projects/noisy">
-            <ImgDiv>
-              <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
-            </ImgDiv>
-          </Link>
-          <Link href="/projects/curius">
-            <ImgDiv>
-              <CoverImg alt="curius" src="/images/projects/curius/banner.png" />
-            </ImgDiv>
-          </Link>
-          <Link href="/projects/hackathons">
-            <ImgDiv>
-              <CoverImg
-                alt="hackathons"
-                src="/images/projects/hackathons/banner.png"
-              />
-            </ImgDiv>
-          </Link>
-        </Col>
-        <Col xs={24} sm={12}>
-          <Link href="/projects/trofi">
-            <ImgDiv>
-              <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
-            </ImgDiv>
-          </Link>
-          <Link href="/projects/brett">
-            <ImgDiv>
-              <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
-            </ImgDiv>
-          </Link>
-        </Col>
-      </Row>
-    </div>
-  );
-};
+const ProjectsContainer = styled.div`
+  display: grid;
+  grid-auto-rows: auto;
+  column-gap: 12px;
+  row-gap: 12px;
+  margin: 0 auto;
 
-export default ProjectsPage;
+  @media ${device.mobileS} {
+    grid-template-columns: 1fr;
+  }
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+`;
