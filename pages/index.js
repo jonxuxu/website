@@ -180,7 +180,7 @@ const SideBar = () => (
         <GithubOutlined />
       </WhiteA>
     </div>
-    <div>
+    {/* <div>
       <a href="https://webring.xxiivv.com/#random" target="_blank">
         <HoverSvg
           src="https://webring.xxiivv.com/icon.white.svg"
@@ -188,7 +188,7 @@ const SideBar = () => (
           height={18}
         />
       </a>
-    </div>
+    </div> */}
   </div>
 );
 
