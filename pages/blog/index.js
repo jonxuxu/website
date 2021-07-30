@@ -31,8 +31,9 @@ const BlogPage = ({ filenames }) => {
       </Head>
       <Title>Jonathan's Blog</Title>
       <p>
-        The soup pot, the salad bowl, the dumpster bin for all my thoughts - I'm
-        not sure how to classify the collection so anything goes.
+        The soup pot, the salad bowl, the dumpster bin for all my thoughts - I
+        write about tech, life, and whatever is on my mind at the time.
+        Hopefully you may find some useful tidbits in this buffet!
       </p>
       <List itemLayout="horizontal">
         {metas.map((m) => (
