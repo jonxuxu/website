@@ -858,5 +858,49 @@
     {
         "date":1625964860,
         "lesson":"Use https://toogoodtogo.org to get good food for cheap"
+    },
+    {
+        "date":1626221146,
+        "lesson":"Cheap anti-tamper mechanisms for custom PCBs - conductive layer, photodiodes"
+    },
+    {
+        "date":1626307546,
+        "lesson":"The music theory of suspended chords"
+    },
+    {
+        "date":1626393946,
+        "lesson":"Learning Jetpack Compose on Android Studio Arctic Fox"
+    },
+    {
+        "date":1626480346,
+        "lesson":"Hasura migrations: version control for Hasura databases"
+    },
+    {
+        "date":1626566746,
+        "lesson":"Playing with the NTAG424 NFC tag"
+    },
+    {
+        "date":1626653146,
+        "lesson":"Pcscd (NFC reader driver) installation and usage - it's a pain"
+    },
+    {
+        "date":1626912346,
+        "lesson":"PostgreSQL extensions"
+    },
+    {
+        "date":1627344346,
+        "lesson":"PostgreSQL SSL connection parameters"
+    },
+    {
+        "date":1627430746,
+        "lesson":"Lotka-Volterra equations and how they model the interaction of two species"
+    },
+    {
+        "date":1627603546,
+        "lesson":"Bought my first NFT!"
+    },
+    {
+        "date":1627862746,
+        "lesson":"When NFTs get revealed in a drop, the market normalizes with higher highs and lower lows. Snipe rares and dump commons."
     }
 ]
