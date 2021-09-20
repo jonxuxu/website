@@ -1,4 +1,72 @@
 {
+    "beef-udon":
+    {
+        "name": "Beef Udon",
+        "subtitle": "Easy peasy michelin star squeezy",
+        "description": "If you get the right ingredients, this is an amazingly simple way to make restaurant-quality udon. My roomate said 'it was really good'",
+        "image": "/images/cooking/beef-udon.jpg",
+        "time":"15 minutes",
+        "servings": 2,
+        "type": "Main Course",
+        "ingredients": [
+            {
+                "unit": 0.5,
+                "item": "tbsp cooking oil"
+            },
+            {
+                "unit": 2,
+                "item": "servings udon noodles"
+            },
+            {
+                "header": "For Beef"
+            },
+            {
+                "unit":1,
+                "item": "tbsp soy sauce"
+            },
+            {
+                "unit":1,
+                "item":"tbsp sugar"
+            },
+            {
+                "unit":2,
+                "item":"green onions"
+            },
+            {
+                "header": "For Broth"
+            },
+            {
+                "unit": 1,
+                "item": "tbsp mirin"
+            },
+            {
+                "unit": 1,
+                "item": "tbsp soy sauce"
+            },
+            {
+                "unit": 1,
+                "item": "tsp sugar"
+            },
+            {
+                "unit": 2,
+                "item": "cups dashi*"
+            }
+        ],
+        "steps": [
+            "In a small saucepan, combine mirin, soy sauce, sugar, and dashi, and bring to a boil. Set aside.",
+            "Bring a large pot of water to a boil.",
+            "Add udon, and cook on medium-low, covered, for 10 minutes. Turn off heat when done.",
+            "Cut the sliced beef into bite sized pieces. Thinly slice the green onions.",
+            "Put a large frying pan on medium heat. Add cooking oil, thinly sliced beef and half of the sliced green onion.",
+            "When beef is browned and seared, add soy sauce and sugar. Turn off heat after 5 minutes.",
+            "Put the udon in serving bowls. Pour in the broth until it almost covers the noodles.",
+            "Place cooked beef on top, and sprinkle the remaining sliced green onions.",
+            "If you are a fancy pants, you can garnish with bonito flakes, shichimi togarashi, narutomaki, and mitsuba."
+        ],
+        "notes": [
+            "*: You can make dashi by mixing instant dashi powder with water."
+        ]
+    },
     "taiwanese-fried-chicken":
     {
         "name": "Taiwanese Fried Chicken",
@@ -239,7 +307,7 @@
         "name": "Sheng Jian Bao",
         "subtitle": "Shanghai style pan-fried pork buns",
         "description": "I love making these with friends. The filling is where the flavor is at, so if that part is done right you get a good bao.",
-        "image": "https://www.seriouseats.com/recipes/images/2015/03/20150323-pan-fried-pork-bao-shao-zhong-24-1500x1125.jpg",
+        "image": "https://thefoodistuk.files.wordpress.com/2015/02/img_1503.jpg",
         "time":"1.5 hours",
         "servings": 2,
         "type": "Main Course",
