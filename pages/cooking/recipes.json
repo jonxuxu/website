@@ -221,7 +221,8 @@
             "Turn the heat to low. Simmer, stirring occasionally, for 10 minutes.",
             "Let the mixture cool for 20 minutes.",
             "Put in a blender, and blend until you get a smoothie texture.",
-            "Pour in a bowl/tub, put in a freezer, and enjoy when it's solid (freeze time depends on freezer temp)."
+            "Pour in a bowl/tub, and mix in milk and cream.",
+            "Put in a freezer, and enjoy when it becomes solid."
         ],
         "notes": [
             "Frozen or fresh blueberries does not matter"
@@ -272,15 +273,15 @@
                 "item":"tbsp fish sauce"
             },
             {
-                "unit":75,
-                "item": "ml water"
+                "unit":3,
+                "item": "tbsp water"
             },
             {
                 "unit":1,
                 "item": "clove garlic, minced"
             },
             {
-                "unit":2,
+                "unit":1,
                 "item": "tbsp lime juice"
             },
             {
@@ -292,7 +293,7 @@
             "Bring a medium saucepan of water to boil. Boil rice vermicelli and shrimp 5 minutes.",
             "Drain, pouring some of the hot water in a plate for later.",
             "Cut shrimp in half, lengthwise.",
-            "Dip one wrapper into the hot water for 2 seconds to soften. Lay wrapper flat on a plate, and place on it a handful total of vermecelli, shrimp, basil, and bean sprouts.",
+            "Dip one wrapper into the saved hot water for 2 seconds to soften. Lay wrapper flat on a plate, and place on it a handful total of vermecelli, shrimp, basil, lettuce, and bean sprouts.",
             "Fold two sides of the wrapper in to the center. Bring the bottom up to cover the center, and roll it up like a burrito.",
             "Repeat steps 4-5 for other wrappers.",
             "Mix the sauce ingredients together in a small bowl. Put some hoison sauce into another bowl.",
