@@ -91,7 +91,7 @@ const Home = () => {
               <Title level={5} style={{ marginBottom: 20 }}>
                 What I've been up to
               </Title>
-              <Timeline pending="Building the next thing..." reverse={true}>
+              <Timeline pending="Building a startup..." reverse={true}>
                 <Timeline.Item>
                   <a href="https://myriade.io">Myriade</a>: Making fortune
                   mining accessible
@@ -111,7 +111,6 @@ const Home = () => {
                 <Timeline.Item>
                   Hacking on <Link href="/projects">projects</Link>
                 </Timeline.Item>
-                <Timeline.Item>Travelling in New York now!</Timeline.Item>
               </Timeline>
             </Col>
             <Col xs={24} sm={12} md={8}>
