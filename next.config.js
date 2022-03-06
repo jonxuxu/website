@@ -3,6 +3,7 @@ const withPlugins = require("next-compose-plugins");
 const withSass = require("@zeit/next-sass");
 const withLess = require("@zeit/next-less");
 const withCSS = require("@zeit/next-css");
+const optimizedImages = require("next-optimized-images");
 
 // const optimizedImages = require("next-optimized-images");
 
@@ -38,6 +39,12 @@ module.exports = withPlugins([
     withMDX,
     {
       pageExtensions: ["js", "jsx", "mdx"],
+    },
+  ],
+  [
+    optimizedImages,
+    {
+      /* config for next-optimized-images */
     },
   ],
 ]);

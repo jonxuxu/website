@@ -125,11 +125,11 @@ const Home = () => {
                   <strong>Grow meaningfully: </strong>Have a clear compass for
                   what your definition of goodness and success is and work
                   towards that. Is what you are working towards something that's
-                  truly important?
+                  truly important to you?
                 </li>
                 <li>
                   <strong>Motivate internally: </strong>Doing something out of
-                  innate interest will never feel old, tiresome or competitive.
+                  innate interest will never feel old or tiresome.
                 </li>
                 <li>
                   <strong>Experiment and explore: </strong>Life is short, and
