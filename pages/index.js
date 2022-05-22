@@ -179,15 +179,15 @@ const SideBar = () => (
         <GithubOutlined />
       </WhiteA>
     </div>
-    {/* <div>
-      <a href="https://webring.xxiivv.com/#random" target="_blank">
+    <div>
+      <a href="https://se-webring.xyz/" target="_blank">
         <HoverSvg
           src="https://webring.xxiivv.com/icon.white.svg"
           width={18}
           height={18}
         />
       </a>
-    </div> */}
+    </div>
   </div>
 );
 

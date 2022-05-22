@@ -36,8 +36,8 @@ const SideBar = () => (
         <GithubOutlined />
       </BlackA>
     </div>
-    {/* <div>
-      <a href="https://webring.xxiivv.com/#random" target="_blank">
+    <div>
+      <a href="https://se-webring.xyz/" target="_blank">
         <img
           style={{
             filter:
@@ -48,7 +48,7 @@ const SideBar = () => (
           height={18}
         />
       </a>
-    </div> */}
+    </div>
   </div>
 );
 
