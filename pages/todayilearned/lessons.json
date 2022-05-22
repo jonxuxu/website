@@ -1054,5 +1054,101 @@
   {
     "date": 1646480837,
     "lesson": "Drawing: A smooth line is much better than a jagged but accurate line"
+  },
+  {
+    "date": 1646771650,
+    "lesson": "Social loafing - a individuals take less initiative in a large group than a small group"
+  },
+  {
+    "date": 1646858050,
+    "lesson": "Our sense of self is easily changed by social situations. Mindfulness helps us stay grounded in different situations"
+  },
+  {
+    "date":1646944450,
+    "lesson": "Attempting to get AWS to approve me to use a GPU vm"
+  },
+  {
+    "date":1647030850,
+    "lesson":"Spiritual materialism: The trap of taking pride in one's humility"
+  },
+  {
+    "date":1647372850,
+    "lesson": "Chord progressions: Songs make so much more sense now!"
+  },
+  {
+    "date":1647459250,
+    "lesson": "Dunbar's number: the limit of the relationships we can have in life"
+  },
+  {
+    "date":1647545650,
+    "lesson": "Affine transformations"
+  },
+  {
+    "date":1647632050,
+    "lesson": "Learning to use Ableton Live"
+  },
+  {
+    "date":1647718450,
+    "lesson": "Drawing ellipses"
+  },
+  {
+    "date":1647891250,
+    "lesson": "Suspended chords and syncopation"
+  },
+  {
+    "date":1647977650,
+    "lesson": "The fundamentals of mixing: foundation, pads, rhythm, lead, fills"
+  },
+  {
+    "date":1648150450,
+    "lesson": "HTML canvas global composite operations"
+  },
+  {
+    "date":1649446450,
+    "lesson": "Sampling: Recording my own sounds. Thinking about objects (what makes the sound) and exciters (what makes the object make sound)"
+  },
+  {
+    "date":1649619250,
+    "lesson": "Nicomachean ethics book 3: Our habits determine our character which determines our habits"
+  },
+  {
+    "date":1650310450,
+    "lesson": "You don't need to find that one thing that gives you passion - you can be passionate about different things at different times"
+  },
+  {
+    "date":1650569650,
+    "lesson": "Reverse engineering dalle2's api"
+  },
+  {
+    "date":1650656050,
+    "lesson": "Selenium - a toole for browser automation"
+  },
+  {
+    "date":1651520050,
+    "lesson": "Synthesizing sounds - amplitude envelope for attack, decay, sustain and release"
+  },
+  {
+    "date":1651606450,
+    "lesson": "Taking a sculpting class: a good idea is even more important than good technique"
+  },
+  {
+    "date":1652038450,
+    "lesson": "Proving asymptotic bounds for algorithms"
+  },
+  {
+    "date":1652470450,
+    "lesson": "Learning Airtable + automations"
+  },
+  {
+    "date":1652729650,
+    "lesson": "Woodworking: learning to use the table saw, hack saw, band saw and drill press"
+  },
+  {
+    "date":1653075250,
+    "lesson": "Proving asymptotic function behavior on first principles"
+  },
+  {
+    "date":1653075250,
+    "lesson": "Generating series in combinatorics"
   }
 ]
