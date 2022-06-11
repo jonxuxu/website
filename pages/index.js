@@ -65,8 +65,8 @@ const Home = () => {
             <MainCol xs={24} md={7} xl={4}>
               <div style={{ minHeight: 200 }}>
                 <img
-                  src="https://i.ibb.co/XLq7z0h/profile-Circle.jpg"
-                  style={{ width: "100%" }}
+                  src="https://i.ibb.co/x6hQ8Ng/profile-pic.jpg"
+                  style={{ width: "100%", borderRadius: "50%" }}
                 />
               </div>
             </MainCol>
