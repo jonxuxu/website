@@ -1,21 +1,33 @@
 import React, { useRef, useState } from "react";
+import { PrismaClient } from "@prisma/client";
+
 import Head from "next/head";
 import Highlighter from "react-highlight-words";
 import dayjs from "dayjs";
 import { Typography, Table, Input, Space, Button } from "antd";
-import lessons from "./lessons.json";
 
 import { SearchOutlined } from "@ant-design/icons";
 
+export async function getStaticProps() {
+  const prisma = new PrismaClient();
+  const lessons = await prisma.Lesson.findMany();
+  lessons.forEach((lesson) => {
+    lesson.createdAt = lesson.createdAt.getTime();
+  });
+
+  return {
+    props: { lessons },
+  };
+}
+
 const { Title } = Typography;
 
-const LearnedPage = () => {
+const LessonsPage = ({ lessons }) => {
   const searchInput = useRef(null);
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
 
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
-    console.log(dataIndex);
     confirm();
     setSearchText(selectedKeys[0]);
     setSearchedColumn(dataIndex);
@@ -95,13 +107,13 @@ const LearnedPage = () => {
   const columns = [
     {
       title: "Date",
-      dataIndex: "date",
+      dataIndex: "createdAt",
       // specify the condition of filtering result
       // here is that finding the name started with `value`
       // onFilter: (value, record) => record.name.indexOf(value) === 0,
       sorter: (a, b) => a.date - b.date,
       defaultSortOrder: "descend",
-      render: (text) => dayjs.unix(text).format("MMM D YYYY"),
+      render: (text) => dayjs(text).format("MMM D YYYY"),
       width: 130,
     },
     {
@@ -123,9 +135,9 @@ const LearnedPage = () => {
         learned every day. The universe is big and complex thing - learning a
         little bit about it every day makes life a bit more interesting.
       </p>
-      <Table columns={columns} dataSource={lessons} rowKey="date" />
+      <Table columns={columns} dataSource={lessons} rowKey="id" />
     </div>
   );
 };
 
-export default LearnedPage;
+export default LessonsPage;
