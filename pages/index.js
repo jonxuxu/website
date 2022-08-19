@@ -91,13 +91,13 @@ const Home = () => {
               <Title level={5} style={{ marginBottom: 20 }}>
                 What I've been up to
               </Title>
-              <Timeline pending="Building a startup..." reverse={true}>
+              <Timeline pending="ML research at Stanford" reverse={true}>
                 <Timeline.Item>
                   <a href="https://myriade.io">Myriade</a>: Making fortune
                   mining accessible
                 </Timeline.Item>
                 <Timeline.Item>
-                  <a href="https://fractal.co">Fractal</a>: Turning Chromebooks
+                  <a href="https://whist.com">Whist</a>: Turning Chromebooks
                   into supercomputers
                 </Timeline.Item>
                 <Timeline.Item>
@@ -107,6 +107,14 @@ const Home = () => {
                 <Timeline.Item>
                   <a href="https://hebbia.ai">Hebbia</a>: Answering questions
                   for everything
+                </Timeline.Item>
+                <Timeline.Item>
+                  Exploring founding in{" "}
+                  <a href="https://legendsofvenari.com">crypto gaming</a>,{" "}
+                  <a href="https://iyk.app">wearable NFTs</a>, and{" "}
+                  <a href="https://uwaterloo.ca/conrad-school-entrepreneurship-business/news/meet-winter-2022-enterprise-co-op-pitch-winners">
+                    pharmacy
+                  </a>
                 </Timeline.Item>
                 <Timeline.Item>
                   Hacking on <Link href="/projects">projects</Link>

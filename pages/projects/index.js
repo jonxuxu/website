@@ -13,11 +13,18 @@ const ProjectsPage = () => {
         <title>Projects</title>
       </Head>
       <Title>Projects</Title>
-      <p>
-        This page is a work in progress, please mind the dust. Here is where
-        I'll be documenting some of the things that I've built.
-      </p>
+      <p>Some of the things that I've built, tinkered with, and worked on.</p>
       <ProjectsContainer>
+        <Link href="https://legendsofvenari.com/">
+          <ImgDiv>
+            <CoverImg alt="lov" src="/images/projects/lov/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="https://iyk.app">
+          <ImgDiv>
+            <CoverImg alt="iyk" src="/images/projects/iyk.png" />
+          </ImgDiv>
+        </Link>
         <Link href="/projects/polygon">
           <ImgDiv>
             <CoverImg alt="polygon" src="/images/projects/polygon/banner.png" />
@@ -28,16 +35,19 @@ const ProjectsPage = () => {
             <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
           </ImgDiv>
         </Link>
-        <Link href="/projects/trofi">
-          <ImgDiv>
-            <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
-          </ImgDiv>
-        </Link>
         <Link href="/projects/curius">
           <ImgDiv>
             <CoverImg alt="curius" src="/images/projects/curius/banner.png" />
           </ImgDiv>
         </Link>
+        <Link href="/projects/trofi">
+          <ImgDiv>
+            <CoverImg alt="trofi" src="/images/projects/trofi/banner.png" />
+          </ImgDiv>
+        </Link>
+        <ImgDiv>
+          <CoverImg alt="moments" src="/images/projects/moments/banner.png" />
+        </ImgDiv>
         <Link href="/projects/echo">
           <ImgDiv>
             <CoverImg alt="echo" src="/images/projects/echo/banner.png" />
