@@ -91,7 +91,10 @@ const Home = () => {
               <Title level={5} style={{ marginBottom: 20 }}>
                 What I've been up to
               </Title>
-              <Timeline pending="ML research at Stanford" reverse={true}>
+              <Timeline
+                pending="ML research @ Stanford Sustain Lab"
+                reverse={true}
+              >
                 <Timeline.Item>
                   <a href="https://myriade.io">Myriade</a>: Making fortune
                   mining accessible
@@ -101,15 +104,14 @@ const Home = () => {
                   into supercomputers
                 </Timeline.Item>
                 <Timeline.Item>
-                  Living in shared intellectual communities in New Mexico, San
-                  Francisco and Taipei
+                  Exploring coliving in New Mexico, San Francisco and Taipei
                 </Timeline.Item>
                 <Timeline.Item>
                   <a href="https://hebbia.ai">Hebbia</a>: Answering questions
                   for everything
                 </Timeline.Item>
                 <Timeline.Item>
-                  Exploring founding in{" "}
+                  Founding startups in{" "}
                   <a href="https://legendsofvenari.com">crypto gaming</a>,{" "}
                   <a href="https://iyk.app">wearable NFTs</a>, and{" "}
                   <a href="https://uwaterloo.ca/conrad-school-entrepreneurship-business/news/meet-winter-2022-enterprise-co-op-pitch-winners">
