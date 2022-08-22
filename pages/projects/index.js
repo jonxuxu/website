@@ -15,12 +15,12 @@ const ProjectsPage = () => {
       <Title>Projects</Title>
       <p>Some of the things that I've built, tinkered with, and worked on.</p>
       <ProjectsContainer>
-        <Link href="https://legendsofvenari.com/">
+        <Link href="/projects/lov">
           <ImgDiv>
             <CoverImg alt="lov" src="/images/projects/lov/banner.png" />
           </ImgDiv>
         </Link>
-        <Link href="https://iyk.app">
+        <Link href="/projects/iyk">
           <ImgDiv>
             <CoverImg alt="iyk" src="/images/projects/iyk.png" />
           </ImgDiv>
@@ -30,14 +30,14 @@ const ProjectsPage = () => {
             <CoverImg alt="polygon" src="/images/projects/polygon/banner.png" />
           </ImgDiv>
         </Link>
-        <Link href="/projects/noisy">
-          <ImgDiv>
-            <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
-          </ImgDiv>
-        </Link>
         <Link href="/projects/curius">
           <ImgDiv>
             <CoverImg alt="curius" src="/images/projects/curius/banner.png" />
+          </ImgDiv>
+        </Link>
+        <Link href="/projects/noisy">
+          <ImgDiv>
+            <CoverImg alt="noisy" src="/images/projects/noisy/banner.png" />
           </ImgDiv>
         </Link>
         <Link href="/projects/trofi">
