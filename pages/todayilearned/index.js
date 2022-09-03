@@ -134,9 +134,9 @@ const LessonsPage = ({ lessons }) => {
       </Head>
       <Title>Today I Learned</Title>
       <p>
-        This is a special part of the digital woods where I try to log what I've
-        learned every day. The universe is big and complex thing - learning a
-        little bit about it every day makes life a bit more interesting.
+        I hope to use this as a place to log what I've learned each day. The
+        universe is wonderfully big and complex - I'd like to make an evergreen
+        habit of discovering more about the world I live in.
       </p>
       <Table columns={columns} dataSource={lessons} rowKey="id" />
     </div>
