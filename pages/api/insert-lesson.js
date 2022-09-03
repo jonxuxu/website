@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+
 const prisma = new PrismaClient();
 
 export default async (req, res) => {
@@ -9,18 +10,16 @@ export default async (req, res) => {
     return;
   }
 
-  console.log(req.body);
-  const json = JSON.parse(req.body);
-  console.log(json);
+  const lesson = req.body.lesson;
+  const date = new Date(req.body.createdAt);
 
-  const lesson = "pog";
-
-  //   const lesson = await prisma.Lesson.create({
-  //     data: {
-  //       lesson: JSON.parse(req.body),
-  //     },
-  //   });
+  const result = await prisma.Lesson.create({
+    data: {
+      lesson: lesson,
+      createdAt: date,
+    },
+  });
 
   res.statusCode = 200;
-  res.json(lesson);
+  res.json(result);
 };

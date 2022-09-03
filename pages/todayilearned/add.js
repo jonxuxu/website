@@ -1,24 +1,30 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Modal, Form, Input, Typography, DatePicker, Button } from "antd";
-import dayjs from "dayjs";
+import { Modal, Form, Input, Typography, Button, message } from "antd";
+import DatePicker from "../../components/DatePicker";
 
 const { Title } = Typography;
 
 export default function AddPage() {
   const [authenticated, setAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
+  const [form] = Form.useForm();
 
   const addLesson = async (values) => {
     const res = await fetch("/api/insert-lesson", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${password}`,
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(values),
     });
-    console.log(res);
+    if (res.status === 200) {
+      message.success("Added lesson");
+      form.resetFields();
+    } else {
+      message.error("Failed to add lesson");
+    }
   };
 
   return (
@@ -39,12 +45,7 @@ export default function AddPage() {
       </Modal>
 
       <Title>Add a new lesson</Title>
-      <Form
-        onFinish={addLesson}
-        initialValues={{
-          ["createdAt"]: dayjs(),
-        }}
-      >
+      <Form onFinish={addLesson} form={form}>
         <Form.Item
           label="Today I learned..."
           name="lesson"
@@ -52,7 +53,11 @@ export default function AddPage() {
         >
           <Input />
         </Form.Item>
-        <Form.Item label="Date" name="createdAt">
+        <Form.Item
+          label="Date"
+          name="createdAt"
+          rules={[{ required: true, message: "Date is required" }]}
+        >
           <DatePicker />
         </Form.Item>
         <Form.Item>

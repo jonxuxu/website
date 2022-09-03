@@ -4,7 +4,6 @@ const withSass = require("@zeit/next-sass");
 const withLess = require("@zeit/next-less");
 const withCSS = require("@zeit/next-css");
 const optimizedImages = require("next-optimized-images");
-const AntdDayjsWebpackPlugin = require("antd-dayjs-webpack-plugin");
 
 // const optimizedImages = require("next-optimized-images");
 
@@ -48,7 +47,6 @@ module.exports = withPlugins([
       /* config for next-optimized-images */
     },
   ],
-  [new AntdDayjsWebpackPlugin()],
 ]);
 
 // return withLess({

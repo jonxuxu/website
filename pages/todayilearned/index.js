@@ -111,7 +111,7 @@ const LessonsPage = ({ lessons }) => {
       // specify the condition of filtering result
       // here is that finding the name started with `value`
       // onFilter: (value, record) => record.name.indexOf(value) === 0,
-      sorter: (a, b) => a.date - b.date,
+      sorter: (a, b) => a.createdAt - b.createdAt,
       defaultSortOrder: "descend",
       render: (text) => dayjs(text).format("MMM D YYYY"),
       width: 130,

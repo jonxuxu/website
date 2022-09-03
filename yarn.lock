@@ -837,11 +837,6 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-antd-dayjs-webpack-plugin@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/antd-dayjs-webpack-plugin/-/antd-dayjs-webpack-plugin-1.0.6.tgz#7d98bcb51422248b8cd4a32e352a0425a3bffa3a"
-  integrity sha512-UlK3BfA0iE2c5+Zz/Bd2iPAkT6cICtrKG4/swSik5MZweBHtgmu1aUQCHvICdiv39EAShdZy/edfP6mlkS/xXg==
-
 antd@^4.9.4:
   version "4.10.0"
   resolved "https://registry.yarnpkg.com/antd/-/antd-4.10.0.tgz#1d73c94ec11105d90b374be6975c2a257d34340c"
