@@ -13,6 +13,9 @@ export async function getStaticProps() {
   const lessons = await prisma.Lesson.findMany();
   lessons.forEach((lesson) => {
     lesson.createdAt = lesson.createdAt.getTime();
+    if (lesson.id > 288) {
+      console.log(lesson);
+    }
   });
 
   return {
