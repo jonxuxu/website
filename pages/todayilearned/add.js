@@ -19,12 +19,6 @@ export default function AddPage() {
       },
       body: JSON.stringify(values),
     });
-    if (res.status === 200) {
-      message.success("Added lesson");
-      form.resetFields();
-    } else {
-      message.error("Failed to add lesson");
-    }
   };
 
   return (
