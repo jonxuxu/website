@@ -170,14 +170,25 @@ const SideBar = () => (
       </Link>
     </div>
     <div>
-      <Link passHref href="/projects">
-        <WhiteA>Projects</WhiteA>
-      </Link>
+      <Link href="/projects"><WhiteA>Projects</WhiteA></Link>
     </div>
     <div>
-      <Link passHref href="/cooking">
-        <WhiteA>Cooking</WhiteA>
-      </Link>
+      <a  href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q" target="_blank">
+        <WhiteA>Notes</WhiteA>
+      </a>
+    </div>
+    <div>
+      <Link href="/cooking"><WhiteA>Cooking</WhiteA></Link>
+    </div>
+    <div>
+      <a  href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g" target="_blank">
+        <WhiteA>Walks</WhiteA>
+      </a>
+    </div>
+    <div>
+      <a  href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a" target="_blank">
+        <WhiteA>Library</WhiteA>
+      </a>
     </div>
     <div style={{ marginTop: 40 }}>
       <WhiteA href="https://twitter.com/jonxuxu" target="_blank">
@@ -214,9 +225,25 @@ const TopMenu = () => (
     <Menu.Item key="projects">
       <Link href="/projects">Projects</Link>
     </Menu.Item>
+    <Menu.Item key="notes">
+      <a  href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q" target="_blank">
+        Notes
+      </a>
+    </Menu.Item>
     <Menu.Item key="cooking">
       <Link href="/cooking">Cooking</Link>
     </Menu.Item>
+    <Menu.Item key="walks">
+      <a  href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g" target="_blank">
+        Walks
+      </a>    
+    </Menu.Item>
+    <Menu.Item key="library">
+      <a  href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a" target="_blank">
+        Library
+      </a>
+    </Menu.Item>
+
   </Menu>
 );
 

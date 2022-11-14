@@ -24,7 +24,22 @@ const SideBar = () => (
       <Link href="/projects">Projects</Link>
     </div>
     <div>
+      <a  href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q" target="_blank">
+        Notes
+      </a>
+    </div>
+    <div>
       <Link href="/cooking">Cooking</Link>
+    </div>
+    <div>
+      <a  href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g" target="_blank">
+        Walks
+      </a>
+    </div>
+    <div>
+      <a  href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a" target="_blank">
+        Library
+      </a>
     </div>
     <div style={{ marginTop: 40 }}>
       <BlackA href="https://twitter.com/jonxuxu" target="_blank">
