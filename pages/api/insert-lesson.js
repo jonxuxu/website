@@ -7,8 +7,11 @@ export default async (req, res) => {
   if (bearerToken !== "Bearer poggers") {
     res.statusCode = 401;
     res.end("Unauthorized");
+    console.log("insert-lesson called with invalid token")
     return;
   }
+
+  console.log("insert-lesson called with valid token")
 
   const lesson = req.body.lesson;
   const date = new Date(req.body.createdAt);
