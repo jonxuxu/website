@@ -1,5 +1,4 @@
 import { PrismaClient } from "@prisma/client";
-import "../../utils/prisma";
 
 // So that we can use BigInts in the database
 BigInt.prototype.toJSON = function() {
