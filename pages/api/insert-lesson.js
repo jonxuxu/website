@@ -1,4 +1,10 @@
 import { PrismaClient } from "@prisma/client";
+import "../../utils/prisma";
+
+// So that we can use BigInts in the database
+BigInt.prototype.toJSON = function() {
+  return Number(this);
+}
 
 const prisma = new PrismaClient();
 
@@ -16,9 +22,7 @@ export default async (req, res) => {
   const lesson = req.body.lesson;
   const date = new Date(req.body.createdAt);
 
-  console.log(lesson, date)
   // log type of lesson and date
-  console.log(typeof lesson, typeof date)
 
   const result = await prisma.Lesson.create({
     data: {

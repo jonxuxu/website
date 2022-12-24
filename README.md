@@ -12,9 +12,11 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Prisma Migrations
+## Workflow
 
-npx prisma migrate dev --name added_lessons
+npx prisma db pull
+npx prisma migrate dev
+npx prisma db push
 
 ## View Database
 npx prisma studio

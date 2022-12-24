@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { PrismaClient } from "@prisma/client";
+import "../../utils/prisma";
 
 import Head from "next/head";
 import Highlighter from "react-highlight-words";
@@ -13,6 +14,7 @@ export async function getStaticProps() {
   const lessons = await prisma.Lesson.findMany();
   lessons.forEach((lesson) => {
     lesson.createdAt = lesson.createdAt.getTime();
+    lesson.id = Number(lesson.id);
   });
 
   return {

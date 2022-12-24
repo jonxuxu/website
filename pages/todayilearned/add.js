@@ -8,12 +8,12 @@ const { Title } = Typography;
 export default function AddPage() {
   const [authenticated, setAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
-  const [status, setStatus] = useState("idle")
+  const [loading, setLoading] = useState(false)
   const [form] = Form.useForm();
   const [messageApi, contextHolder] = message.useMessage();
 
   const addLesson = async (values) => {
-    setStatus("loading")
+    setLoading(true)
     const res = await fetch("/api/insert-lesson", {
       method: "POST",
       headers: {
@@ -23,8 +23,9 @@ export default function AddPage() {
       body: JSON.stringify(values),
     });
     const statusCode = res.status
+
     // check statusCode and show message
-    setStatus("idle")
+    setLoading(false)
     if (statusCode === 200) {
       messageApi.open({
         type: 'success',
@@ -75,7 +76,7 @@ export default function AddPage() {
           <DatePicker />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" htmlType="submit" loading={status === "loading"}>
+          <Button type="primary" htmlType="submit" loading={loading}>
             Submit
           </Button>
         </Form.Item>
