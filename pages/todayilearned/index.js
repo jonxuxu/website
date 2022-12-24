@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { PrismaClient } from "@prisma/client";
-import "../../utils/prisma";
 
 import Head from "next/head";
 import Highlighter from "react-highlight-words";
