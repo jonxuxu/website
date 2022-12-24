@@ -13,9 +13,6 @@ export async function getStaticProps() {
   const lessons = await prisma.Lesson.findMany();
   lessons.forEach((lesson) => {
     lesson.createdAt = lesson.createdAt.getTime();
-    if (lesson.id > 288) {
-      console.log(lesson);
-    }
   });
 
   return {
@@ -89,8 +86,8 @@ const LessonsPage = ({ lessons }) => {
             .toLowerCase()
             .includes(value.toLowerCase())
         : "",
-    onFilterDropdownVisibleChange: (visible) => {
-      if (visible) {
+    onFilterDropdownVisibleChange: (open) => {
+      if (open) {
         setTimeout(() => searchInput.current.select(), 100);
       }
     },

@@ -16,8 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 npx prisma migrate dev --name added_lessons
 
+## View Database
+npx prisma studio
+
 ## TODOS
 
-- include xutown content
-- add bookshelf
 - add quotes page

@@ -13,12 +13,18 @@ export default async (req, res) => {
   const lesson = req.body.lesson;
   const date = new Date(req.body.createdAt);
 
+  console.log(lesson, date)
+  // log type of lesson and date
+  console.log(typeof lesson, typeof date)
+
   const result = await prisma.Lesson.create({
     data: {
       lesson: lesson,
       createdAt: date,
     },
   });
+
+  console.log("SUCCESS")
 
   res.statusCode = 200;
   res.json(result);
