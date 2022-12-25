@@ -1,32 +1,24 @@
-import React, { useRef, useState } from "react";
-import { PrismaClient } from "@prisma/client";
+import React, { useRef, useState, useEffect } from "react";
 
 import Head from "next/head";
 import Highlighter from "react-highlight-words";
 import dayjs from "dayjs";
 import { Typography, Table, Input, Space, Button } from "antd";
+import useSWR from 'swr';
 
 import { SearchOutlined } from "@ant-design/icons";
 
-export async function getStaticProps() {
-  const prisma = new PrismaClient();
-  const lessons = await prisma.Lesson.findMany();
-  lessons.forEach((lesson) => {
-    lesson.createdAt = lesson.createdAt.getTime();
-    lesson.id = Number(lesson.id);
-  });
 
-  return {
-    props: { lessons },
-  };
-}
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 const { Title } = Typography;
 
-const LessonsPage = ({ lessons }) => {
+const LessonsPage = () => {
   const searchInput = useRef(null);
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
+
+  const { data, error, isLoading } = useSWR('/api/list-lesson', fetcher)
 
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
@@ -136,7 +128,7 @@ const LessonsPage = ({ lessons }) => {
         universe is wonderfully big and complex - I'd like to make an evergreen
         habit of discovering more about the world I live in.
       </p>
-      <Table columns={columns} dataSource={lessons} rowKey="id" />
+      <Table columns={columns} dataSource={data} rowKey="id" loading={isLoading}/>
     </div>
   );
 };

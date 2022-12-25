@@ -45,7 +45,7 @@ export default function AddPage() {
       {contextHolder}
 
       <Modal
-        visible={!authenticated}
+        open={!authenticated}
         closable={false}
         okText="Login"
         cancelText={<Link href="/todayilearned">Cancel</Link>}

@@ -24,3 +24,4 @@ npx prisma studio
 ## TODOS
 
 - add quotes page
+- migrate to typescript
