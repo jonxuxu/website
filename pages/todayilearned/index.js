@@ -124,8 +124,8 @@ const LessonsPage = () => {
       </Head>
       <Title>Today I Learned</Title>
       <p>
-        I hope to use this as a place to log what I've learned each day. The
-        universe is wonderfully big and complex - I'd like to make an evergreen
+        I use this as a place to log what I've learned each day. The
+        universe is wonderfully big and complex - I'd like to make a daily
         habit of discovering more about the world I live in.
       </p>
       <Table columns={columns} dataSource={data} rowKey="id" loading={isLoading}/>
