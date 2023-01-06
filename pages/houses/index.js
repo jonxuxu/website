@@ -31,10 +31,12 @@ const HousePage = () => {
             extra={item.img && <img width={272} alt="logo" src={item.img} />}
           >
             <List.Item.Meta
-              title={<a href={item.url}>{item.name}</a>}
+              title={item.name}
               description={item.location}
             />
             {item.description}
+            <br/>
+            <a href={item.url}>link</a>
           </List.Item>
         )}
       />

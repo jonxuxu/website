@@ -23,5 +23,8 @@ npx prisma studio
 
 ## TODOS
 
+- fix pics in first year post
 - add quotes page
 - migrate to typescript
+- somehow render page titles for blog posts
+- recipe page breaks for unknown url
