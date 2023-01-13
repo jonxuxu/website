@@ -47,7 +47,7 @@ const SideBar = () => (
       </BlackA>
     </div>
     <div>
-      <BlackA href="https://github.com/JonathanXu1" target="_blank">
+      <BlackA href="https://github.com/jonxuxu" target="_blank">
         <GithubOutlined />
       </BlackA>
     </div>

@@ -22,7 +22,7 @@ npx prisma db push
 npx prisma studio
 
 ## TODOS
-
+- nav bar broken on not main page mobile
 - add quotes page
 - migrate to typescript
 - somehow render page titles for blog posts

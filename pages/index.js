@@ -196,7 +196,7 @@ const SideBar = () => (
       </WhiteA>
     </div>
     <div>
-      <WhiteA href="https://github.com/JonathanXu1" target="_blank">
+      <WhiteA href="https://github.com/jonxuxu" target="_blank">
         <GithubOutlined />
       </WhiteA>
     </div>
