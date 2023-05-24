@@ -92,16 +92,11 @@ const Home = () => {
                 What I've been up to
               </Title>
               <Timeline
-                pending="ML research @ Stanford Sustain Lab"
+                pending="Image reconstruction @ NUS"
                 reverse={true}
               >
                 <Timeline.Item>
-                  <a href="https://myriade.io">Myriade</a>: Making fortune
-                  mining accessible
-                </Timeline.Item>
-                <Timeline.Item>
-                  <a href="https://whist.com">Whist</a>: Turning Chromebooks
-                  into supercomputers
+                  <a href="https://whist.com">Whist</a>: Turning Chromebooks into supercomputers
                 </Timeline.Item>
                 <Timeline.Item>
                   Exploring coliving in New Mexico, San Francisco and Taipei
@@ -113,13 +108,16 @@ const Home = () => {
                 <Timeline.Item>
                   Founding startups in{" "}
                   <a href="https://legendsofvenari.com">crypto gaming</a>,{" "}
-                  <a href="https://iyk.app">wearable NFTs</a>, and{" "}
+                  <a href="https://iyk.app">wearable NFC chips</a>, and{" "}
                   <a href="https://uwaterloo.ca/conrad-school-entrepreneurship-business/news/meet-winter-2022-enterprise-co-op-pitch-winners">
                     pharmacy
                   </a>
                 </Timeline.Item>
                 <Timeline.Item>
                   Hacking on <Link href="/projects">projects</Link>
+                </Timeline.Item>
+                <Timeline.Item>
+                  Detecting harvest piles at Stanford <Link href="/projects">sustain lab</Link>
                 </Timeline.Item>
               </Timeline>
             </Col>
