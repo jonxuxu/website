@@ -96,9 +96,6 @@ const Home = () => {
                 reverse={true}
               >
                 <Timeline.Item>
-                  <a href="https://whist.com">Whist</a>: Turning Chromebooks into supercomputers
-                </Timeline.Item>
-                <Timeline.Item>
                   Exploring coliving in New Mexico, San Francisco and Taipei
                 </Timeline.Item>
                 <Timeline.Item>
