@@ -1,6 +1,6 @@
 import { Typography, Image, Divider } from "antd";
 import { MDXProvider } from "@mdx-js/react";
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 
 import { Container } from "../components/layout";
 import { CodeBlock, BlockQuote } from "../components/mdx";
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           <Container center={<Component {...pageProps} />} />
         )}
       </MDXProvider>
-      <Analytics />
+      {/* <Analytics /> */}
     </div>
   );
 }
