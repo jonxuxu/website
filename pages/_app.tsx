@@ -3,7 +3,16 @@ import type { AppProps } from 'next/app';
 import { useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { ConfigProvider, theme, Button, Card, App } from 'antd';
+import { createGlobalStyle } from 'styled-components'
+
+import {GlobalLayout} from '../components/layout';
 // import theme from '../styles/themeConfig';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+  }
+`
 
 function AppPage({ Component, pageProps }: AppProps) {
   const { defaultAlgorithm, darkAlgorithm } = theme;
@@ -13,18 +22,22 @@ function AppPage({ Component, pageProps }: AppProps) {
     setIsDarkMode((previousValue) => !previousValue);
   };
 
-  return(<>
+  return(
+  <>
+    <GlobalStyle />
     <ConfigProvider
     theme={{
       algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
     }}>
       <App>
-        <Component {...pageProps} />
-        <Card style={{ width: "max-content" }}>
+        <GlobalLayout>
+          <Component {...pageProps} />
+        {/* <Card style={{ width: "max-content" }}>
           <Button onClick={handleClick}>
           Change Theme to {isDarkMode ? "Light" : "Dark"}
           </Button>
-        </Card>
+        </Card> */}
+          </GlobalLayout>
       </App>
     </ConfigProvider>
     <Analytics />
