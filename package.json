@@ -16,6 +16,7 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-masonry-component": "^6.3.0",
     "styled-components": "^6.0.5"
   },
   "browser": {

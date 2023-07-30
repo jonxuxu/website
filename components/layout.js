@@ -8,61 +8,23 @@ import {
   TwitterOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
+import { useEffect } from "react";
 
 export const GlobalLayout = ({ children }) => {
   const router = useRouter();
   const currRoute = router.asPath.split("/");
   const currKey = currRoute.length > 1 ? currRoute[1] : "home";
 
+  useEffect(() => {
+    console.log(currKey);
+  }, [currKey]);
+
   return (
     <div>
-      <Row>
-        <Col xs={24} lg={0}>
-          <Menu mode="horizontal" selectedKeys={[currKey]}>
-            <Menu.Item key="home">
-              <Link href="/">
-                <HomeOutlined />
-              </Link>
-            </Menu.Item>
-            <Menu.Item key="blog">
-              <Link href="/blog">Blog</Link>
-            </Menu.Item>
-            <Menu.Item key="projects">
-              <Link href="/projects">Projects</Link>
-            </Menu.Item>
-            <Menu.Item key="notebook">
-              <a
-                href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
-                target="_blank"
-              >
-                Notebook
-              </a>
-            </Menu.Item>
-            <Menu.Item key="cooking">
-              <Link href="/cooking">Cooking</Link>
-            </Menu.Item>
-            <Menu.Item key="walks">
-              <a
-                href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
-                target="_blank"
-              >
-                Walks
-              </a>
-            </Menu.Item>
-            <Menu.Item key="library">
-              <a
-                href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a"
-                target="_blank"
-              >
-                Library
-              </a>
-            </Menu.Item>
-          </Menu>
-        </Col>
-      </Row>
+      <TopBar currKey={currKey} />
       <Row>
         <Col xs={0} lg={4}>
-          <SideBar />
+          <SideBar currKey={currKey} />
         </Col>
         <Col xs={24} lg={20}>
           {children}
@@ -72,8 +34,60 @@ export const GlobalLayout = ({ children }) => {
   );
 };
 
+const TopBar = ({ currKey }) => (
+  <Row>
+    <Col xs={24} lg={0}>
+      <Menu mode="horizontal" selectedKeys={[currKey]}>
+        <Menu.Item key="home">
+          <Link href="/">
+            <HomeOutlined />
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="blog">
+          <Link href="/blog">Blog</Link>
+        </Menu.Item>
+        <Menu.Item key="projects">
+          <Link href="/projects">Projects</Link>
+        </Menu.Item>
+        <Menu.Item key="notebook">
+          <a
+            href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
+            target="_blank"
+          >
+            Notebook
+          </a>
+        </Menu.Item>
+        <Menu.Item key="cooking">
+          <Link href="/cooking">Cooking</Link>
+        </Menu.Item>
+        <Menu.Item key="walks">
+          <a
+            href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
+            target="_blank"
+          >
+            Walks
+          </a>
+        </Menu.Item>
+        <Menu.Item key="library">
+          <a
+            href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a"
+            target="_blank"
+          >
+            Library
+          </a>
+        </Menu.Item>
+      </Menu>
+    </Col>
+  </Row>
+);
+
 const SideBar = () => (
-  <div style={{ padding: 80, position: "fixed" }}>
+  <div
+    style={{
+      padding: 80,
+      position: "fixed",
+    }}
+  >
     <Link href="/">
       <Image src="/images/logoBlack.svg" width={50} height={50} />
     </Link>

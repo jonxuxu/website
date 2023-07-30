@@ -1,110 +1,115 @@
-import { Table } from 'antd';
+import { Table } from "antd";
 
 export const metadata = {
   title: "Brain Reconstruction Resources",
   url: "2023-07-22-mind-reading-resources",
   date: "2023-07-23",
   length: 1,
-}
-const datasets = [
-    {
-        key: '1',
-        name: "Natural Scenes Dataset",
-        type: "fMRI - image pairs",
-        size: "8 subjects, each observing 9000-10000 images, ~40,000 voxels per scan",
-        link: "https://naturalscenesdataset.org/",
-    },
-    {
-        key: '2',
-        name: "BOLD5000",
-        type: "fMRI - image pairs",
-        size: "4 subjects, each observing 5254 images, ~1,000 - 2,000 voxels  per scan",
-        link: "https://bold5000-dataset.github.io/website/",
-    },
-    {
-        key: '3',
-        name: "Generic Object Decoding",
-        type: "fMRI - image paris",
-        size: "5 subjects, each observing 1200 images, ~4,000 - 5,000 voxels per scan",
-        link: "https://github.com/KamitaniLab/GenericObjectDecoding",
-    },
-    {
-        key: '4',
-        name: "Human Connectome Project",
-        type: "Resting state fMRIs",
-        size: "1206 subjects. 4,000 voxels in visual cortex per scan",
-        link: "https://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release",
-    },
-    {
-        key: '5',
-        name: "Prof. Zhongming Liu’s dataset",
-        type: "fMRI - movie pairs",
-        size: "3 subjects, ~3,000 - 6,000 voxels after preprocessing",
-        link: "https://libi.engin.umich.edu/",
-    },
-]
-const datasets_columns = [
-    {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
-        render: (text, record) => (
-            <a href={record.link} target="_blank" rel="noopener noreferrer">
-                {text}
-            </a>
-        ),
-        width: 150
-    },
-    {
-        title: 'Type',
-        dataIndex: 'type',
-        key: 'type',
-        width: 150
-    },
-    {
-        title: 'Size',
-        dataIndex: 'size',
-        key: 'size',
-    },
-]
-const competitions = [
-    {
-        key: '1',
-        name: "Algonauts Challenge",
-        description: "Predict fMRI responses given an image. First, second, third place prize is 1,500 Euros",
-        link: "http://algonauts.csail.mit.edu/",
-    },
-    {
-        key: '2',
-        name: "Grand Challenge",
-        description: "A whole directory of ML competitions in biomedical imaging",
-        link: "https://grand-challenge.org/",
-    },
-    {
-        key: '3',
-        name: "Kaggle",
-        description: "All sorts of deep learning competitions",
-        link: "https://www.kaggle.com/competitions",
-    },
-]
-const competitions_columns = [
-    {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
-        render: (text, record) => (
-            <a href={record.link} target="_blank" rel="noopener noreferrer">
-                {text}
-            </a>
-        ),
-        width: 150
-    },
-    {
-        title: 'Description',
-        dataIndex: 'description',
-        key: 'description',
-    },
-]
+};
+
+export const datasets = [
+  {
+    key: "1",
+    name: "Natural Scenes Dataset",
+    type: "fMRI - image pairs",
+    size: "8 subjects, each observing 9000-10000 images, ~40,000 voxels per scan",
+    link: "https://naturalscenesdataset.org/",
+  },
+  {
+    key: "2",
+    name: "BOLD5000",
+    type: "fMRI - image pairs",
+    size: "4 subjects, each observing 5254 images, ~1,000 - 2,000 voxels per scan",
+    link: "https://bold5000-dataset.github.io/website/",
+  },
+  {
+    key: "3",
+    name: "Generic Object Decoding",
+    type: "fMRI - image paris",
+    size: "5 subjects, each observing 1200 images, ~4,000 - 5,000 voxels per scan",
+    link: "https://github.com/KamitaniLab/GenericObjectDecoding",
+  },
+  {
+    key: "4",
+    name: "Human Connectome Project",
+    type: "Resting state fMRIs",
+    size: "1206 subjects. 4,000 voxels in visual cortex per scan",
+    link: "https://www.humanconnectome.org/study/hcp-young-adult/document/1200-subjects-data-release",
+  },
+  {
+    key: "5",
+    name: "Prof. Zhongming Liu’s dataset",
+    type: "fMRI - movie pairs",
+    size: "3 subjects, ~3,000 - 6,000 voxels after preprocessing",
+    link: "https://libi.engin.umich.edu/",
+  },
+];
+
+export const datasets_columns = [
+  {
+    title: "Name",
+    dataIndex: "name",
+    key: "name",
+    render: (text, record) => (
+      <a href={record.link} target="_blank" rel="noopener noreferrer">
+        {text}
+      </a>
+    ),
+    width: 150,
+  },
+  {
+    title: "Type",
+    dataIndex: "type",
+    key: "type",
+    width: 150,
+  },
+  {
+    title: "Size",
+    dataIndex: "size",
+    key: "size",
+  },
+];
+
+export const competitions = [
+  {
+    key: "1",
+    name: "Algonauts Challenge",
+    description:
+      "Predict fMRI responses given an image. First, second, third place prize is 1,500 Euros",
+    link: "http://algonauts.csail.mit.edu/",
+  },
+  {
+    key: "2",
+    name: "Grand Challenge",
+    description: "A whole directory of ML competitions in biomedical imaging",
+    link: "https://grand-challenge.org/",
+  },
+  {
+    key: "3",
+    name: "Kaggle",
+    description: "All sorts of deep learning competitions",
+    link: "https://www.kaggle.com/competitions",
+  },
+];
+
+export const competitions_columns = [
+  {
+    title: "Name",
+    dataIndex: "name",
+    key: "name",
+    render: (text, record) => (
+      <a href={record.link} target="_blank" rel="noopener noreferrer">
+        {text}
+      </a>
+    ),
+    width: 150,
+  },
+  {
+    title: "Description",
+    dataIndex: "description",
+    key: "description",
+  },
+];
 
 # Brain Reconstruction Resources
 
@@ -115,17 +120,23 @@ The field of mind reconstruction from fMRIs, EEGs, and other noninvasive brain i
 Here are some resources to get you started. Reach out if you'd like to chat about this space!
 
 ## Datasets
+
 There are quite a few large open-source datasets, a few are listed below. It’s common practice to pretrain on the Human Connectome Project resting state dataset because it’s so large and can help your encoder learn the latent space well. Then you can fine tune on task specific datasets.
+
 <Table dataSource={datasets} columns={datasets_columns} />
 
 ## Competitions
+
 These challenges are great to test your skills in a fixed environment. Many of them offer cash prizes, and the opportunity to have your work featured within the competition’s published paper.
+
 <Table dataSource={competitions} columns={competitions_columns} />
 
 ## Papers
+
 Wip
 
 ## Research
+
 If you’d like to do research, most professors are quite open to getting help! Just email them describing what about their work excites you, why you want to help, and how you can help. Most will reply.
 
 ---
