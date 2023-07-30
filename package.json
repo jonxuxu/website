@@ -16,8 +16,10 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-highlight-words": "^0.20.0",
     "react-masonry-component": "^6.3.0",
-    "styled-components": "^6.0.5"
+    "styled-components": "^6.0.5",
+    "swr": "^2.2.0"
   },
   "browser": {
     "fs": false,

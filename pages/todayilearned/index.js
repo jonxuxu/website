@@ -1,15 +1,14 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 
 import Head from "next/head";
 import Highlighter from "react-highlight-words";
 import dayjs from "dayjs";
 import { Typography, Table, Input, Space, Button } from "antd";
-import useSWR from 'swr';
+import useSWR from "swr";
 
 import { SearchOutlined } from "@ant-design/icons";
 
-
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const { Title } = Typography;
 
@@ -18,7 +17,7 @@ const LessonsPage = () => {
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
 
-  const { data, error, isLoading } = useSWR('/api/list-lesson', fetcher)
+  const { data, error, isLoading } = useSWR("/api/list-lesson", fetcher);
 
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
@@ -124,11 +123,16 @@ const LessonsPage = () => {
       </Head>
       <Title>Today I Learned</Title>
       <p>
-        I use this as a place to log what I've learned each day. The
-        universe is wonderfully big and complex - I'd like to make a daily
-        habit of discovering more about the world I live in.
+        I use this as a place to log what I've learned each day. The universe is
+        wonderfully big and complex - I'd like to make a daily habit of
+        discovering more about the world I live in.
       </p>
-      <Table columns={columns} dataSource={data} rowKey="id" loading={isLoading}/>
+      <Table
+        columns={columns}
+        dataSource={data}
+        rowKey="id"
+        loading={isLoading}
+      />
     </div>
   );
 };
