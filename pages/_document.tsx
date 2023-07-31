@@ -1,5 +1,11 @@
-import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import { StyleProvider, createCache, extractStyle } from "@ant-design/cssinjs";
+import Document, {
+  DocumentContext,
+  Head,
+  Html,
+  Main,
+  NextScript,
+} from "next/document";
 
 const MyDocument = () => (
   <Html lang="en">

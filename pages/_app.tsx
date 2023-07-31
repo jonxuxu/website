@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const components = {
+const components: any = {
   h1: Typography.Title,
   img: (props: ImageProps) => (
     <center>

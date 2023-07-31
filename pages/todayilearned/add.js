@@ -1,19 +1,26 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Modal, Form, Input, Typography, Button, message } from "antd";
-import DatePicker from "../../components/DatePicker";
+import {
+  Modal,
+  Form,
+  Input,
+  Typography,
+  Button,
+  message,
+  DatePicker,
+} from "antd";
 
 const { Title } = Typography;
 
 export default function AddPage() {
   const [authenticated, setAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
   const [messageApi, contextHolder] = message.useMessage();
 
   const addLesson = async (values) => {
-    setLoading(true)
+    setLoading(true);
     const res = await fetch("/api/insert-lesson", {
       method: "POST",
       headers: {
@@ -22,20 +29,20 @@ export default function AddPage() {
       },
       body: JSON.stringify(values),
     });
-    const statusCode = res.status
+    const statusCode = res.status;
 
     // check statusCode and show message
-    setLoading(false)
+    setLoading(false);
     if (statusCode === 200) {
       messageApi.open({
-        type: 'success',
-        content: 'Added lesson!',
+        type: "success",
+        content: "Added lesson!",
       });
       form.resetFields();
     } else {
       messageApi.open({
-        type: 'error',
-        content: 'Failed to add lesson :(',
+        type: "error",
+        content: "Failed to add lesson :(",
       });
     }
   };
