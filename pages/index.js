@@ -30,7 +30,7 @@ const Home = () => {
       </Head>
 
       <Introduction gutter={24} align="middle">
-        <MainCol xs={24} md={7} xl={4}>
+        <MainCol xs={24} md={7} xxl={4}>
           <div style={{ minHeight: 200 }}>
             <img
               src="https://i.ibb.co/x6hQ8Ng/profile-pic.jpg"
@@ -38,7 +38,7 @@ const Home = () => {
             />
           </div>
         </MainCol>
-        <MainCol xs={24} md={17} xl={20}>
+        <MainCol xs={24} md={17} xxl={20}>
           <Title>Hello!</Title>
           <p>
             I'm Jonathan. Many of my projects explore the magic of cross-domain
@@ -53,8 +53,8 @@ const Home = () => {
         </MainCol>
       </Introduction>
 
-      <Row>
-        <Col xs={24} sm={12} md={8}>
+      <Row gutter={36}>
+        <Col xs={24} sm={12}>
           <Title level={5} style={{ marginBottom: 20 }}>
             What I've been up to
           </Title>
@@ -103,7 +103,7 @@ const Home = () => {
             </a>
           </Space>
         </Col>
-        <Col xs={24} sm={12} md={8}>
+        <Col xs={24} sm={12}>
           <Title level={5}>My values & beliefs</Title>
           <ul>
             <li>
