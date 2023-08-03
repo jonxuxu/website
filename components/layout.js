@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Row, Col, Menu } from "antd";
+import { Row, Col, Menu, Layout } from "antd";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,7 +20,7 @@ export const GlobalLayout = ({ children }) => {
   }, [currKey]);
 
   return (
-    <div>
+    <Layout>
       <TopBar currKey={currKey} />
       <Row>
         <Col xs={0} lg={4}>
@@ -30,7 +30,7 @@ export const GlobalLayout = ({ children }) => {
           {children}
         </Col>
       </Row>
-    </div>
+    </Layout>
   );
 };
 

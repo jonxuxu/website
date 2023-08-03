@@ -5,7 +5,6 @@ import { Analytics } from "@vercel/analytics/react";
 
 import {
   ConfigProvider,
-  theme,
   Button,
   Card,
   App,
@@ -17,7 +16,10 @@ import { createGlobalStyle } from "styled-components";
 import { MDXProvider } from "@mdx-js/react";
 import { BlockQuote } from "../components/mdx";
 import { GlobalLayout } from "../components/layout";
-// import theme from '../styles/themeConfig';
+
+// https://github.com/muzzamilr/design-tokens-workshop?ref=blog.carbonteq.com
+import * as lightTheme from "../styles/ant-light.json";
+import * as darkTheme from "../styles/ant-dark.json";
 
 import { type ImageProps } from "rc-image";
 
@@ -40,7 +42,6 @@ const components: any = {
 };
 
 function AppPage({ Component, pageProps }: AppProps) {
-  const { defaultAlgorithm, darkAlgorithm } = theme;
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleClick = () => {
@@ -52,7 +53,7 @@ function AppPage({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <ConfigProvider
         theme={{
-          algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
+          token: isDarkMode ? darkTheme : lightTheme,
         }}
       >
         <App>
@@ -61,10 +62,10 @@ function AppPage({ Component, pageProps }: AppProps) {
               <Component {...pageProps} />
             </MDXProvider>
             {/* <Card style={{ width: "max-content" }}>
-          <Button onClick={handleClick}>
-          Change Theme to {isDarkMode ? "Light" : "Dark"}
-          </Button>
-        </Card> */}
+              <Button onClick={handleClick}>
+                Change Theme to {isDarkMode ? "Light" : "Dark"}
+              </Button>
+            </Card> */}
           </GlobalLayout>
         </App>
       </ConfigProvider>
