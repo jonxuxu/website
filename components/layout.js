@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { Row, Col, Menu, Layout } from "antd";
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -9,6 +8,8 @@ import {
   GithubOutlined,
 } from "@ant-design/icons";
 import { useEffect } from "react";
+import styled from "styled-components";
+import { device } from "../styles/breakpoints";
 
 export const GlobalLayout = ({ children }) => {
   const router = useRouter();
@@ -26,9 +27,12 @@ export const GlobalLayout = ({ children }) => {
         <Col xs={0} lg={4}>
           <SideBar currKey={currKey} />
         </Col>
-        <Col xs={24} lg={20}>
-          {children}
+        <Col xs={24} lg={20} xl={15}>
+          <Row justify="center">
+            <AdaptiveDiv className="content wrapper">{children}</AdaptiveDiv>
+          </Row>
         </Col>
+        <Col xs={0} xl={9} />
       </Row>
     </Layout>
   );
@@ -155,5 +159,18 @@ const BlackA = styled.a`
   color: #999;
   &:hover {
     color: black;
+  }
+`;
+
+const AdaptiveDiv = styled.div`
+  max-width: 800px;
+  padding: 20px;
+
+  @media ${device.mobileL} {
+    padding: 30px;
+  }
+
+  @media ${device.tablet} {
+    padding: 45px;
   }
 `;

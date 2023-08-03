@@ -8,7 +8,7 @@ const { Title } = Typography;
 
 const ProjectsPage = () => {
   return (
-    <div style={{ paddingBottom: 80 }}>
+    <div>
       <Head>
         <title>Projects</title>
       </Head>
