@@ -39,15 +39,15 @@ const Home = () => {
           </div>
         </MainCol>
         <MainCol xs={24} md={17} xxl={20}>
-          <Title>Hello!</Title>
+          <Title>Hey!</Title>
           <p>
             I'm Jonathan. Many of my projects explore the magic of cross-domain
             tech; curently I'm trying to recover thoughts from brain scans.
           </p>
           <p>
             Apart from code, I enjoy cooking new things, learning languages, and
-            making music. I love meeting and sharing interesting conversations
-            with new people, so please do reach out!
+            making music. If what I'm working on or talking about strikes your
+            fancy, feel free to say hello!
           </p>
           <Divider />
         </MainCol>
@@ -104,7 +104,7 @@ const Home = () => {
           </Space>
         </Col>
         <Col xs={24} sm={12}>
-          <Title level={5}>My values & beliefs</Title>
+          <Title level={5}>Character north stars</Title>
           <ul>
             <li>
               <strong>Live authentically: </strong>Find your own purpose and

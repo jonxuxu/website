@@ -7,7 +7,7 @@ import {
   TwitterOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "../styles/breakpoints";
 
 export const GlobalLayout = ({ children }) => {
@@ -90,7 +90,6 @@ const SideBar = ({ currRoute }) => {
           : "none",
         backgroundSize: "cover",
         height: "100vh",
-        zIndex: 1,
       }}
     >
       <Link href="/">
@@ -101,59 +100,61 @@ const SideBar = ({ currRoute }) => {
         />
       </Link>
 
-      <div style={{ marginTop: 10 }}>
-        <Link href="/blog">Blog</Link>
-      </div>
-      <div>
-        <Link href="/projects">Projects</Link>
-      </div>
-      <div>
-        <a
-          href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
-          target="_blank"
-        >
-          Notebook
-        </a>
-      </div>
-      <div>
-        <Link href="/cooking">Cooking</Link>
-      </div>
-      <div>
-        <a
-          href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
-          target="_blank"
-        >
-          Walks
-        </a>
-      </div>
-      <div>
-        <a
-          href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a"
-          target="_blank"
-        >
-          Library
-        </a>
-      </div>
-      <div style={{ marginTop: 40 }}>
-        <BlackA href="https://twitter.com/jonxuxu" target="_blank">
-          <TwitterOutlined />
-        </BlackA>
-      </div>
-      <div>
-        <BlackA href="https://github.com/jonxuxu" target="_blank">
-          <GithubOutlined />
-        </BlackA>
-      </div>
+      <PageLink href="/blog" $white={homeStyle} style={{ marginTop: 10 }}>
+        Blog
+      </PageLink>
+      <PageLink href="/projects" $white={homeStyle}>
+        Projects
+      </PageLink>
+      <PageLink
+        href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
+        target="_blank"
+        $white={homeStyle}
+      >
+        Notebook
+      </PageLink>
+      <PageLink href="/cooking" $white={homeStyle}>
+        Cooking
+      </PageLink>
+      <PageLink
+        href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
+        target="_blank"
+        $white={homeStyle}
+      >
+        Walks
+      </PageLink>
+      <PageLink
+        href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a"
+        target="_blank"
+        $white={homeStyle}
+      >
+        Library
+      </PageLink>
+
+      <SocialLink
+        href="https://twitter.com/jonxuxu"
+        target="_blank"
+        $home={homeStyle}
+        style={{ marginTop: 40 }}
+      >
+        <TwitterOutlined />
+      </SocialLink>
+      <SocialLink
+        href="https://github.com/jonxuxu"
+        target="_blank"
+        $home={homeStyle}
+      >
+        <GithubOutlined />
+      </SocialLink>
       <div>
         <a href="https://se-webring.xyz/" target="_blank">
-          <img
-            style={{
-              filter:
-                "invert(69%) sepia(0%) saturate(1504%) hue-rotate(139deg) brightness(90%) contrast(83%)",
-            }}
-            src="https://webring.xxiivv.com/icon.black.svg"
-            width={18}
-            height={18}
+          <Webring
+            src={
+              homeStyle
+                ? "https://webring.xxiivv.com/icon.white.svg"
+                : "https://webring.xxiivv.com/icon.black.svg"
+            }
+            $home={homeStyle}
           />
         </a>
       </div>
@@ -161,11 +162,12 @@ const SideBar = ({ currRoute }) => {
   );
 };
 
-const BlackA = styled.a`
-  color: #999;
+const SocialLink = styled.a`
+  color: ${(props) => (props.$home ? "white" : "#999")};
   &:hover {
-    color: black;
+    color: ${(props) => !props.$home && "black"};
   }
+  display: inline-block;
 `;
 
 const AdaptiveDiv = styled.div`
@@ -181,12 +183,31 @@ const AdaptiveDiv = styled.div`
   }
 `;
 
-const WhiteA = styled.a`
-  color: white;
+const PageLink = styled(Link)`
+  color: ${(props) => props.$white && "white"};
+  display: inline-block;
 `;
-const HoverSvg = styled.img`
-  &:hover {
-    filter: invert(36%) sepia(75%) saturate(2522%) hue-rotate(340deg)
-      brightness(110%) contrast(101%);
-  }
+
+const Webring = styled.img`
+  width 18px;
+  height: 18px;
+  position: relative;
+  left: -2px;
+  top: 2px;
+  ${(props) =>
+    props.$home
+      ? css`
+          &:hover {
+            filter: invert(36%) sepia(75%) saturate(2522%) hue-rotate(340deg)
+              brightness(110%) contrast(101%);
+          }
+        `
+      : css`
+          filter: invert(69%) sepia(0%) saturate(1504%) hue-rotate(139deg)
+            brightness(90%) contrast(83%);
+          // On hover remove filter
+          &:hover {
+            filter: none;
+          }
+        `}
 `;
