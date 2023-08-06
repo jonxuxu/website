@@ -20,7 +20,7 @@
     "react-dom": "18.2.0",
     "react-highlight-words": "^0.20.0",
     "react-masonry-component": "^6.3.0",
-    "styled-components": "^6.0.5",
+    "styled-components": "^6.0.7",
     "swr": "^2.2.0"
   },
   "browser": {
@@ -31,6 +31,8 @@
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "babel-plugin-styled-components": "^2.1.4",
     "typescript": "4.7.4"
-  }
+  },
+  "peerDependencies": {}
 }
