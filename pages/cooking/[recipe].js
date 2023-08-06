@@ -13,7 +13,7 @@ const RecipePage = () => {
   if (router.asPath === router.route) {
     return <div></div>; // router.query.recipe is not yet deifned
   }
-  const recipe = recipes[router.query.recipe];
+  const recipe = recipes.find((dict) => dict.name === router.query.recipe);
 
   const Ingredients = recipe.ingredients.map((i, idx) => (
     <div key={idx}>

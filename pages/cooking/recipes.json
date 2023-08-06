@@ -20,6 +20,10 @@
         "header": "For Beef"
       },
       {
+        "unit": 300,
+        "item": "grams shaved beef"
+      },
+      {
         "unit": 1,
         "item": "tbsp soy sauce"
       },
@@ -62,9 +66,7 @@
       "Place cooked beef on top, and sprinkle the remaining sliced green onions.",
       "If you are a fancy pants, you can garnish with bonito flakes, shichimi togarashi, narutomaki, and mitsuba."
     ],
-    "notes": [
-      "*: You can make dashi by mixing instant dashi powder with water."
-    ]
+    "notes": ["* You can make dashi by mixing instant dashi powder with water."]
   },
   {
     "name": "Taiwanese Fried Chicken",
