@@ -90,6 +90,7 @@ const SideBar = ({ currRoute }) => {
           : "none",
         backgroundSize: "cover",
         height: "100vh",
+        position: "fixed",
       }}
     >
       <Link href="/">
@@ -97,6 +98,7 @@ const SideBar = ({ currRoute }) => {
           src={homeStyle ? "/images/logoWhite.svg" : "/images/logoBlack.svg"}
           width={50}
           height={50}
+          alt="logo"
         />
       </Link>
 
@@ -167,7 +169,7 @@ const SocialLink = styled.a`
   &:hover {
     color: ${(props) => !props.$home && "black"};
   }
-  display: inline-block;
+  display: block;
 `;
 
 const AdaptiveDiv = styled.div`
@@ -185,7 +187,7 @@ const AdaptiveDiv = styled.div`
 
 const PageLink = styled(Link)`
   color: ${(props) => props.$white && "white"};
-  display: inline-block;
+  display: block;
 `;
 
 const Webring = styled.img`

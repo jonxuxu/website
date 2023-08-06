@@ -51,10 +51,15 @@ export default function CookingPage() {
               )
             }
           >
-            <Link href="/cooking/[recipe]" as={`/cooking/${item.name}`}>
-              <List.Item.Meta title={item.name} description={item.location} />
-              {item.subtitle}
-            </Link>
+            <List.Item.Meta
+              title={
+                <Link href="/cooking/[recipe]" as={`/cooking/${item.name}`}>
+                  {item.name}
+                </Link>
+              }
+              description={item.location}
+            />
+            {item.subtitle}
           </List.Item>
         )}
       />

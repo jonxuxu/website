@@ -1,4 +1,9 @@
 import { Table } from "antd";
+export const TdCell = (props) => {
+  // Need custom ant table cell to prevent crashing when hovering over a cell
+  const { onMouseEnter, onMouseLeave, ...restProps } = props;
+  return <td {...restProps} />;
+};
 
 export const metadata = {
   title: "Brain Reconstruction Resources",
@@ -123,13 +128,25 @@ Here are some resources to get you started. Reach out if you'd like to chat abou
 
 There are quite a few large open-source datasets, a few are listed below. It’s common practice to pretrain on the Human Connectome Project resting state dataset because it’s so large and can help your encoder learn the latent space well. Then you can fine tune on task specific datasets.
 
-<Table dataSource={datasets} columns={datasets_columns} />
+<Table
+  dataSource={datasets}
+  columns={datasets_columns}
+  components={{
+    body: { cell: TdCell },
+  }}
+/>
 
 ## Competitions
 
 These challenges are great to test your skills in a fixed environment. Many of them offer cash prizes, and the opportunity to have your work featured within the competition’s published paper.
 
-<Table dataSource={competitions} columns={competitions_columns} />
+<Table
+  dataSource={competitions}
+  columns={competitions_columns}
+  components={{
+    body: { cell: TdCell },
+  }}
+/>
 
 ## Papers
 
