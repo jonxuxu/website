@@ -49,7 +49,6 @@ _The first ever MRI scan of a live human being_
 MRIs have been a huge boon to the medical field, providing an indispensable tool for the diagnosis of all brain-related diseases. In the 1990s, Seiji Ogawa and Ken Kwong helped develop the Functional MRI (fMRI). This builds upon MRIs, but enables measuring the activity of the brain in real-time, rather than just the physical structure of the tissues within the brain.
 
 ![An fMRI scan](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F26b5c630-561f-44e9-b3f6-7de480e1f172_316x251.gif)
-
 _An fMRI scan_
 
 fMRI tracks neural activity by measuring blood flow. It’s based on a physiological phenomenon called the hemodynamic response. Neurons do not contain internal reserves of glucose or oxygen, so blood flow is directed on demand to active regions of the brain. fMRIs use blood oxygen level-dependent (BOLD) contrast imaging to measure the levels of oxyhemoglobin and deoxyhemoglobin based on their magnetic properties, which give us a near real-time picture of which neurons are firing in the brain.
@@ -62,7 +61,6 @@ _A fMRI at Okinawa Institute of Science and Technology Graduate University_
 Ultimately, these downsides have resulted in very limited sets of data to work with. In addition, although fMRI is currently the most precise source, it still has a low signal-to-noise ratio, due to variables such as patient movement, and the fact that every brain has slightly different structures and blood flow patterns.
 
 ![This image shows the BOLD response of different regions of the brain when the subject performs different tasks](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6a1081d-820c-4cdf-a3ab-9cbf0aa20ad8_440x468.png)
-
 _This image shows the BOLD response of different regions of the brain when the subject performs different tasks_
 
 ---
@@ -100,21 +98,9 @@ _Neural encoding and decoding through a deep-learning model_
 
 When predicting the category of the image from one of 15 categories (i.e. people, bird, airplane), the top 1 accuracy score was an average of 48%. This was a breakthrough, as it was one of the first projects to not only predict which type of image you saw, but also tried to reconstruct what it looked like. Its use of a late-stage CNN layer was also a baby step towards the idea of an fMRI latent (lower dimensional vector) to predict images.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ![Comparison of Wen results](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://substack-post-media.s3.amazonaws.com/public/images/1481ec8a-b9ff-4d60-a2bc-32a71c4120d5_520x456.png)
 
-=======
-![Comparison of Wen results](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1481ec8a-b9ff-4d60-a2bc-32a71c4120d5_520x456.png)
-
-> > > > > > > 534629a (adding content for brain post)
-> > > > > > > _For each row, the top shows the example frames seen by 1 subject; the bottom shows the reconstruction of those frames based on the subject's cortical fMRI responses_
-> > > > > > > =======
-> > > > > > > ![Comparison of Wen results](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https://substack-post-media.s3.amazonaws.com/public/images/1481ec8a-b9ff-4d60-a2bc-32a71c4120d5_520x456.png)
-
 _For each row, the top shows the example frames seen by 1 subject; the bottom shows the reconstruction of those frames based on the subject's cortical fMRI responses_
-
-> > > > > > > fa69e06 (mdx mapping update for link and imges)
 
 So far, projects relied on a very small set of image and fMRI pairs, which made it hard to train powerful models. There were not enough labeled examples, simply because fMRIs scans are notoriously expensive to perform at scale.
 
@@ -159,13 +145,11 @@ Thanks to increased attention from the public and academia, there is a recent su
 Let’s dive into a new project, [Mind-Video](https://mind-video.com/), by Chen et al [^8]. This is the first recent project that works with video: subjects are shown a video, and the model attempts to reconstruct that video.
 
 ![Mind-Video example 1](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4638773-87e3-43b3-9ef4-dca622f3033a_518x260.gif)
-
 _Ground truth is on the left, and reconstructed on the right_
 
 It builds upon the architecture of [Mind-Vis](https://mind-vis.github.io/), but with a few modifications. First, it uses classifier-free guidance, which essentially passes stronger embeddings to the Stable Diffusion model for a more specific reconstruction. They also changed the architecture to work with video frames instead of images. This is quite a technical challenge, as fMRI scans capture BOLD changes over time, which gets jumbled over time.
 
 ![Mind-Video example 2](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7195bc02-b992-4c0a-8a7d-9590d10683b8_518x260.gif)
-
 _Ground truth is on the left, and reconstructed on the right_
 
 Diving deeper into the architecture, it involves first pretraining a ViT-based masked auto-encoder on the Human Connectome Project dataset, which is a great source of unlabelled fMRI data. Then, the SC-MBM encoder is fine tuned on an fMRI-video dataset introduced by H. Wen et al in 2018. We want to project the learned fMRI latent to the same space as the latent of CLIP based image encoder and CLIP based text encoder, as the diffusion model used in the generative step takes in cross attention latents in the CLIP space.
