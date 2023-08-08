@@ -28,7 +28,6 @@ const Home = () => {
       <Head>
         <title>Jonathan Xu</title>
       </Head>
-
       <Introduction gutter={24} align="middle">
         <MainCol xs={24} md={7} xxl={4}>
           <div style={{ minHeight: 200 }}>
