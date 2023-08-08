@@ -25,3 +25,17 @@ pnpm create next-app --example with-ant-design with-ant-design-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+npx prisma db pull
+npx prisma migrate dev
+npx prisma db push
+
+## Database
+
+I use Prisma to manage the table organizaiton and versions. It is hosted on Cockroachdb for free.
+
+View database:
+npx prisma studio
+
+## Semantic Search
+
+In progress: looking at Pinecone
