@@ -93,13 +93,8 @@ const Home = () => {
             >
               <Button type="dashed">Resume</Button>
             </a>
-            <a
-              href="/documents/home/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button type="dashed">Failure Resume</Button>
-            </a>
+
+            {/* <Button type="dashed">Failure Resume</Button> */}
           </Space>
         </Col>
         <Col xs={24} sm={12}>
