@@ -78,7 +78,7 @@ const LessonsPage = () => {
             .toLowerCase()
             .includes(value.toLowerCase())
         : "",
-    onFilterDropdownVisibleChange: (open) => {
+    onFilterDropdownOpenChange: (open) => {
       if (open) {
         setTimeout(() => searchInput.current.select(), 100);
       }
