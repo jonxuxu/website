@@ -28,7 +28,7 @@ In this post, we’ll go deeper on how these results were achieved and the state
 
 The brain controls all complex functions in the body, and is the center where our thoughts and experiences are processed. Since the brain is organized into structural groups, if we can track the activations of neurons, we can attempt to map what’s going on inside the brain. Thoughts, movements, and your biological control processes could be analyzed and recovered. This is the holy grail that many in cognitive neuroscience have been working toward.
 
-To interface with the brain, there are two main approaches. Invasive measures involve directly interacting with the brain tissue within the skull, with things like probes and wires. Noninvasive measures involve using electromagnetic fields and radiation to map the brain, without actually touching the brain. For this newsletter, we are diving into the development of noninvasive technology.
+To interface with the brain, there are two main approaches. Invasive measures involve directly interacting with the brain tissue within the skull, using probes and wires. Noninvasive measures involve using electromagnetic fields and radiation to map the brain, without actually touching the brain. In this post, we'll dive into the development of MRI based noninvasive technology.
 
 There’s been some mind-blowing developments in this space. So, to appreciate the long journey that brought us here, let’s dive into the history of noninvasive brain imaging.
 
@@ -39,9 +39,9 @@ _The team behind some of the first whole-body MRI scans_
 
 ## The History of Noninvasive Brain Scanning
 
-The first hardware breakthrough to noninvasive brain imaging was the invention of the Magnetic Resonance Imaging (MRI) machine in the early 1970s. The foundational principles behind MRI were first described by physicists Paul Lauterbur and Sir Peter Mansfield, who independently developed techniques to produce detailed images using magnetic resonance. Their work earned them the Nobel Prize in Physiology or Medicine in 2003.
+The first hardware breakthroughs to noninvasive brain imaging was the invention of the Magnetic Resonance Imaging (MRI) machine in the early 1970s. This came alongside other novel techniques such as the CT and PET scanner. The foundational principles behind MRI were first described by physicists Paul Lauterbur and Sir Peter Mansfield, who independently developed techniques to produce detailed images using magnetic resonance. Their work earned them the Nobel Prize in Physiology or Medicine in 2003.
 
-MRIs export a 3D scan of the structure of the brain. They work by using powerful magnets that align all protons in the body to the field. Radio current is pulsed through the patient, which moves protons in the brain out of equilibrium. When the field is turned off, MRI sensors detect the energy released, and the time it takes for the protons to realign. Different types of tissues have different molecular properties, so we can build a 3D map of structural components of the brain based on this information.
+MRIs export a 3D scan of the structure of the brain. They work by using powerful magnets that align a small number of protons in the body to the field. Radio current is pulsed through the patient, which moves protons in the brain out of equilibrium. When the field is turned off, MRI sensors detect the energy released, and the time it takes for the protons to realign. Different types of tissues have different molecular properties, so we can build a 3D map of structural components of the brain based on this information.
 
 ![The first ever MRI scan of a live human being](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1dab5d77-96f6-4a67-b591-2cc2acebb69c_600x381.jpeg)
 _The first ever MRI scan of a live human being_
@@ -58,7 +58,7 @@ Almost all noninvasive brain reading projects use fMRI technology, due to it bei
 ![A fMRI at Okinawa Institute of Science and Technology Graduate University](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6dfaa6be-1b07-4ee2-b220-f7fd3619d664_1440x935.jpeg)
 _A fMRI at Okinawa Institute of Science and Technology Graduate University_
 
-Ultimately, these downsides have resulted in very limited sets of data to work with. In addition, although fMRI is currently the most precise source, it still has a low signal-to-noise ratio, due to variables such as patient movement, and the fact that every brain has slightly different structures and blood flow patterns.
+Ultimately, these downsides have resulted in very limited sets of data to work with. In addition, although fMRI is currently the most precise technique, it still has a low signal-to-noise ratio, due to variables such as patient movement, the specifics of the machine, and sensitive changes to external factors. Moreover, every brain has slightly different structures and blood flow patterns.
 
 ![This image shows the BOLD response of different regions of the brain when the subject performs different tasks](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6a1081d-820c-4cdf-a3ab-9cbf0aa20ad8_440x468.png)
 _This image shows the BOLD response of different regions of the brain when the subject performs different tasks_
@@ -69,7 +69,7 @@ _This image shows the BOLD response of different regions of the brain when the s
 
 Since the advent of the fMRI, there has been an explosion of research work in interpreting brain activity from fMRI scans. This is a quickly growing field, with more than 1,000 research papers and counting. We’ll dive into image reconstruction specifically: the task of reconstructing what the patient saw in real-life from brain scan data.
 
-In each of these experiments, a patient is shown an image inside an fMRI machine. The goal is to then reconstruct that shown image from the fMRI scan itself. An fMRI scan consists of a 3D matrix of pixels, which are called voxels. Each voxel has a discrete value, which represents how much blood is in the 3D volume occupied by the voxel.
+In each of these experiments, a patient is shown an image inside an fMRI machine. The goal is to then reconstruct that shown image from the fMRI scan itself. An fMRI scan consists of a 3D matrix of pixels, which are called voxels. Each voxel has a discrete value, which represents how much oxygenated blood is in the 3D volume occupied by the voxel.
 
 Since the early 2000s, there has been a constant stream of research work involving using statistical methods to make sense of the pattern and structure of fMRI scans in the visual cortex. Bayesian statistics is a common technique in many approaches, which involves calculating the probability of some neural activity (i.e. the visual cortex seeing a cat) based on the given event (an fMRI scan).
 
@@ -194,7 +194,7 @@ Thanks for reading!
 
 ## Thanks
 
-This post was written in collaboration with [Oliver Cameron](https://twitter.com/olivercameron), you can read it on his [substack](https://olivercameron.substack.com/p/ai-to-interpret-your-mind): Thanks to [Zijiao Chen](https://twitter.com/ZijiaoC) and Jiaxin Qing for their feedback. Thanks to Alyssa for her moral support during these crazy times. And thanks to Ayataka green tea for keeping me awake.
+This post was written in collaboration with [Oliver Cameron](https://twitter.com/olivercameron), you can read it on his [substack](https://olivercameron.substack.com/p/ai-to-interpret-your-mind): Thanks to [Raffi](https://www.rhotter.com), [Zijiao](https://twitter.com/ZijiaoC) and Jiaxin for their feedback. Thanks to Alyssa for her moral support during these crazy times. And thanks to Ayataka green tea for keeping me awake.
 
 [^1]: Kamitani, Y. & Tong, F. Decoding the visual and subjective contents of the human brain. Nature Neurosci. 8, 679–685, 2005.
 [^2]: K. N. Kay, T. Naselaris, R. J. Prenger, and J. L. Gallant, “Identifying natural images from human brain activity,” Nature, vol. 452, pp. 352–355, 3 2008.
