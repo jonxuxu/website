@@ -41,7 +41,7 @@ const Home = () => {
           <Title>Hey!</Title>
           <p>
             I'm Jonathan. Many of my projects explore the magic of cross-domain
-            tech; curently I'm trying to recover thoughts from brain scans.
+            tech; currently I'm trying to recover thoughts from brain scans.
           </p>
           <p>
             Apart from code, I enjoy cooking new things, learning languages, and
@@ -57,22 +57,13 @@ const Home = () => {
           <Title level={5} style={{ marginBottom: 20 }}>
             What I've been up to
           </Title>
-          <Timeline pending="Image reconstruction @ NUS" reverse={true}>
-            <Timeline.Item>
-              <Link href="/blog/2021-04-28-group-houses">Coliving</Link> at New
-              Mexico, San Francisco and Taipei
-            </Timeline.Item>
+          <Timeline pending="Something new..." reverse={true}>
             <Timeline.Item>
               <a href="https://hebbia.ai">Hebbia</a>: Answering questions for
               everything
             </Timeline.Item>
             <Timeline.Item>
-              Founding startups in{" "}
-              <a href="https://legendsofvenari.com">crypto gaming</a>,{" "}
-              <a href="https://iyk.app">wearable NFC chips</a>, and{" "}
-              <a href="https://uwaterloo.ca/conrad-school-entrepreneurship-business/news/meet-winter-2022-enterprise-co-op-pitch-winners">
-                pharmacy
-              </a>
+              Programming <a href="https://iyk.app">wearable NFC chips</a>
             </Timeline.Item>
             <Timeline.Item>
               Detecting harvest piles at Stanford{" "}
@@ -84,8 +75,18 @@ const Home = () => {
                 Sustain Lab
               </a>
             </Timeline.Item>
+            <Timeline.Item>
+              Image reconstruction in{" "}
+              <a
+                href="https://neuroimaginglab.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Singapore
+              </a>
+            </Timeline.Item>
           </Timeline>
-          <Space>
+          {/* <Space>
             <a
               href="/documents/home/resume.pdf"
               target="_blank"
@@ -94,8 +95,8 @@ const Home = () => {
               <Button type="dashed">Resume</Button>
             </a>
 
-            {/* <Button type="dashed">Failure Resume</Button> */}
-          </Space>
+            <Button type="dashed">Failure Resume</Button>
+          </Space> */}
         </Col>
         <Col xs={24} sm={12}>
           <Title level={5}>Character north stars</Title>
@@ -106,19 +107,12 @@ const Home = () => {
               yourself.
             </li>
             <li>
-              <strong>Grow meaningfully: </strong>Have a clear compass for what
-              your definition of goodness and success is and work towards that.
-              Is what you are working towards something that's truly important
-              to you?
+              <strong>Grow meaningfully: </strong>Develop a strong personal
+              compass. Never stop <Link href="/todayilearned">learning</Link>.
             </li>
             <li>
-              <strong>Motivate internally: </strong>Doing something out of
-              innate interest will never feel old or tiresome.
-            </li>
-            <li>
-              <strong>Experiment and explore: </strong>Life is short, and there
-              is so much to do out there. Try new things and never stop{" "}
-              <Link href="/todayilearned">learning</Link>.
+              <strong>Motivate internally: </strong>Follow your inner passions
+              and don't get swayed by external pressures.
             </li>
           </ul>
         </Col>
