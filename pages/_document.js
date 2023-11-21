@@ -10,7 +10,12 @@ import { ServerStyleSheet } from "styled-components";
 
 const MyDocument = () => (
   <Html lang="en">
-    <Head />
+    <Head>
+      <meta
+        property="description"
+        content="Jonathan's corner of the internet"
+      />
+    </Head>
     <body>
       <Main />
       <NextScript />
