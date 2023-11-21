@@ -57,14 +57,14 @@ const TopBar = ({ currRoute }) => (
         <Menu.Item key="/cooking">
           <Link href="/cooking">Cooking</Link>
         </Menu.Item>
-        <Menu.Item key="walks">
+        {/* <Menu.Item key="walks">
           <a
             href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
             target="_blank"
           >
             Walks
           </a>
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Item key="library">
           <a
             href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a"
@@ -118,13 +118,13 @@ const SideBar = ({ currRoute }) => {
       <PageLink href="/cooking" $white={homeStyle}>
         Cooking
       </PageLink>
-      <PageLink
+      {/* <PageLink
         href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
         target="_blank"
         $white={homeStyle}
       >
         Walks
-      </PageLink>
+      </PageLink> */}
       <PageLink
         href="https://jonathanxu.notion.site/0857986109904814a624c83c56c74692?v=897726067d62486692b709da9e94aa1a"
         target="_blank"
