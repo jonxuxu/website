@@ -9,6 +9,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  experimental: {
+    appDir: false,
+  },
 };
 
 const withMDX = createMDX({
