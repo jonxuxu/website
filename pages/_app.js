@@ -1,5 +1,5 @@
 import React from "react";
-import type { AppProps } from "next/app";
+// import type { AppProps } from "next/app";
 
 import { useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
@@ -22,7 +22,7 @@ import { GlobalLayout } from "../components/layout";
 import * as lightTheme from "../styles/ant-light.json";
 import * as darkTheme from "../styles/ant-dark.json";
 
-import { type ImageProps } from "rc-image";
+// import { type ImageProps } from "rc-image";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -30,9 +30,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const components: any = {
+// const components: any = {
+const components = {
   h1: Typography.Title,
-  img: (props: ImageProps) => (
+  // img: (props: ImageProps) => (
+  img: (props) => (
     <center>
       <Image {...props} />
     </center>
@@ -42,7 +44,8 @@ const components: any = {
   blockquote: BlockQuote,
 };
 
-function AppPage({ Component, pageProps }: AppProps) {
+// function AppPage({ Component, pageProps }: AppProps) {
+function AppPage({ Component, pageProps }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleClick = () => {
