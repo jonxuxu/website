@@ -18,7 +18,8 @@ const MyDocument = () => (
   </Html>
 );
 
-MyDocument.getInitialProps = async (ctx: DocumentContext) => {
+// MyDocument.getInitialProps = async (ctx: DocumentContext) => {
+MyDocument.getInitialProps = async (ctx) => {
   const sheet = new ServerStyleSheet();
 
   const cache = createCache();
