@@ -85,10 +85,8 @@ const SideBar = ({ currRoute }) => {
     <div
       style={{
         padding: 80,
-        background: homeStyle
-          ? "url(https://i.ibb.co/q5Bh6sZ/side-Banner.jpg)"
-          : "none",
-        backgroundSize: "cover",
+        background: homeStyle ? "url(/images/home/sideBanner.jpg)" : "none",
+        backgroundSize: homeStyle ? "cover" : "auto",
         height: "100vh",
         position: "fixed",
       }}

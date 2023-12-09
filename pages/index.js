@@ -32,7 +32,7 @@ const Home = () => {
         <MainCol xs={24} md={7} xxl={4}>
           <div style={{ minHeight: 200 }}>
             <img
-              src="https://i.ibb.co/x6hQ8Ng/profile-pic.jpg"
+              src="/images/home/profile-pic.jpeg"
               style={{ width: "100%", borderRadius: "50%" }}
             />
           </div>
