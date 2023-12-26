@@ -29,7 +29,7 @@ const BlogPage = ({ filenames }) => {
       <Head>
         <title>Jonathan's Blog</title>
       </Head>
-      <Title>Jonathan's Blog</Title>
+      <Title>Blog</Title>
       <p>
         The soup pot, the salad bowl, the dumpster bin for all my thoughts - I
         write about tech, life, and whatever is on my mind at the time.

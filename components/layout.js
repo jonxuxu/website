@@ -12,17 +12,18 @@ import { device } from "../styles/breakpoints";
 
 export const GlobalLayout = ({ children }) => {
   const router = useRouter();
+  const isIndexPage = router.asPath === "/";
 
   return (
     <Layout>
       <TopBar currRoute={router.asPath} />
       <Row>
-        <Col xs={0} lg={4}>
+        <Col xs={0} lg={3}>
           <SideBar currRoute={router.asPath} />
         </Col>
-        <Col xs={24} lg={20} xxl={16}>
+        <Col xs={24} lg={19} xxl={16}>
           <Row justify="center">
-            <AdaptiveDiv className="content wrapper">{children}</AdaptiveDiv>
+            <AdaptiveDiv isIndexPage={isIndexPage}>{children}</AdaptiveDiv>
           </Row>
         </Col>
         <Col xs={0} lg={0} xxl={4} />
@@ -40,11 +41,14 @@ const TopBar = ({ currRoute }) => (
             <HomeOutlined />
           </Link>
         </Menu.Item>
-        <Menu.Item key="/blog">
-          <Link href="/blog">Blog</Link>
+        <Menu.Item key="/researc">
+          <Link href="/research">Research</Link>
         </Menu.Item>
         <Menu.Item key="/projects">
           <Link href="/projects">Projects</Link>
+        </Menu.Item>
+        <Menu.Item key="/blog">
+          <Link href="/blog">Blog</Link>
         </Menu.Item>
         <Menu.Item key="notebook">
           <a
@@ -99,13 +103,16 @@ const SideBar = ({ currRoute }) => {
           alt="logo"
         />
       </Link>
-
-      <PageLink href="/blog" $white={homeStyle} style={{ marginTop: 10 }}>
-        Blog
+      <PageLink href="/research" $white={homeStyle} style={{ marginTop: 10 }}>
+        Research
       </PageLink>
       <PageLink href="/projects" $white={homeStyle}>
         Projects
       </PageLink>
+      <PageLink href="/blog" $white={homeStyle}>
+        Blog
+      </PageLink>
+
       <PageLink
         href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
         target="_blank"
@@ -171,7 +178,9 @@ const SocialLink = styled.a`
 `;
 
 const AdaptiveDiv = styled.div`
-  max-width: 800px;
+  /* Conditionally set the max-width based on isIndexPage prop */
+  max-width: ${(props) => (props.isIndexPage ? "800px" : "1000px")};
+
   padding: 20px;
 
   @media ${device.mobileL} {
