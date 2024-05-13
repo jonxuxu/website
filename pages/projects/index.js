@@ -60,6 +60,14 @@ const ProjectsPage = () => {
             <CoverImg alt="brett" src="/images/projects/brett/banner.png" />
           </ImgDiv>
         </Link>
+        <Link href="/projects/hand">
+          <ImgDiv>
+            <CoverImg
+              alt="robotic hand"
+              src="/images/projects/hand/banner.JPG"
+            />
+          </ImgDiv>
+        </Link>
         <Link href="/projects/hackathons">
           <ImgDiv>
             <CoverImg
@@ -76,18 +84,21 @@ const ProjectsPage = () => {
 export default ProjectsPage;
 
 const ImgDiv = styled.div`
-  display: block;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto; /* Adjust this to change the aspect ratio */
+  aspect-ratio: 16 / 10; /* This sets the aspect ratio */
   overflow: hidden;
   border-radius: 2px;
-  max-height: 360px;
   cursor: pointer;
 `;
 
 const CoverImg = styled.img`
-  margin: 0;
-  transform: scale(1);
+  grid-area: 1 / 1 / 2 / 2; /* Positions the image to cover the grid area */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: 0.3s transform;
-  max-width: 100%;
   &:hover {
     transform: scale(1.05);
   }
@@ -95,16 +106,18 @@ const CoverImg = styled.img`
 
 const ProjectsContainer = styled.div`
   display: grid;
-  grid-auto-rows: auto;
-  column-gap: 12px;
-  row-gap: 12px;
+  grid-gap: 12px; /* This is shorthand for row-gap and column-gap */
   margin: 0 auto;
 
   @media ${device.mobileS} {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   @media ${device.tablet} {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  @media ${device.laptop} {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 `;

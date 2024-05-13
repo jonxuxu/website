@@ -23,7 +23,7 @@ export const GlobalLayout = ({ children }) => {
         </Col>
         <Col xs={24} lg={19} xxl={16}>
           <Row justify="center">
-            <AdaptiveDiv isIndexPage={isIndexPage}>{children}</AdaptiveDiv>
+            <AdaptiveDiv isindexpage={isIndexPage}>{children}</AdaptiveDiv>
           </Row>
         </Col>
         <Col xs={0} lg={0} xxl={4} />

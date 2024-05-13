@@ -5,14 +5,34 @@ const { Title, Text } = Typography;
 
 const data = [
   {
+    title: `MindEye2: Shared-Subject Models Enable fMRI-To-Image With 1 Hour of Data`,
+    description:
+      "Our architecture achieves a 40x finetuning speedup using a novel functional alignment procedure.",
+    authors:
+      "Paul S. Scotti, Mihir Tripathy ... Tong Chen, Jonathan Xu, Thomas Naselaris, Kenneth A. Norman, Tanishq Mathew Abraham",
+    href: "https://medarc-ai.github.io/mindeye2/",
+    publish: ["ICML 2024", "ICLR 2024 Re-Align Workshop"],
+    thumbnail: "/images/research/mindeye2.png",
+  },
+  {
+    title: `Alljoined1`,
+    description:
+      "We create a dataset built specifically for EEG-to-Image decoding, featuring 46,080 epochs of brain responses recorded with a 64-channel EEG headset.",
+    authors:
+      "Jonathan Xu, Bruno Aristimunha, Max Emanuel Feucht, Emma Qian, Charles Liu ... Adrian Nestor",
+    href: "https://arxiv.org/abs/2404.05553",
+    publish: ["CVPR 2024 DCAMI Workshop"],
+    thumbnail: "/images/research/alljoined1.jpg",
+  },
+  {
     title: `HarvestNet: A Dataset for Detecting Smallholder Farming Activity Using Harvest Piles and Remote Sensing`,
     description:
       "We introduce 7k hand-labeled images and 2k ground collected labels of harvest piles. Models trained on it detect smallholder farms better than SOTA land cover maps.",
     authors:
       "Jonathan Xu*, Amna Elmustafa*, Liya Weldegebriel, Emnet Negash, Richard Lee, David Lobell, Stefano Ermon",
     href: "https://arxiv.org/abs/2308.12061",
-    publish: "AAAI 2024",
-    thumbnail: "/images/research/pile-examples.png",
+    publish: ["AAAI 2024 oral presentation", "CVPR 2024 V4A Workshop"],
+    thumbnail: "/images/research/pile-examples.jpg",
   },
   {
     title: `Structure-Preserved Image Reconstruction from Brain Recordings`,
@@ -21,7 +41,7 @@ const data = [
     authors:
       "Zijiao Chen*, Jonathan Xu*, Jiaxin Qing, Ruilin Li, Juan Helen Zhou",
     href: "/documents/research/mindvis2.pdf",
-    publish: "Extended Abstracts of ISMRM 2024",
+    publish: ["ISMRM 2024"],
     thumbnail: "/images/research/fmri.png",
   },
 ];
@@ -50,9 +70,11 @@ const PapersPage = () => {
                 </Title>
                 <Text type="secondary">{item.description}</Text>
                 <div style={{ paddingTop: 8 }}>
-                  <Tag bordered={false} color="orange">
-                    {item.publish}
-                  </Tag>
+                  {item.publish.map((publishItem, index) => (
+                    <Tag key={index} bordered={false} color="orange">
+                      {publishItem}
+                    </Tag>
+                  ))}
                 </div>
               </Col>
               <Col xs={24} md={0}>
@@ -68,12 +90,12 @@ const PapersPage = () => {
                 <div>
                   {item.authors.split(", ").map((author, index, array) =>
                     author.includes("Jonathan Xu") ? (
-                      <Text type="secondary" strong>
+                      <Text type="secondary" strong key={index}>
                         {author}
                         {index < array.length - 1 ? ", " : ""}
                       </Text>
                     ) : (
-                      <Text type="secondary">
+                      <Text type="secondary" key={index}>
                         {author}
                         {index < array.length - 1 ? ", " : ""}
                       </Text>
