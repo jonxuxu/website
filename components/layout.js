@@ -9,6 +9,7 @@ import {
 } from "@ant-design/icons";
 import styled, { css } from "styled-components";
 import { device } from "../styles/breakpoints";
+import { useState, useEffect } from "react";
 
 export const GlobalLayout = ({ children }) => {
   const router = useRouter();
@@ -16,7 +17,7 @@ export const GlobalLayout = ({ children }) => {
 
   return (
     <Layout>
-      <TopBar currRoute={router.asPath} />
+      <TopBar />
       <Row>
         <Col xs={0} lg={3}>
           <SideBar currRoute={router.asPath} />
@@ -78,13 +79,27 @@ const menuItems = [
   },
 ];
 
-const TopBar = ({ currRoute }) => (
-  <Row>
-    <Col xs={24} lg={0}>
-      <Menu mode="horizontal" selectedKeys={[currRoute]} items={menuItems} />
-    </Col>
-  </Row>
-);
+const TopBar = () => {
+  const router = useRouter();
+  const [selectedKey, setSelectedKey] = useState(router.asPath);
+
+  useEffect(() => {
+    setSelectedKey(router.asPath); // Update selected key when route changes
+  }, [router.asPath]);
+
+  return (
+    <Row>
+      <Col xs={24} lg={0}>
+        <Menu
+          mode="horizontal"
+          selectedKeys={[selectedKey]}
+          onClick={(e) => setSelectedKey(e.key)}
+          items={menuItems}
+        />
+      </Col>
+    </Row>
+  );
+};
 
 const SideBar = ({ currRoute }) => {
   const homeStyle = currRoute === "/";

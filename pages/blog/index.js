@@ -4,6 +4,7 @@ import Link from "next/link";
 import dayjs from "dayjs";
 import { Typography, List, Space } from "antd";
 import { ClockCircleOutlined } from "@ant-design/icons";
+import { useState, useEffect } from "react";
 
 const { Title } = Typography;
 
@@ -18,12 +19,24 @@ export async function getStaticProps() {
 }
 
 const BlogPage = ({ filenames }) => {
-  var metas = filenames
-    .sort()
-    .reverse()
-    .map((name) => require(`./${name}`).metadata); //TODO: Fix crude solution to get metadata
+  const [metas, setMetas] = useState([]);
 
-  metas = metas.filter((m) => m !== undefined);
+  useEffect(() => {
+    const data = filenames
+      .sort()
+      .reverse()
+      .map((name) => {
+        try {
+          return require(`./${name}`).metadata;
+        } catch (e) {
+          return undefined;
+        }
+      })
+      .filter((m) => m !== undefined);
+
+    setMetas(data);
+  }, [filenames]);
+
   return (
     <div>
       <Head>

@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Typography, Card, Space, Row, Col, Tag, Divider } from "antd";
+import { Typography, Card, Space, Row, Col, Tag, Divider, Grid } from "antd";
+const { useBreakpoint } = Grid;
 
 const { Title, Text } = Typography;
 
@@ -46,6 +47,74 @@ const data = [
   },
 ];
 
+const PaperCard = ({ item }) => {
+  const screens = useBreakpoint();
+
+  const CardDescription = () => (
+    <div>
+      <Text type="secondary">{item.description}</Text>
+      <Space wrap size={[8, 8]} style={{ paddingTop: 10 }}>
+        {item.publish.map((publishItem, index) => (
+          <Tag key={index} bordered={false} color="orange">
+            {publishItem}
+          </Tag>
+        ))}
+      </Space>
+    </div>
+  );
+
+  return (
+    <Card
+      hoverable
+      onClick={(e) => window.open(item.href, "_blank")}
+      key={item.title}
+    >
+      <Row gutter={30}>
+        <Col xs={14} sm={18} md={11}>
+          <Title level={5} style={{ marginTop: 0 }}>
+            {item.title}
+          </Title>
+          {!screens.xs && <CardDescription />}
+        </Col>
+        <Col xs={10} sm={6} md={5}>
+          <img src={item.thumbnail} width="100%" />
+        </Col>
+        {screens.xs && (
+          <div style={{ paddingLeft: 15, paddingRight: 15 }}>
+            <CardDescription />
+          </div>
+        )}
+        <Col xs={24} md={0}>
+          <Divider />
+        </Col>
+        <Col xs={0} md={1}>
+          <Divider type="vertical" style={{ height: "100%" }} />
+        </Col>
+        <Col xs={24} md={6}>
+          <Title level={5} style={{ marginTop: 0 }}>
+            Authors
+          </Title>
+          <div>
+            {item.authors.split(", ").map((author, index, array) =>
+              author.includes("Jonathan Xu") ? (
+                <Text type="secondary" strong key={index}>
+                  {author}
+                  {index < array.length - 1 ? ", " : ""}
+                </Text>
+              ) : (
+                <Text type="secondary" key={index}>
+                  {author}
+                  {index < array.length - 1 ? ", " : ""}
+                </Text>
+              )
+            )}
+          </div>
+        </Col>
+      </Row>
+    </Card>
+  );
+};
+
 const PapersPage = () => {
   return (
     <div>
@@ -54,57 +123,8 @@ const PapersPage = () => {
       </Head>
       <Title>Research</Title>
       <Space direction="vertical" size={16}>
-        {data.map((item) => (
-          <Card
-            hoverable
-            onClick={(e) => window.open(item.href, "_blank")}
-            key={item.title}
-          >
-            <Row gutter={30}>
-              <Col xs={10} sm={6} md={5}>
-                <img src={item.thumbnail} width="100%" />
-              </Col>
-              <Col xs={14} sm={18} md={11}>
-                <Title level={5} style={{ marginTop: 0 }}>
-                  {item.title}
-                </Title>
-                <Text type="secondary">{item.description}</Text>
-                <div style={{ paddingTop: 8 }}>
-                  {item.publish.map((publishItem, index) => (
-                    <Tag key={index} bordered={false} color="orange">
-                      {publishItem}
-                    </Tag>
-                  ))}
-                </div>
-              </Col>
-              <Col xs={24} md={0}>
-                <Divider />
-              </Col>
-              <Col xs={0} md={1}>
-                <Divider type="vertical" style={{ height: "100%" }} />
-              </Col>
-              <Col xs={24} md={6}>
-                <Title level={5} style={{ marginTop: 0 }}>
-                  Authors
-                </Title>
-                <div>
-                  {item.authors.split(", ").map((author, index, array) =>
-                    author.includes("Jonathan Xu") ? (
-                      <Text type="secondary" strong key={index}>
-                        {author}
-                        {index < array.length - 1 ? ", " : ""}
-                      </Text>
-                    ) : (
-                      <Text type="secondary" key={index}>
-                        {author}
-                        {index < array.length - 1 ? ", " : ""}
-                      </Text>
-                    )
-                  )}
-                </div>
-              </Col>
-            </Row>
-          </Card>
+        {data.map((item, index) => (
+          <PaperCard key={index} item={item} />
         ))}
       </Space>
     </div>
