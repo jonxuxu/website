@@ -57,35 +57,56 @@ const Home = () => {
           <Title level={5} style={{ marginBottom: 20 }}>
             What I've been up to
           </Title>
-          <Timeline pending="Something new..." reverse={true}>
-            <Timeline.Item>
-              <a href="https://hebbia.ai">Hebbia</a>: Answering questions for
-              everything
-            </Timeline.Item>
-            <Timeline.Item>
-              Programming <a href="https://iyk.app">wearable NFC chips</a>
-            </Timeline.Item>
-            <Timeline.Item>
-              Detecting harvest piles at Stanford{" "}
-              <a
-                href="http://sustain.stanford.edu"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Sustain Lab
-              </a>
-            </Timeline.Item>
-            <Timeline.Item>
-              Image reconstruction in{" "}
-              <a
-                href="https://neuroimaginglab.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Singapore
-              </a>
-            </Timeline.Item>
-          </Timeline>
+          <Timeline
+            pending="Something new..."
+            reverse={true}
+            items={[
+              {
+                children: (
+                  <span>
+                    <a href="https://hebbia.ai">Hebbia</a>: Answering questions
+                    for everything
+                  </span>
+                ),
+              },
+              {
+                children: (
+                  <span>
+                    Programming <a href="https://iyk.app">wearable NFC chips</a>
+                  </span>
+                ),
+              },
+              {
+                children: (
+                  <span>
+                    Detecting harvest piles at Stanford{" "}
+                    <a
+                      href="http://sustain.stanford.edu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Sustain Lab
+                    </a>
+                  </span>
+                ),
+              },
+              {
+                children: (
+                  <span>
+                    Image reconstruction in{" "}
+                    <a
+                      href="https://neuroimaginglab.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Singapore
+                    </a>
+                  </span>
+                ),
+              },
+            ]}
+          />
+
           {/* <Space>
             <a
               href="/documents/home/resume.pdf"

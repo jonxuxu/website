@@ -31,7 +31,7 @@ const data = [
     authors:
       "Jonathan Xu*, Amna Elmustafa*, Liya Weldegebriel, Emnet Negash, Richard Lee, David Lobell, Stefano Ermon",
     href: "https://arxiv.org/abs/2308.12061",
-    publish: ["AAAI 2024 oral presentation", "CVPR 2024 V4A Workshop"],
+    publish: ["AAAI 2024 Oral Presentation", "CVPR 2024 V4A Workshop"],
     thumbnail: "/images/research/pile-examples.jpg",
   },
   {
