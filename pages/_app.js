@@ -4,15 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 
-import {
-  ConfigProvider,
-  Button,
-  Card,
-  App,
-  Typography,
-  Image,
-  Divider,
-} from "antd";
+import { ConfigProvider, App, Typography, Image, Divider } from "antd";
 import { createGlobalStyle } from "styled-components";
 import { MDXProvider } from "@mdx-js/react";
 import { BlockQuote } from "../components/mdx";
@@ -35,9 +27,9 @@ const components = {
   h1: Typography.Title,
   // img: (props: ImageProps) => (
   img: (props) => (
-    <center>
-      <Image {...props} />
-    </center>
+    <div style={{ textAlign: "center" }}>
+      <Image {...props} style={{ maxWidth: "500px", height: "auto" }} />
+    </div>
   ),
   hr: Divider,
   // code: CodeBlock,

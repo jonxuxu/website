@@ -197,11 +197,14 @@ const SocialLink = styled.a`
 `;
 
 const AdaptiveDiv = styled.div`
-  max-width: ${(props) => (props.$isindexpage ? "800px" : "1000px")};
+  max-width: ${(props) =>
+    props.$isindexpage ? "800px" : "min(1000px, 100vw)"};
   padding: 20px;
+
   @media ${device.mobileL} {
     padding: 30px;
   }
+
   @media ${device.tablet} {
     padding: 45px;
   }

@@ -293,10 +293,24 @@ papers = papers.map((paper) => {
 
 const papers_columns = [
   {
+    title: "Paper",
+    dataIndex: "paper",
+    key: "paper",
+    render: (text, record) => (
+      <a href={record.link} target="_blank" rel="noopener noreferrer">
+        {text}
+      </a>
+    ),
+  },
+  {
+    title: "Contribution",
+    dataIndex: "contribution",
+    key: "contribution",
+  },
+  {
     title: "Topic",
     dataIndex: "topic",
     key: "topic",
-    width: 70,
     render: (text) => {
       let color;
       switch (text) {
@@ -325,21 +339,6 @@ const papers_columns = [
       );
     },
   },
-  {
-    title: "Paper",
-    dataIndex: "paper",
-    key: "paper",
-    render: (text, record) => (
-      <a href={record.link} target="_blank" rel="noopener noreferrer">
-        {text}
-      </a>
-    ),
-  },
-  {
-    title: "Contribution",
-    dataIndex: "contribution",
-    key: "contribution",
-  },
 ];
 
 export const DatasetTable = () => (
@@ -355,5 +354,7 @@ export const CompetitionTable = () => (
 );
 
 export const PaperTable = () => (
-  <Table dataSource={papers} columns={papers_columns} />
+  <div style={{ overflowX: "auto" }}>
+    <Table dataSource={papers} columns={papers_columns} />
+  </div>
 );
