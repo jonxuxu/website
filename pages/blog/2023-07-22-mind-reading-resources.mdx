@@ -1,4 +1,4 @@
-import { Table } from "antd";
+import { Table, Tag} from "antd";
 export const TdCell = (props) => {
   // Need custom ant table cell to prevent crashing when hovering over a cell
   const { onMouseEnter, onMouseDown, ...restProps } = props;
@@ -130,11 +130,8 @@ export const competitions_columns = [
   },
 ];
 
+export const paperTopics = ["Image reconstruction", "Reconstruction in other modalities", "Diffusion models", "Transformers", "Datasets"];
 export const papers = [
-  {
-    key: 1,
-    topic: "Image reconstruction",
-  },
   {
     key: 11,
     paper: "Decoding the visual and subjective contents of the human brain",
@@ -206,10 +203,6 @@ export const papers = [
     link: "https://openreview.net/pdf?id=pHdiaqgh_nf",
   },
   {
-    key: 2,
-    topic: "Reconstruction in other modalities",
-  },
-  {
     key: 21,
     paper:
       "DreamDiffusion: Generating High-Quality Images from Brain EEG Signals",
@@ -233,10 +226,6 @@ export const papers = [
     link: "https://arxiv.org/abs/2305.11675",
   },
   {
-    key: 3,
-    topic: "Diffusion models",
-  },
-  {
     key: 31,
     paper: "LoRA: Low-Rank Adaptation of Large Language Models",
     contribution:
@@ -257,10 +246,6 @@ export const papers = [
     contribution:
       "zero-shot learning of image-caption pairs by comparing image and text embeddings and training the encoders to map to the same latent space",
     link: "https://arxiv.org/abs/2103.000200",
-  },
-  {
-    key: 4,
-    topic: "Transformers",
   },
   {
     key: 41,
@@ -293,10 +278,6 @@ export const papers = [
     link: "https://arxiv.org/abs/2111.09883",
   },
   {
-    key: 5,
-    topic: "Datasets",
-  },
-  {
     key: 51,
     paper:
       "NSD: A massive 7T fMRI dataset to bridge cognitive neuroscience and artificial intelligence",
@@ -305,6 +286,15 @@ export const papers = [
     link: "https://naturalscenesdataset.org",
   },
 ];
+export const updatedPapers = papers.map(paper => {
+  const index = Math.floor(paper.key / 10) - 1;
+  const topic = paperTopics[index];
+
+return {
+...paper,
+topic
+};
+});
 
 export const papers_columns = [
   {
@@ -312,6 +302,33 @@ export const papers_columns = [
     dataIndex: "topic",
     key: "topic",
     width: 70,
+    render: (text) => {
+      let color;
+      switch (text) {
+        case "Image reconstruction":
+          color = "blue";
+          break;
+        case "Reconstruction in other modalities":
+          color = "green";
+          break;
+        case "Diffusion models":
+          color = "orange";
+          break;
+        case "Transformers":
+          color = "purple";
+          break;
+        case "Datasets":
+          color = "red";
+          break;
+        default:
+          color = "gray";
+      }
+      return (
+        <Tag color={color} bordered={false}>
+          {text}
+        </Tag>
+      );
+    },
   },
   {
     title: "Paper",
@@ -370,7 +387,7 @@ One of the best ways to learn quickly is to read up on foundational papers and t
 
 <div>
   <Table
-    dataSource={papers}
+    dataSource={updatedPapers}
     columns={papers_columns}
     components={{
       body: { cell: TdCell },
