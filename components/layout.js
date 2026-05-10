@@ -79,6 +79,9 @@ const menuItems = [
   },
 ];
 
+// Mobile menu excludes external links shown in sidebar only
+const mobileMenuItems = menuItems;
+
 const TopBar = () => {
   const router = useRouter();
   const [selectedKey, setSelectedKey] = useState(router.asPath);
@@ -102,103 +105,80 @@ const TopBar = () => {
 };
 
 const SideBar = ({ currRoute }) => {
-  const homeStyle = currRoute === "/";
-
   return (
-    <div
-      style={{
-        padding: 80,
-        background: homeStyle ? "url(/images/home/sideBanner.jpg)" : "none",
-        backgroundSize: homeStyle ? "cover" : "auto",
-        height: "100vh",
-        position: "fixed",
-      }}
-    >
+    <SidebarWrapper>
       <Link href="/">
         <Image
-          src={homeStyle ? "/images/logoWhite.svg" : "/images/logoBlack.svg"}
-          width={50}
-          height={50}
+          src="/images/logoBlack.svg"
+          width={36}
+          height={36}
           alt="logo"
         />
       </Link>
-      <PageLink href="/research" $white={homeStyle} style={{ marginTop: 10 }}>
+      <PageLink href="/research" style={{ marginTop: 16 }}>
         Research
       </PageLink>
-      <PageLink href="/projects" $white={homeStyle}>
+      <PageLink href="/projects">
         Projects
       </PageLink>
-      <PageLink href="/blog" $white={homeStyle}>
+      <PageLink href="/blog">
         Blog
       </PageLink>
-
       <PageLink
         href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
         target="_blank"
-        $white={homeStyle}
       >
         Notebook
       </PageLink>
-      <PageLink href="/cooking" $white={homeStyle}>
+      <PageLink href="/cooking">
         Cooking
       </PageLink>
-      {/* <PageLink
-        href="https://www.youtube.com/channel/UCYVeWh2TK8QAwiNCtrR6j5g"
-        target="_blank"
-        $white={homeStyle}
-      >
-        Walks
-      </PageLink> */}
       <PageLink
         href="https://seen-badge-2df.notion.site/89bd1d2e5b164f49a1ae8a63ccd5bf61?v=d67bff7207dc408b8cf0a61c4b0ef8da&pvs=4"
         target="_blank"
-        $white={homeStyle}
       >
         Library
       </PageLink>
 
-      <SocialLink
-        href="https://twitter.com/jonxuxu"
-        target="_blank"
-        $home={homeStyle}
-        style={{ marginTop: 40 }}
-      >
-        <TwitterOutlined />
-      </SocialLink>
-      <SocialLink
-        href="https://github.com/jonxuxu"
-        target="_blank"
-        $home={homeStyle}
-      >
-        <GithubOutlined />
-      </SocialLink>
-      <div>
-        <a href="https://se-webring.xyz/" target="_blank">
-          <Webring
-            src={
-              homeStyle
-                ? "https://webring.xxiivv.com/icon.white.svg"
-                : "https://webring.xxiivv.com/icon.black.svg"
-            }
-            $home={homeStyle}
-          />
-        </a>
-      </div>
-    </div>
+      <SocialRow>
+        <SocialLink href="https://twitter.com/jonxuxu" target="_blank">
+          <TwitterOutlined />
+        </SocialLink>
+        <SocialLink href="https://github.com/jonxuxu" target="_blank">
+          <GithubOutlined />
+        </SocialLink>
+      </SocialRow>
+    </SidebarWrapper>
   );
 };
 
+const SidebarWrapper = styled.div`
+  padding: 48px 32px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(42, 42, 38, 0.1);
+`;
+
+const SocialRow = styled.div`
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+`;
+
 const SocialLink = styled.a`
-  color: ${(props) => (props.$home ? "white" : "#999")};
+  color: #7A7870;
+  font-size: 16px;
+  text-decoration: none;
   &:hover {
-    color: ${(props) => !props.$home && "black"};
+    color: #2A2A26;
   }
-  display: block;
 `;
 
 const AdaptiveDiv = styled.div`
   max-width: ${(props) =>
-    props.$isindexpage ? "800px" : "min(1000px, 100vw)"};
+    props.$isindexpage ? "720px" : "min(1000px, 100vw)"};
   padding: 20px;
 
   @media ${device.mobileL} {
@@ -206,35 +186,23 @@ const AdaptiveDiv = styled.div`
   }
 
   @media ${device.tablet} {
-    padding: 45px;
+    padding: 56px 48px;
   }
 `;
 
 const PageLink = styled(Link)`
-  color: ${(props) => props.$white && "white"};
+  color: #7A7870;
   display: block;
-`;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.15s ease;
 
-const Webring = styled.img`
-  width 18px;
-  height: 18px;
-  position: relative;
-  left: -2px;
-  top: 2px;
-  ${(props) =>
-    props.$home
-      ? css`
-          &:hover {
-            filter: invert(36%) sepia(75%) saturate(2522%) hue-rotate(340deg)
-              brightness(110%) contrast(101%);
-          }
-        `
-      : css`
-          filter: invert(69%) sepia(0%) saturate(1504%) hue-rotate(139deg)
-            brightness(90%) contrast(83%);
-          // On hover remove filter
-          &:hover {
-            filter: none;
-          }
-        `}
+  &:hover {
+    color: #2A2A26;
+  }
 `;

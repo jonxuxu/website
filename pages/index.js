@@ -1,145 +1,215 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Link from "next/link";
-import { Row, Col, Typography, Timeline, Button, Divider, Space } from "antd";
 import { device } from "../styles/breakpoints";
-
-const { Title } = Typography;
 
 export function getStaticProps() {
   return {
-    props: { fullscreen: true }, // will be passed to the page component as props
+    props: { fullscreen: true },
   };
 }
 
-const MainCol = styled(Col)``;
-
-const Introduction = styled(Row)`
-  padding-top: 20px;
-
-  @media ${device.mobileS} {
-    padding-top: 0px;
-  }
-`;
-
 const Home = () => {
   return (
-    <div>
+    <Wrapper>
       <Head>
         <title>Jonathan Xu</title>
       </Head>
-      <Introduction gutter={24} align="middle">
-        <MainCol xs={24} md={7} xxl={4}>
-          <div style={{ minHeight: 200 }}>
-            <img
-              src="/images/home/profile-pic.jpeg"
-              style={{ width: "100%", borderRadius: "50%" }}
-            />
-          </div>
-        </MainCol>
-        <MainCol xs={24} md={17} xxl={20}>
-          <Title>Hey!</Title>
-          <p>
-            I'm Jonathan. Many of my projects explore the magic of cross-domain
-            tech; currently I'm trying to recover thoughts from brain scans.
-          </p>
-          <p>
-            Apart from code, I enjoy cooking new things, learning languages, and
-            making music. If what I'm working on or talking about strikes your
-            fancy, feel free to say hello!
-          </p>
-          <Divider />
-        </MainCol>
-      </Introduction>
 
-      <Row gutter={36}>
-        <Col xs={24} sm={12}>
-          <Title level={5} style={{ marginBottom: 20 }}>
-            What I've been up to
-          </Title>
-          <Timeline
-            pending="Something new..."
-            reverse={true}
-            items={[
-              {
-                children: (
-                  <span>
-                    <a href="https://hebbia.ai">Hebbia</a>: Answering questions
-                    for everything
-                  </span>
-                ),
-              },
-              {
-                children: (
-                  <span>
-                    Programming <a href="https://iyk.app">wearable NFC chips</a>
-                  </span>
-                ),
-              },
-              {
-                children: (
-                  <span>
-                    Detecting harvest piles at Stanford{" "}
-                    <a
-                      href="http://sustain.stanford.edu"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Sustain Lab
-                    </a>
-                  </span>
-                ),
-              },
-              {
-                children: (
-                  <span>
-                    Image reconstruction in{" "}
-                    <a
-                      href="https://neuroimaginglab.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Singapore
-                    </a>
-                  </span>
-                ),
-              },
-            ]}
-          />
+      <Name>Jonathan Xu</Name>
+      <Role>Founder · AI &amp; Neuroscience</Role>
 
-          {/* <Space>
-            <a
-              href="/documents/home/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button type="dashed">Resume</Button>
-            </a>
+      <Divider />
 
-            <Button type="dashed">Failure Resume</Button>
-          </Space> */}
-        </Col>
-        <Col xs={24} sm={12}>
-          <Title level={5}>Character north stars</Title>
-          <ul>
-            <li>
-              <strong>Live authentically: </strong>Find your own purpose and
-              meaning in life; live to be a better, more honest version of
-              yourself.
-            </li>
-            <li>
-              <strong>Grow meaningfully: </strong>Develop a strong personal
-              compass. Never stop <Link href="/todayilearned">learning</Link>.
-            </li>
-            <li>
-              <strong>Motivate internally: </strong>Follow your inner passions
-              and don't get swayed by external pressures.
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </div>
+      <Bio>
+        <p>
+          I'm building <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">AllJoined</a> —
+          tools to decode thoughts from non-invasive brain recordings.
+          The brain generates rich signals. We're making them legible.
+        </p>
+        <p>
+          My research on neural decoding has been published at ICML, AAAI, and CVPR.
+          Previously at <a href="https://hebbia.ai" target="_blank" rel="noopener noreferrer">Hebbia</a> and <a href="https://iyk.app" target="_blank" rel="noopener noreferrer">IYK</a>.
+        </p>
+        <p>
+          Say hello —{" "}
+          <a href="mailto:dev@alljoined.com">dev@alljoined.com</a>
+        </p>
+      </Bio>
+
+      <Divider />
+
+      <Section>
+        <SectionLabel>Experience</SectionLabel>
+        <TimelineList>
+          <TimelineItem>
+            <TimelineYear>2024 –</TimelineYear>
+            <TimelineContent>
+              Founder,{" "}
+              <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">
+                AllJoined
+              </a>{" "}
+              — EEG decoding &amp; brain-computer interfaces
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineYear>2023</TimelineYear>
+            <TimelineContent>
+              <a href="https://hebbia.ai" target="_blank" rel="noopener noreferrer">
+                Hebbia
+              </a>{" "}
+              — AI for knowledge work
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineYear>2022</TimelineYear>
+            <TimelineContent>
+              <a href="https://iyk.app" target="_blank" rel="noopener noreferrer">
+                IYK
+              </a>{" "}
+              — Programmable wearable NFC chips
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineYear>2022</TimelineYear>
+            <TimelineContent>
+              Stanford{" "}
+              <a href="http://sustain.stanford.edu" target="_blank" rel="noopener noreferrer">
+                Sustain Lab
+              </a>{" "}
+              — Smallholder farm detection via satellite imagery
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineYear>2021</TimelineYear>
+            <TimelineContent>
+              NUS{" "}
+              <a href="https://neuroimaginglab.org/" target="_blank" rel="noopener noreferrer">
+                Neuroimaging Lab
+              </a>{" "}
+              — fMRI-to-image reconstruction
+            </TimelineContent>
+          </TimelineItem>
+        </TimelineList>
+      </Section>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  padding-top: 12px;
+`;
+
+const Name = styled.h1`
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 3rem !important;
+  font-weight: 400 !important;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.02em;
+  color: #2A2A26;
+`;
+
+const Role = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7A7870;
+  margin: 0;
+  text-decoration: none;
+`;
+
+const Divider = styled.hr`
+  border: none;
+  border-top: 1px solid rgba(42, 42, 38, 0.12);
+  margin: 28px 0;
+`;
+
+const Bio = styled.div`
+  max-width: 520px;
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #2A2A26;
+    margin: 0 0 16px 0;
+  }
+
+  a {
+    color: #2A2A26;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(42,42,38,0.3);
+    &:hover {
+      color: #6B6355;
+      text-decoration-color: #6B6355;
+    }
+  }
+`;
+
+const Section = styled.div`
+  display: flex;
+  gap: 40px;
+
+  @media ${device.mobileL} {
+    flex-direction: column;
+    gap: 12px;
+  }
+`;
+
+const SectionLabel = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7A7870;
+  margin: 0;
+  min-width: 100px;
+  padding-top: 2px;
+`;
+
+const TimelineList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+`;
+
+const TimelineItem = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+`;
+
+const TimelineYear = styled.span`
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #7A7870;
+  min-width: 52px;
+  letter-spacing: 0.02em;
+`;
+
+const TimelineContent = styled.span`
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #2A2A26;
+  line-height: 1.5;
+
+  a {
+    color: #2A2A26;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(42,42,38,0.3);
+    &:hover {
+      color: #6B6355;
+      text-decoration-color: #6B6355;
+    }
+  }
+`;
 
 export default Home;
