@@ -19,6 +19,41 @@ import * as darkTheme from "../styles/ant-dark.json";
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #F5F3EE;
+    color: #2A2A26;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .ant-typography h1,
+  .ant-typography h2,
+  .ant-typography h3,
+  .ant-typography h4,
+  div.ant-typography,
+  .ant-typography {
+    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    letter-spacing: 0.01em;
+  }
+
+  h1.ant-typography, .ant-typography h1 {
+    font-weight: 400 !important;
+    font-size: 2.6rem !important;
+  }
+
+  h2.ant-typography, .ant-typography h2 {
+    font-weight: 400 !important;
+  }
+
+  a {
+    color: #2A2A26;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(42,42,38,0.3);
+  }
+
+  a:hover {
+    color: #6B6355;
+    text-decoration-color: #6B6355;
   }
 `;
 

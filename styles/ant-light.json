@@ -1,7 +1,12 @@
 {
-  "fontSize": 14,
+  "fontSize": 15,
   "lineWidth": 1,
-  "colorPrimary": "#ff4c3b",
-  "colorLink": "#ff4c3b",
-  "colorBgLayout": "#ffffff"
+  "colorPrimary": "#6B6355",
+  "colorLink": "#2A2A26",
+  "colorLinkHover": "#6B6355",
+  "colorBgLayout": "#F5F3EE",
+  "colorBgContainer": "#F5F3EE",
+  "colorText": "#2A2A26",
+  "colorTextSecondary": "#7A7870",
+  "borderRadius": 2
 }
