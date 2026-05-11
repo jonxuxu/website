@@ -17,7 +17,6 @@ const Home = () => {
       </Head>
 
       <Name>Jonathan Xu</Name>
-      <Role>Founder &amp; CEO, AllJoined</Role>
 
       <Divider />
 
@@ -57,29 +56,20 @@ const Home = () => {
           <TimelineItem>
             <TimelineYear>2024 –</TimelineYear>
             <TimelineContent>
-              Founder,{" "}
               <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">
                 AllJoined
               </a>{" "}
-              — EEG decoding &amp; brain-computer interfaces
+              — Decoding thoughts to bridge humans and AI
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineYear>2023</TimelineYear>
             <TimelineContent>
-              <a href="https://hebbia.ai" target="_blank" rel="noopener noreferrer">
-                Hebbia
+              NUS{" "}
+              <a href="https://neuroimaginglab.org/" target="_blank" rel="noopener noreferrer">
+                Neuroimaging Lab
               </a>{" "}
-              — AI for knowledge work
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineYear>2022</TimelineYear>
-            <TimelineContent>
-              <a href="https://iyk.app" target="_blank" rel="noopener noreferrer">
-                IYK
-              </a>{" "}
-              — Programmable wearable NFC chips
+              — fMRI-to-image reconstruction
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -95,11 +85,19 @@ const Home = () => {
           <TimelineItem>
             <TimelineYear>2021</TimelineYear>
             <TimelineContent>
-              NUS{" "}
-              <a href="https://neuroimaginglab.org/" target="_blank" rel="noopener noreferrer">
-                Neuroimaging Lab
+              <a href="https://hebbia.ai" target="_blank" rel="noopener noreferrer">
+                Hebbia
               </a>{" "}
-              — fMRI-to-image reconstruction
+              — AI for knowledge work
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineYear>2021</TimelineYear>
+            <TimelineContent>
+              <a href="https://iyk.app" target="_blank" rel="noopener noreferrer">
+                IYK
+              </a>{" "}
+              — Programmable wearable NFC chips
             </TimelineContent>
           </TimelineItem>
         </TimelineList>
@@ -114,7 +112,7 @@ const Wrapper = styled.div`
 
 const Name = styled.h1`
   font-family: 'Cormorant Garamond', Georgia, serif !important;
-  font-size: 3rem !important;
+  font-size: 2.2rem !important;
   font-weight: 400 !important;
   margin: 0 0 6px 0;
   letter-spacing: 0.02em;
