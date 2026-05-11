@@ -22,29 +22,32 @@ const Home = () => {
 
       <Bio>
         <p>
-          I believe the technologies people call impossible are often just early.
-          My work is about finding those gaps — and building through them.
+          I'm the founder and CEO of{" "}
+          <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">AllJoined</a>,
+          where we decode thoughts from non-invasive brain recordings. I think
+          most "impossible" technologies are just early, and that paradigms often
+          change faster than people realize.
         </p>
         <p>
-          At <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">AllJoined</a>, we
-          decode thoughts from non-invasive brain recordings. The science exists,
-          the compute exists, the data is coming — we're assembling it into
-          something real.
-        </p>
-        <p>
-          I started programming in high school, competing in 40+ hackathons.
-          I studied Computer Science at the University of Waterloo, did ML research
-          at Stanford under Stefano Ermon and David Lobell, and worked on neural
+          I grew up in Toronto and live in San Francisco. In high school I spent
+          my weekends at 40+ hackathons, where I learned how to program. I studied
+          Computer Science at the University of Waterloo, did ML research at
+          Stanford under Stefano Ermon and David Lobell, and worked on neural
           decoding at NUS. I've published at CVPR, ICML, and NeurIPS.
         </p>
         <p>
-          Outside of work: piano, badminton, Asimov, meditation.
+          A couple of operating beliefs: be honest with yourself, stay inspired,
+          be grounded, follow your heart.
         </p>
         <p>
-          Find me on{" "}
-          <a href="https://github.com/jonxuxu" target="_blank" rel="noopener noreferrer">GitHub</a>,{" "}
-          <a href="https://twitter.com/jonxuxu" target="_blank" rel="noopener noreferrer">Twitter</a>, or{" "}
-          <a href="mailto:dev@alljoined.com">say hello directly</a>.
+          I like classical music, badminton, Asimov books, zazen, outer space,
+          and interior design.
+        </p>
+        <p>
+          You can find me on{" "}
+          <a href="https://github.com/jonxuxu" target="_blank" rel="noopener noreferrer">GitHub</a>{" "}
+          and{" "}
+          <a href="https://twitter.com/jonxuxu" target="_blank" rel="noopener noreferrer">Twitter</a>.
         </p>
       </Bio>
 
