@@ -2,11 +2,7 @@ import { Row, Col, Menu, Layout } from "antd";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  HomeOutlined,
-  TwitterOutlined,
-  GithubOutlined,
-} from "@ant-design/icons";
+import { HomeOutlined } from "@ant-design/icons";
 import styled, { css } from "styled-components";
 import { device } from "../styles/breakpoints";
 import { useState, useEffect } from "react";
@@ -48,8 +44,8 @@ const menuItems = [
     label: <Link href="/projects">Projects</Link>,
   },
   {
-    key: "/blog",
-    label: <Link href="/blog">Blog</Link>,
+    key: "/thoughts",
+    label: <Link href="/thoughts">Thoughts</Link>,
   },
   {
     key: "notebook",
@@ -121,8 +117,8 @@ const SideBar = ({ currRoute }) => {
       <PageLink href="/projects">
         Projects
       </PageLink>
-      <PageLink href="/blog">
-        Blog
+      <PageLink href="/thoughts">
+        Thoughts
       </PageLink>
       <PageLink
         href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
@@ -140,14 +136,6 @@ const SideBar = ({ currRoute }) => {
         Library
       </PageLink>
 
-      <SocialRow>
-        <SocialLink href="https://twitter.com/jonxuxu" target="_blank">
-          <TwitterOutlined />
-        </SocialLink>
-        <SocialLink href="https://github.com/jonxuxu" target="_blank">
-          <GithubOutlined />
-        </SocialLink>
-      </SocialRow>
     </SidebarWrapper>
   );
 };

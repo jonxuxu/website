@@ -17,23 +17,35 @@ const Home = () => {
       </Head>
 
       <Name>Jonathan Xu</Name>
-      <Role>Founder · AI &amp; Neuroscience</Role>
+      <Role>Founder &amp; CEO, AllJoined</Role>
 
       <Divider />
 
       <Bio>
         <p>
-          I'm building <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">AllJoined</a> —
-          tools to decode thoughts from non-invasive brain recordings.
-          The brain generates rich signals. We're making them legible.
+          I believe the technologies people call impossible are often just early.
+          My work is about finding those gaps — and building through them.
         </p>
         <p>
-          My research on neural decoding has been published at ICML, AAAI, and CVPR.
-          Previously at <a href="https://hebbia.ai" target="_blank" rel="noopener noreferrer">Hebbia</a> and <a href="https://iyk.app" target="_blank" rel="noopener noreferrer">IYK</a>.
+          At <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">AllJoined</a>, we
+          decode thoughts from non-invasive brain recordings. The science exists,
+          the compute exists, the data is coming — we're assembling it into
+          something real.
         </p>
         <p>
-          Say hello —{" "}
-          <a href="mailto:dev@alljoined.com">dev@alljoined.com</a>
+          I started programming in high school, competing in 40+ hackathons.
+          I studied Computer Science at the University of Waterloo, did ML research
+          at Stanford under Stefano Ermon and David Lobell, and worked on neural
+          decoding at NUS. I've published at CVPR, ICML, and NeurIPS.
+        </p>
+        <p>
+          Outside of work: piano, badminton, Asimov, meditation.
+        </p>
+        <p>
+          Find me on{" "}
+          <a href="https://github.com/jonxuxu" target="_blank" rel="noopener noreferrer">GitHub</a>,{" "}
+          <a href="https://twitter.com/jonxuxu" target="_blank" rel="noopener noreferrer">Twitter</a>, or{" "}
+          <a href="mailto:dev@alljoined.com">say hello directly</a>.
         </p>
       </Bio>
 
