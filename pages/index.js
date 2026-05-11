@@ -23,7 +23,7 @@ const Home = () => {
       <Bio>
         <p>
           I'm the founder and CEO of{" "}
-          <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">AllJoined</a>,
+          <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">Alljoined</a>,
           where we decode thoughts from non-invasive brain recordings. I think
           most "impossible" technologies are just early, and that paradigms often
           change faster than people realize.
@@ -60,7 +60,7 @@ const Home = () => {
             <TimelineYear>2024 –</TimelineYear>
             <TimelineContent>
               <a href="https://alljoined.com" target="_blank" rel="noopener noreferrer">
-                AllJoined
+                Alljoined
               </a>{" "}
               — Decoding thoughts to bridge humans and AI
             </TimelineContent>
