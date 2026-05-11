@@ -40,12 +40,12 @@ const menuItems = [
     label: <Link href="/research">Research</Link>,
   },
   {
-    key: "/projects",
-    label: <Link href="/projects">Projects</Link>,
-  },
-  {
     key: "/thoughts",
     label: <Link href="/thoughts">Thoughts</Link>,
+  },
+  {
+    key: "/projects",
+    label: <Link href="/projects">Projects</Link>,
   },
   {
     key: "notebook",
@@ -114,11 +114,11 @@ const SideBar = ({ currRoute }) => {
       <PageLink href="/research" style={{ marginTop: 16 }}>
         Research
       </PageLink>
-      <PageLink href="/projects">
-        Projects
-      </PageLink>
       <PageLink href="/thoughts">
         Thoughts
+      </PageLink>
+      <PageLink href="/projects">
+        Projects
       </PageLink>
       <PageLink
         href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"

@@ -4,7 +4,8 @@ import React from "react";
 import { useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 
-import { ConfigProvider, App, Typography, Image, Divider } from "antd";
+import { ConfigProvider, App, Typography, Divider } from "antd";
+import NextImage from "next/image";
 import { createGlobalStyle } from "styled-components";
 import { MDXProvider } from "@mdx-js/react";
 import { BlockQuote } from "../components/mdx";
@@ -55,6 +56,11 @@ const GlobalStyle = createGlobalStyle`
     color: #6B6355;
     text-decoration-color: #6B6355;
   }
+
+  .ant-menu a,
+  .ant-menu-item a {
+    text-decoration: none !important;
+  }
 `;
 
 // const components: any = {
@@ -63,7 +69,13 @@ const components = {
   // img: (props: ImageProps) => (
   img: (props) => (
     <div style={{ textAlign: "center" }}>
-      <Image {...props} style={{ maxWidth: "500px", height: "auto" }} />
+      <NextImage
+        {...props}
+        width={500}
+        height={0}
+        style={{ maxWidth: "100%", height: "auto" }}
+        sizes="(max-width: 600px) 100vw, 500px"
+      />
     </div>
   ),
   hr: Divider,
