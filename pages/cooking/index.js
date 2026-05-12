@@ -44,25 +44,27 @@ export default function CookingPage() {
         size="large"
         dataSource={recipes}
         renderItem={(item) => (
-          <StyledListItem key={item.name}>
-            <TextContainer>
-              <List.Item.Meta
-                title={
-                  <Link href="/cooking/[recipe]" as={`/cooking/${item.name}`}>
-                    {item.name}
-                  </Link>
-                }
-                description={item.location}
-              />
-              <Text type="secondary">{item.subtitle}</Text>
-            </TextContainer>
+          <Link
+            href="/cooking/[recipe]"
+            as={`/cooking/${item.name}`}
+            style={{ display: "block", textDecoration: "none", color: "inherit" }}
+          >
+            <StyledListItem key={item.name}>
+              <TextContainer>
+                <List.Item.Meta
+                  title={<RecipeTitle>{item.name}</RecipeTitle>}
+                  description={item.location}
+                />
+                <Text type="secondary">{item.subtitle}</Text>
+              </TextContainer>
 
-            {item.image && (
-              <ImageContainer>
-                <img alt="recipe image" src={item.image} />
-              </ImageContainer>
-            )}
-          </StyledListItem>
+              {item.image && (
+                <ImageContainer>
+                  <img alt="recipe image" src={item.image} />
+                </ImageContainer>
+              )}
+            </StyledListItem>
+          </Link>
         )}
       />
 
@@ -71,14 +73,25 @@ export default function CookingPage() {
   );
 }
 
+const RecipeTitle = styled.span`
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #2A2A26;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(42, 42, 38, 0.3);
+`;
+
 const StyledListItem = styled.div`
   display: flex;
-  flex-direction: row; /* Ensure row layout */
-  justify-content: space-between; /* Space between text and image */
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start;
-  border-bottom: 1px solid #f0f0f0;
-  padding: 16px 0; /* Optional: Adds spacing for better visual separation */
-  width: 100%; /* Ensure it takes up full width of the parent */
+  border-bottom: 1px solid rgba(42, 42, 38, 0.1);
+  padding: 24px 0;
+  width: 100%;
+  cursor: pointer;
 `;
 
 const ImageContainer = styled.div`

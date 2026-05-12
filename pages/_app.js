@@ -18,11 +18,16 @@ import * as darkTheme from "../styles/ant-dark.json";
 // import { type ImageProps } from "rc-image";
 
 const GlobalStyle = createGlobalStyle`
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #F5F3EE;
     color: #2A2A26;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6,

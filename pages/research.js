@@ -68,6 +68,7 @@ const PaperCard = ({ item }) => {
       hoverable
       onClick={(e) => window.open(item.href, "_blank")}
       key={item.title}
+      style={{ border: "1px solid rgba(42, 42, 38, 0.2)" }}
     >
       <Row gutter={30}>
         <Col xs={14} sm={18} md={11}>

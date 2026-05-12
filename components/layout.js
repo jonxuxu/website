@@ -111,31 +111,24 @@ const SideBar = ({ currRoute }) => {
           alt="logo"
         />
       </Link>
-      <PageLink href="/research" style={{ marginTop: 16 }}>
-        Research
-      </PageLink>
-      <PageLink href="/thoughts">
-        Thoughts
-      </PageLink>
-      <PageLink href="/projects">
-        Projects
-      </PageLink>
-      <PageLink
-        href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
-        target="_blank"
-      >
-        Notebook
-      </PageLink>
-      <PageLink href="/cooking">
-        Cooking
-      </PageLink>
-      <PageLink
-        href="https://seen-badge-2df.notion.site/89bd1d2e5b164f49a1ae8a63ccd5bf61?v=d67bff7207dc408b8cf0a61c4b0ef8da&pvs=4"
-        target="_blank"
-      >
-        Library
-      </PageLink>
-
+      <NavLinks>
+        <PageLink href="/research">Research</PageLink>
+        <PageLink href="/thoughts">Thoughts</PageLink>
+        <PageLink href="/projects">Projects</PageLink>
+        <PageLink
+          href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
+          target="_blank"
+        >
+          Notebook
+        </PageLink>
+        <PageLink href="/cooking">Cooking</PageLink>
+        <PageLink
+          href="https://seen-badge-2df.notion.site/89bd1d2e5b164f49a1ae8a63ccd5bf61?v=d67bff7207dc408b8cf0a61c4b0ef8da&pvs=4"
+          target="_blank"
+        >
+          Library
+        </PageLink>
+      </NavLinks>
     </SidebarWrapper>
   );
 };
@@ -165,8 +158,8 @@ const SocialLink = styled.a`
 `;
 
 const AdaptiveDiv = styled.div`
-  max-width: ${(props) =>
-    props.$isindexpage ? "720px" : "min(1000px, 100vw)"};
+  max-width: ${(props) => (props.$isindexpage ? "720px" : "1000px")};
+  width: 100%;
   padding: 20px;
 
   @media ${device.mobileL} {
@@ -178,16 +171,22 @@ const AdaptiveDiv = styled.div`
   }
 `;
 
+const NavLinks = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+`;
+
 const PageLink = styled(Link)`
   color: #7A7870;
   display: block;
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.06em;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 10px;
   transition: color 0.15s ease;
 
   &:hover {
