@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 export async function getStaticProps() {
   const filenames = fs
-    .readdirSync("./pages/thoughts")
+    .readdirSync("./pages/blog")
     .filter((f) => f.indexOf(".mdx") !== -1);
 
   return {
@@ -15,7 +15,7 @@ export async function getStaticProps() {
   };
 }
 
-const ThoughtsPage = ({ filenames }) => {
+const BlogPage = ({ filenames }) => {
   const [metas, setMetas] = useState([]);
 
   useEffect(() => {
@@ -37,14 +37,14 @@ const ThoughtsPage = ({ filenames }) => {
   return (
     <div>
       <Head>
-        <title>Jonathan's Thoughts</title>
+        <title>Jonathan's Blog</title>
       </Head>
-      <PageTitle>Thoughts</PageTitle>
+      <PageTitle>Blog</PageTitle>
       <PostList>
         {metas.map((m) => (
           <PostItem key={m.title}>
             <PostDate>{dayjs(m.date, "YYYY-MM-DD").format("MMM YYYY")}</PostDate>
-            <PostLink href={`/thoughts/${m.url}`}>{m.title}</PostLink>
+            <PostLink href={`/blog/${m.url}`}>{m.title}</PostLink>
           </PostItem>
         ))}
       </PostList>
@@ -96,4 +96,4 @@ const PostLink = styled(Link)`
   }
 `;
 
-export default ThoughtsPage;
+export default BlogPage;

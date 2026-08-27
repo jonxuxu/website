@@ -72,16 +72,26 @@ const GlobalStyle = createGlobalStyle`
 const components = {
   h1: Typography.Title,
   // img: (props: ImageProps) => (
-  img: (props) => (
-    <div style={{ textAlign: "center" }}>
-      <NextImage
-        {...props}
-        width={500}
-        height={0}
-        style={{ maxWidth: "100%", height: "auto" }}
-        sizes="(max-width: 600px) 100vw, 500px"
-      />
-    </div>
+  // width/height are the image's real dimensions, injected at build time by
+  // rehype-img-size. Passing them through gives the browser an aspect ratio to
+  // reserve, which is what stops the page jumping as images load.
+  // Centering is done on the image itself: markdown puts a standalone image
+  // inside a <p>, and a wrapper <div> there is invalid HTML that breaks
+  // hydration.
+  img: ({ width, height, ...props }) => (
+    <NextImage
+      {...props}
+      width={Number(width) || 500}
+      height={Number(height) || 500}
+      style={{
+        display: "block",
+        margin: "0 auto",
+        width: "100%",
+        maxWidth: 500,
+        height: "auto",
+      }}
+      sizes="(max-width: 600px) 100vw, 500px"
+    />
   ),
   hr: Divider,
   // code: CodeBlock,

@@ -40,8 +40,8 @@ const menuItems = [
     label: <Link href="/research">Research</Link>,
   },
   {
-    key: "/thoughts",
-    label: <Link href="/thoughts">Thoughts</Link>,
+    key: "/blog",
+    label: <Link href="/blog">Blog</Link>,
   },
   {
     key: "/projects",
@@ -113,7 +113,7 @@ const SideBar = ({ currRoute }) => {
       </Link>
       <NavLinks>
         <PageLink href="/research">Research</PageLink>
-        <PageLink href="/thoughts">Thoughts</PageLink>
+        <PageLink href="/blog">Blog</PageLink>
         <PageLink href="/projects">Projects</PageLink>
         <PageLink
           href="https://1drv.ms/u/s!AkkQVbX5M5Bliz4y7hE0mD3fqa_q"
